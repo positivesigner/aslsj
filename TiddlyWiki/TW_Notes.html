@@ -147,15 +147,25 @@ Error message and password prompt
 
 <li>$:/config/HideSidebarOnStartup</li>
 
+<li>$:/config/MissingLinks</li>
+
 <li>$:/config/NewJournal/Title</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
+<li>$:/config/TextEditor/EnableToolbar</li>
+
+<li>$:/config/Toolbar/Icons</li>
+
+<li>$:/config/WikiParserRules/Inline/wikilink</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
+
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
@@ -240,6 +250,9 @@ exports.startup = function() {
 <div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20190925044957682" revision="0" tags="" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
+<div created="20190925061735308" modified="20190925061735308" title="$:/config/MissingLinks">
+<pre>no</pre>
+</div>
 <div created="20190925052037606" modified="20190925052045771" title="$:/config/NewJournal/Title">
 <pre>YYYYmMMdDD</pre>
 </div>
@@ -248,6 +261,15 @@ exports.startup = function() {
 </div>
 <div created="20190925051431806" modified="20190925051431807" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
+</div>
+<div created="20190925061557600" modified="20190925062040148" title="$:/config/TextEditor/EnableToolbar">
+<pre>yes</pre>
+</div>
+<div created="20190925061819062" modified="20190925061910011" title="$:/config/Toolbar/Icons">
+<pre>yes</pre>
+</div>
+<div created="20190925061714843" modified="20190925061714843" title="$:/config/WikiParserRules/Inline/wikilink">
+<pre>disable</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.21">
 <pre>{
@@ -9445,6 +9467,16 @@ exports.startup = function() {
 <div created="20190925014431388" modified="20190925051250712" title="$:/DefaultTiddlers">
 <pre>[all[tiddlers]tag[INDEX]sort[title]]</pre>
 </div>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;title&quot;: &quot;Untitled&quot;,
+            &quot;text&quot;: &quot;&lt;br class=\&quot;Apple-interchange-newline\&quot;&gt;&lt;span style=\&quot;color: rgb(192, 192, 192); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 12.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\&quot;&gt;24th September 2019 at 10:44pm&lt;/span&gt;&quot;
+        }
+    }
+}</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9457,19 +9489,19 @@ exports.startup = function() {
 <div created="20190925014404111" modified="20190925014416181" title="$:/SiteTitle">
 <pre>TiddlyWiki vs Markdown</pre>
 </div>
-<div created="20190925044925672" modified="20190925060944265" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20190925062026286" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20190925051414187" modified="20190925060842558" title="$:/state/tab-1749438307">
+<div created="20190925051414187" modified="20190925062032475" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
-<div created="20190925014513912" modified="20190925060946470" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20190925014513912" modified="20190925062209876" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20190925060819306" list="HideHeader [[Articles on how to use Tiddly Wiki]] [[Plugin for Hiding Sidebar]]" modified="20190925060913901" title="$:/StoryList">
+<div created="20190925061653740" list="[[What is this Wiki Stuff?]]" modified="20190925062029640" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9485,7 +9517,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/TiddlyWiki/TW_Notes.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/Dad/Downloads/TW_Notes%20(1).html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9505,7 +9537,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/BBK/aslsj/TiddlyWiki/TW_Notes.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/Dad/Downloads/TW_Notes%20(1).html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9653,11 +9685,21 @@ exports.startup = function() {
 
 &lt;a href={{HideHeader}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;External Links&lt;/a&gt;</pre>
 </div>
-<div created="20190925051442835" modified="20190925051825763" tags="META" title="What is this Wiki Stuff?">
-<pre>Open every Tiddler: [list[$:/StoryList]]
+<div created="20190925051442835" modified="20190925062200472" tags="META" title="What is this Wiki Stuff?">
+<pre>Open every Tiddler:
 
-Open just Tiddlers with a certain tag: [all[tiddlers]tag[INDEX]sort[title]]
-* Note: Replace INDEX with your tag name</pre>
+```
+[list[$:/StoryList]]
+```
+
+
+Open just Tiddlers with a certain tag:
+
+```
+[all[tiddlers]tag[UrTagName]sort[title]]
+```
+
+* Note: Replace UrTagName with your tag name</pre>
 </div>
 
 </div>

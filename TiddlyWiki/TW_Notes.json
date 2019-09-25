@@ -28,10 +28,10 @@
         "created": "20190925054126842"
     },
     {
-        "text": "Open every Tiddler: [list[$:/StoryList]]\n\nOpen just Tiddlers with a certain tag: [all[tiddlers]tag[INDEX]sort[title]]\n* Note: Replace INDEX with your tag name",
+        "text": "Open every Tiddler:\n\n```\n[list[$:/StoryList]]\n```\n\n\nOpen just Tiddlers with a certain tag:\n\n```\n[all[tiddlers]tag[UrTagName]sort[title]]\n```\n\n* Note: Replace UrTagName with your tag name",
         "title": "What is this Wiki Stuff?",
         "tags": "META",
-        "modified": "20190925051825763",
+        "modified": "20190925062200472",
         "created": "20190925051442835"
     }
 ]
