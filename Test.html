@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+  window.onload = function() {
+    window.addEventListener("message", function(e) {
+      document.querySelector("#messageCopy").innerHTML = e.data;
+    }, false);
+   document.querySelector("iframe").contentWindow.postMessage(null, "*");
+  };
+</script>
+<h1>Test parent</h1>
+<div id="messageCopy"></div>
+<iframe src="included.html"></iframe>
+</body>
+</html>
