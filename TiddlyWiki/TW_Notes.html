@@ -141,15 +141,35 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/.tb/modules/startup/hide-sidebar.js</li>
+
+<li>$:/config/DefaultSidebarTab</li>
+
+<li>$:/config/HideSidebarOnStartup</li>
+
+<li>$:/config/NewJournal/Title</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/isEncrypted</li>
 
+<li>$:/language/DefaultNewTiddlerTitle</li>
+
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
+
+<li>$:/state/sidebar</li>
+
+<li>$:/state/tab--2112689675</li>
+
+<li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
 
@@ -161,7 +181,15 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>Entry</li>
+<li>Articles on how to use Tiddly Wiki</li>
+
+<li>HideHeader</li>
+
+<li>INDEX</li>
+
+<li>Plugin for Hiding Sidebar</li>
+
+<li>What is this Wiki Stuff?</li>
 
 </ul>
 </p>
@@ -173,6 +201,54 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div bag="default" created="20151010151732122" creator="Tobias Beer" modified="20151010151750739" module-type="startup" revision="0" title="$:/.tb/modules/startup/hide-sidebar.js" type="application/javascript">
+<pre>/*\
+title: $:/.tb/modules/startup/hide-sidebar.js
+type: application/javascript
+module-type: startup
+created: 20151010151732122
+creator: Tobias Beer
+modified: 20151010151750739
+
+Hides the sidebar on startup when the config tiddler [[$:/config/hide-sidebar-on-startup]] contains &quot;yes&quot;
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+// Export name and synchronous status
+exports.name = &quot;hide-sidebar-on-startup&quot;;
+exports.platforms = [&quot;browser&quot;];
+exports.after = [&quot;startup&quot;];
+exports.synchronous = true;
+
+exports.startup = function() {
+	var conf = $tw.wiki.getTiddler(&quot;$:/config/HideSidebarOnStartup&quot;),
+		value = (conf ? conf.getFieldString(&quot;text&quot;) : &quot;&quot;).toLowerCase(),
+		state = value == &quot;yes&quot; ? &quot;no&quot; : &quot;yes&quot;;
+	$tw.wiki.setText(&quot;$:/state/sidebar&quot;, &quot;text&quot;, undefined, state);
+};
+
+})();</pre>
+</div>
+<div created="20190925052308177" modified="20190925052323703" title="$:/config/DefaultSidebarTab">
+<pre>$:/core/ui/SideBar/Open</pre>
+</div>
+<div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20190925044957682" revision="0" tags="" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
+<pre>yes</pre>
+</div>
+<div created="20190925052037606" modified="20190925052045771" title="$:/config/NewJournal/Title">
+<pre>YYYYmMMdDD</pre>
+</div>
+<div created="20190925051433967" modified="20190925051433967" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
+<pre>hide</pre>
+</div>
+<div created="20190925051431806" modified="20190925051431807" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
+<pre>hide</pre>
+</div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.21">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -9366,11 +9442,14 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190925014431388" modified="20190925014441308" title="$:/DefaultTiddlers">
-<pre>[list[$:/StoryList]]</pre>
+<div created="20190925014431388" modified="20190925051250712" title="$:/DefaultTiddlers">
+<pre>[all[tiddlers]tag[INDEX]sort[title]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
+</div>
+<div created="20190925052027956" modified="20190925052030401" title="$:/language/DefaultNewTiddlerTitle">
+<pre>New Entry</pre>
 </div>
 <div created="20190925014420922" modified="20190925014423233" title="$:/SiteSubtitle">
 <pre>Why use either</pre>
@@ -9378,10 +9457,19 @@ Error message and password prompt
 <div created="20190925014404111" modified="20190925014416181" title="$:/SiteTitle">
 <pre>TiddlyWiki vs Markdown</pre>
 </div>
-<div created="20190925014513912" modified="20190925014621874" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20190925044925672" modified="20190925054122872" title="$:/state/sidebar">
+<pre>yes</pre>
 </div>
-<div list="Entry" title="$:/StoryList">
+<div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
+</div>
+<div created="20190925051414187" modified="20190925052250885" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
+</div>
+<div created="20190925014513912" modified="20190925053825457" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
+</div>
+<div list="[[Plugin for Hiding Sidebar]] [[Articles on how to use Tiddly Wiki]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9397,7 +9485,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/Users/Dad/Downloads/empty.html&quot;
+            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/TiddlyWiki/TW_Notes.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9417,7 +9505,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/Users/Dad/Downloads/empty.html&quot;
+            &quot;text&quot;: &quot;/C:/BBK/aslsj/TiddlyWiki/TW_Notes.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9551,8 +9639,25 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190925014523514" modified="20190925014546494" tags="" title="Entry">
-<pre>Here is an entry</pre>
+<div created="20190925014523514" modified="20190925054057684" tags="INDEX" title="Articles on how to use Tiddly Wiki">
+<pre>&lt;$list filter=&quot;[tag[META]sort[title]]&quot;/&gt;</pre>
+</div>
+<div created="20190925053827947" modified="20190925053905115" tags="EXTLINK" title="HideHeader">
+<pre>file:///C:/BBK/aslsj/TiddlyWiki/TiddlyWiki Plugin Hiding The Sidebar On Startup.html</pre>
+</div>
+<div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
+<pre></pre>
+</div>
+<div created="20190925054126842" modified="20190925054411380" tags="META" title="Plugin for Hiding Sidebar">
+<pre>There is a sidebar with settings. It has a minimum width, so when your browser windows is not wide enough, the sidebar turns into a top menu bar. The below Tiddly describes a plugin that hides the sidebar / top menu bar on startup.
+
+&lt;a href={{HideHeader}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;External Links&lt;/a&gt;</pre>
+</div>
+<div created="20190925051442835" modified="20190925051825763" tags="META" title="What is this Wiki Stuff?">
+<pre>Open every Tiddler: [list[$:/StoryList]]
+
+Open just Tiddlers with a certain tag: [all[tiddlers]tag[INDEX]sort[title]]
+* Note: Replace INDEX with your tag name</pre>
 </div>
 
 </div>

@@ -1,0 +1,37 @@
+[
+    {
+        "created": "20190925014523514",
+        "text": "<$list filter=\"[tag[META]sort[title]]\"/>",
+        "title": "Articles on how to use Tiddly Wiki",
+        "tags": "INDEX",
+        "modified": "20190925054057684"
+    },
+    {
+        "created": "20190925053827947",
+        "text": "file:///C:/BBK/aslsj/TiddlyWiki/TiddlyWiki Plugin Hiding The Sidebar On Startup.html",
+        "title": "HideHeader",
+        "tags": "EXTLINK",
+        "modified": "20190925053905115"
+    },
+    {
+        "text": "",
+        "title": "INDEX",
+        "modified": "20190925051931336",
+        "created": "20190925051857974",
+        "color": "#8080c0"
+    },
+    {
+        "created": "20190925054126842",
+        "text": "There is a sidebar with settings. It has a minimum width, so when your browser windows is not wide enough, the sidebar turns into a top menu bar. The below Tiddly describes a plugin that hides the sidebar / top menu bar on startup.\n\n<a href={{HideHeader}}  rel=\"noopener noreferrer\" target=\"_blank\">External Links</a>",
+        "title": "Plugin for Hiding Sidebar",
+        "tags": "META",
+        "modified": "20190925054411380"
+    },
+    {
+        "text": "Open every Tiddler: [list[$:/StoryList]]\n\nOpen just Tiddlers with a certain tag: [all[tiddlers]tag[INDEX]sort[title]]\n* Note: Replace INDEX with your tag name",
+        "title": "What is this Wiki Stuff?",
+        "tags": "META",
+        "modified": "20190925051825763",
+        "created": "20190925051442835"
+    }
+]
