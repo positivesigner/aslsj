@@ -175,6 +175,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/showeditpreview</li>
+
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab--2112689675</li>
@@ -192,6 +194,8 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/vanilla</li>
 
 <li>Articles on how to use Tiddly Wiki</li>
+
+<li>Git Commit from Android</li>
 
 <li>HideHeader</li>
 
@@ -9489,7 +9493,10 @@ exports.startup = function() {
 <div created="20190925014404111" modified="20190929131843610" title="$:/SiteTitle">
 <pre>ASLSJ Dictionary</pre>
 </div>
-<div created="20190925044925672" modified="20190929131729673" title="$:/state/sidebar">
+<div created="20190929135032475" modified="20190929135032475" title="$:/state/showeditpreview">
+<pre>yes</pre>
+</div>
+<div created="20190925044925672" modified="20190929134956070" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
@@ -9501,7 +9508,7 @@ exports.startup = function() {
 <div created="20190925014513912" modified="20190929131731848" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20190929131734880" list="[[Articles on how to use Tiddly Wiki]]" modified="20190929131734880" title="$:/StoryList">
+<div list="[[Git Commit from Android]] [[Articles on how to use Tiddly Wiki]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9517,19 +9524,19 @@ exports.startup = function() {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///storage/emulated/0/Download/aslsj/TiddlyWiki/TW_Notes.html&quot;
+            &quot;text&quot;: &quot;https://positivesigner.github.io/aslsj/TiddlyWiki/TW_Notes.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;positivesigner.github.io&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;positivesigner.github.io&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;file:&quot;
+            &quot;text&quot;: &quot;https:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -9537,7 +9544,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/storage/emulated/0/Download/aslsj/TiddlyWiki/TW_Notes.html&quot;
+            &quot;text&quot;: &quot;/aslsj/TiddlyWiki/TW_Notes.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9545,7 +9552,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;file://&quot;
+            &quot;text&quot;: &quot;https://positivesigner.github.io&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
@@ -9673,6 +9680,56 @@ exports.startup = function() {
 </div>
 <div created="20190925014523514" modified="20190925055530989" tags="INDEX" title="Articles on how to use Tiddly Wiki">
 <pre>&lt;&lt;list-links filter:&quot;[tag[META]sort[title]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20190929135008441" modified="20190929141548446" tags="META" title="Git Commit from Android">
+<pre>Open a Web Browser
+
+*[In address bar]
+
+* Paste in address of TiddlyWiki file hosted on GitHub.io and press Enter
+
+*[In browser window]
+
+*Make changes
+
+Open a File Browser
+
+* Navigate to the browser's Downloads folder
+
+* If necessary, delete the last downloaded version of your TiddlyWiki Html file
+
+In the Web Browser
+
+*[In TiddlyWiki sidebar, Tools menu]
+
+*Click button Save Changes
+**Note: This copied the Html file to the browser's Downloads directory
+
+* Open a new browser tab
+
+* [In address bar]
+
+* Type in GitHub.com and press Enter
+
+*[In browser window]
+
+* Navigate to repository and desired folder
+
+* Click button Upload Files
+
+* Click link Choose Your Files -&gt; Opens dialog box
+
+In dialog box Choose Action
+
+* Select the icon Documents -&gt; Closes dialog box, opens new dialog box
+
+* Navigate to the Downloads folder
+** If necessary, change to List View to see the full file names
+** If necessary, sort by Date Changed to see the most recently saved files
+
+* Select the Html file
+
+</pre>
 </div>
 <div created="20190925053827947" modified="20190925060934266" tags="EXTLINK" title="HideHeader">
 <pre>TiddlyWiki Plugin Hiding The Sidebar On Startup.html</pre>
