@@ -161,6 +161,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
 <li>$:/config/RelinkOnRename</li>
@@ -242,17 +244,20 @@ Error message and password prompt
 &lt;&lt;list-links filter:&quot;[tag[_llll]tag[o_\o]sort[title]]&quot;&gt;&gt;
 </pre>
 </div>
-<div created="20190929203313068" modified="20190929215518699" tags="SUBHEADING [[. q&lt; . q&gt;]] M_\M _llll" title="_llll M_\M . q&lt; . q&gt;">
-<pre>&lt;$list filter=&quot;[tag[_llll]tag[ASLSJ]]&quot;&gt;
+<div created="20190929203313068" modified="20190929220943299" tags="SUBHEADING [[. q&lt; . q&gt;]] M_\M _llll" title="_llll M_\M . q&lt; . q&gt;">
+<pre>&lt;$list filter=&quot;[tag[_llll]tag[ASLSJ]sort[title]]&quot;&gt;
 &lt;$transclude field=&quot;text&quot;/&gt;
 &lt;/$list&gt;</pre>
 </div>
-<div created="20190929213746220" modified="20190929215429593" tags="[[. q&lt; . q&gt;]] M_\M _llll ASLSJ" title="_llll M_\M l__l l+l . q&gt;">
+<div created="20190929213746220" modified="20190929220834247" tags="[[. q&lt; . q&gt;]] M_\M _llll ASLSJ" title="_llll M_\M l__l l+l . q&gt;">
 <pre>_llll M_\M&lt;br&gt;
-l_''''_l [+] . q&gt;
+l_''''_l l+l . q&gt; &lt;br&gt;
 &lt;br&gt;
 * [[hello, greeting]]&lt;br&gt;
-* [[hi, greeting]]</pre>
+* [[hi, greeting]]&lt;br&gt;
+&lt;br&gt;
+group: [[_llll M_\M . q&lt; . q&gt;]]
+&lt;hr&gt;</pre>
 </div>
 <div created="20190929205730008" modified="20190929210640348" tags="_llll HEADER" title="_llll q i">
 <pre>&lt;&lt;list-links filter:&quot;[tag[_llll]tag[. q&lt; . q&gt;]sort[title]]&quot;&gt;&gt;
@@ -308,6 +313,9 @@ exports.startup = function() {
 </div>
 <div created="20190925051433967" modified="20190925051433967" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>hide</pre>
+</div>
+<div created="20190929220336740" modified="20190929220336740" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
 </div>
 <div created="20190925051431806" modified="20190925051431807" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
@@ -9545,7 +9553,7 @@ exports.startup = function() {
 <div created="20190929135032475" modified="20190929135032475" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20190929213341687" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20190929220813632" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
@@ -9554,10 +9562,10 @@ exports.startup = function() {
 <div created="20190925051414187" modified="20190929131736386" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20190929215219260" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20190925014513912" modified="20190929220815364" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20190929210302041" list="[[English Translations]] [[hi, greeting]] [[_llll M_\M l__l l+l . q&gt;]] [[hello, greeting]] [[ASLSJ Heading Words]] [[_llll M ( - o]] [[_llll M_\M . q&lt; . q&gt;]] [[M_\M q i 1]] [[_llll q i]]" modified="20190929214305274" title="$:/StoryList">
+<div created="20190929220354701" list="[[_llll M_\M l__l l+l . q&gt;]] [[ASLSJ Heading Words]] [[_llll M ( - o]] [[_llll M_\M . q&lt; . q&gt;]]" modified="20190929220844138" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
