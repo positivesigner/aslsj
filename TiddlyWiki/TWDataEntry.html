@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>TiddlyWiki Init — Design notes</title>
+<title>TiddlyWiki Data Entry — Design notes</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -181,6 +181,8 @@ Error message and password prompt
 
 <li>$:/state/sidebar</li>
 
+<li>$:/state/tab--1498284803</li>
+
 <li>$:/state/tab--2112689675</li>
 
 <li>$:/state/tab-1749438307</li>
@@ -189,17 +191,29 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/temp/advancedsearch</li>
+
 <li>$:/temp/info-plugin</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>Articles on how to use Tiddly Wiki</li>
+<li>Compare TW Files</li>
+
+<li>Create new TW File</li>
 
 <li>HideHeader</li>
 
+<li>How to present data</li>
+
 <li>INDEX</li>
+
+<li>META</li>
+
+<li>Other Tiddler Title</li>
+
+<li>Standard Text</li>
 
 <li>TiddlyWiki Startup Options</li>
 
@@ -9493,14 +9507,17 @@ exports.startup = function() {
 <div created="20190925014420922" modified="20200111053100183" title="$:/SiteSubtitle">
 <pre>Design notes</pre>
 </div>
-<div created="20190925014404111" modified="20200111053118898" title="$:/SiteTitle">
-<pre>TiddlyWiki Init</pre>
+<div created="20190925014404111" modified="20200111053315911" title="$:/SiteTitle">
+<pre>TiddlyWiki Data Entry</pre>
 </div>
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200111053014413" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200111070915771" title="$:/state/sidebar">
 <pre>yes</pre>
+</div>
+<div created="20200111070743462" modified="20200111070743462" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
@@ -9508,11 +9525,14 @@ exports.startup = function() {
 <div created="20190925051414187" modified="20200111053052887" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200111053124927" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200111070917974" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20200111053020625" list="[[Articles on how to use Tiddly Wiki]]" modified="20200111053136267" title="$:/StoryList">
+<div created="20200111063902951" list="[[How to present data]] [[Compare TW Files]] $:/AdvancedSearch" modified="20200111071011658" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20200111071059087" modified="20200111071059087" title="$:/temp/advancedsearch">
+<pre>[all[tiddlers]tag[INDEX]sort[title]][all[tiddlers]!tag[EXTLINK]!tag[INDEX]!tag[META]!prefix[Draft of]!is[image]!is[tag]!is[system]sort[title]]</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -9527,7 +9547,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/TiddlyWiki/TW_Init.html&quot;
+            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/TiddlyWiki/TWDataEntry.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9547,7 +9567,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/BBK/aslsj/TiddlyWiki/TW_Init.html&quot;
+            &quot;text&quot;: &quot;/C:/BBK/aslsj/TiddlyWiki/TWDataEntry.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9681,14 +9701,265 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20190925014523514" modified="20190925055530989" tags="INDEX" title="Articles on how to use Tiddly Wiki">
-<pre>&lt;&lt;list-links filter:&quot;[tag[META]sort[title]]&quot;&gt;&gt;</pre>
+<div created="20200111070429246" modified="20200111071633946" tags="TWFORMAT" title="Compare TW Files">
+<pre>You can export all the tiddler data in a TiddlyWiki to a JSON file. This way you can compare the data entered in two different TiddlyWiki files without having to look past the source code or configuration data.
+
+# In the Sidebar Tools menu, select the Advanced Search button
+#* This brings up the $:/AdvancedSearch tiddler
+# On the Filter tab, enter the following text
+#* [all[tiddlers]tag[INDEX]sort[title]][all[tiddlers]!tag[EXTLINK]!tag[INDEX]!tag[META]!prefix[Draft of]!is[image]!is[tag]!is[system]sort[title]]
+#* Note: The Filter tab will show you a list of all tiddler titles in the TiddlyWiki file, starting with the INDEX tagged tiddler.
+# Click the Export Tiddlers button (Up-arrow icon)
+#* Note: This shows a list of export file types.
+# Click the &quot;JSON file&quot; option.
+#* Note: The web browser creates a &quot;tiddlers.json&quot; file in your downloads folder.
+# Use Windows Explorer to rename the &quot;tiddlers.json&quot; file so you can remember what data it holds
+# Make some changes in some tiddler's content
+# Create another JSON export file
+# Compare the two JSON export files to see the changes that were made</pre>
+</div>
+<div created="20200111064935280" modified="20200111070417108" tags="TWFORMAT" title="Create new TW File">
+<pre>To create a new TW File
+
+# Copy the [ext[TW_Init.html]] as a new file name
+# Open the file in a browser
+# Open the Sidebar
+# On the Tools menu, select the Control Panel button
+# On the $:/ControlPanel tiddler, change the Title and Subtitle
+#*Note: The Sidebar title and subtitle shows your new text.
+# Close the ControlPanel tiddler
+# Edit the INDEX tagged tiddler
+# Change the tiddler title
+# In the tiddler content, change the tag[META] filter to a new tag name.a
+#* tag[UrTagName]
+# Save the INDEX tiddler
+# Press Alt-N to create a new tiddler
+# Enter a tiddler title
+# Where you select a tag name, type in your new tag name and press enter
+#* UrTagName
+# Enter the tiddler content
+# Save the tiddler
+#* Note: The INDEX tiddler now shows your new tiddler title in the alphabetical list of links.
+# In the Sidebar, click the red circle with a checkmark to save the updated TiddlyWiki file to your Downloads directory, as specified by your web browser.
+# You can use Windows Explorer to move the updated TiddlyWiki file to the original file's directory, overwriting the previous file version.</pre>
 </div>
 <div created="20190925053827947" modified="20190925060934266" tags="EXTLINK" title="HideHeader">
 <pre>TiddlyWiki Plugin Hiding The Sidebar On Startup.html</pre>
 </div>
+<div created="20190925014523514" modified="20200111053352237" tags="INDEX" title="How to present data">
+<pre>&lt;&lt;list-links filter:&quot;[tag[TWFORMAT]sort[title]]&quot;&gt;&gt;</pre>
+</div>
 <div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
 <pre></pre>
+</div>
+<div created="20200111071010543" list="[[TiddlyWiki Startup Options]] [[What is this Wiki Stuff?]]" modified="20200111071010543" title="META">
+<pre></pre>
+</div>
+<div created="20200111063143776" modified="20200111063226190" tags="EXTLINK" title="Other Tiddler Title">
+<pre>Other Tiddler Transcluded Text</pre>
+</div>
+<div created="20200111053354295" modified="20200111064639163" tags="TWFORMAT" title="Standard Text" type="">
+<pre>You can type most standard text without problems. Leading, repeated, or paired special characters may need escaped.
+
+!Vertical Spacing
+
+```
+Pressing enter at the end of a line does not start a new paragraph.
+Both of these lines are one paragraph.
+
+You must leave a blank line between text lines to get a paragraph.
+Press enter twice.
+```
+
+For example, see how the above two paragraphs are shown below:
+
+Pressing enter at the end of a line does not start a new paragraph.
+Both of these lines are one paragraph.
+
+You must leave a blank line between text lines to get a paragraph.
+Press enter twice.
+
+
+!Leading Special Characters
+
+!!Heading Line
+
+```
+!Heading Line
+```
+
+Starting a new paragraph line with an exclamation mark (!) results in a heading line.
+
+```
+!Heading Line
+```
+
+The above heading markup starts with an exclamation mark. To escape, prefix with four single-quotes.
+
+```
+''''!Heading Line
+```
+
+''''!Heading Line
+
+!!Mono-spaced Text Block
+
+```
+ ```
+ Mono-spaced Text Block
+ ```
+```
+
+```
+Mono-spaced Text Block
+```
+
+Leading with a triple back-tick creates a mono-space text block. To escape, surround the triple back-tick with doubled square-brackets.
+
+```
+[[''']] Regular typeface
+```
+
+[[```]] Regular typeface
+
+!!Quoted text block
+```
+&lt;&lt;&lt;
+Quoted text block
+&lt;&lt;&lt;
+```
+
+&lt;&lt;&lt;
+Quoted text block
+&lt;&lt;&lt;
+
+Leading with a triple less-than creates a quoted text block. To escape, surround the 
+
+```
+''''&lt;&lt;&lt; Unquoted text
+```
+
+''''&lt;&lt;&lt; Unquoted text
+
+!!Bulleted List Entry
+
+```
+*Bulleted List Entry
+```
+
+*Bulleted List Entry
+
+Leading with an asterisk creates a bulleted list entry. To escape, prefix with four single-quotes.
+
+```
+''''*Bulleted List Entry
+```
+
+''''*Bulleted List Entry
+
+!!Numbered List Entry
+
+```
+#Numbered List Entry
+```
+
+#Numbered List Entry
+
+Leading with a pound-sign creates a numbered list entry. To escape, prefix with four single-quotes.
+
+```
+''''#Numbered List Entry
+```
+
+''''#Numbered List Entry
+
+
+!Repeated Special Characters
+
+```
+''Bold Text'' //Italic Text// ~~Strike-through Text~~ __Underlined Text__ ^^Raised-Small Text^^ ,,Lowered-Small Text,, `Mono-spaced Text`
+```
+
+''Bold Text'' //Italic Text// ~~Strike-through Text~~ __Underlined Text__ ^^Raised-Small Text^^ ,,Lowered-Small Text,, `Mono-spaced Text`
+
+A number of repeated special characters are used as Wiki Markup to format text. To escape, place four single-quotes between the doubled characters or surround the doubled characters with doubled square-braces.
+
+```
+[['']]Bold Text[['']] /''''/Italic Text/''''/ ~''''~Strike-through Text~''''~ _''''_Underlined Text_''''_ ^''''^Raised-Small Text^''''^ ,'''',Lowered-Small Text,'''', [[`]]Mono-spaced Text[[`]]
+```
+
+[['']]Bold Text[['']] /''''/Italic Text/''''/ ~''''~Strike-through Text~''''~ _''''_Underlined Text_''''_ ^''''^Raised-Small Text^''''^ ,'''',Lowered-Small Text,'''', [[`]]Mono-spaced Text[[`]]
+
+!Paired Special Characters
+
+!!Literal Text
+
+```
+[[Literal Text]]
+```
+
+[[Literal Text]]
+
+Surrounding text with doubled square-brackets shows the literal surrounded text without applying formatting. To escape, place four single-quotes between the first doubled square-brackets.
+
+```
+[''''[Literal Text]]
+```
+
+[''''[Literal Text]]
+
+!!Transcluded Text
+
+```
+{{Other Tiddler Title}}
+
+Note: The other tidder's content is &quot;Other Tiddler Transcluded Text&quot;.
+```
+
+{{Other Tiddler Title}}
+
+Surrounding text with doubled curly-braces shows the full content of another tiddler. To escape, place four single-quotes between the first doubled curly-braces.
+
+```
+{''''{Other Tiddler Title}}
+```
+
+{''''{Other Tiddler Title}}
+
+!!HTML Markup
+
+```
+&lt;b&gt;HTML Markup&lt;/b&gt;
+```
+
+&lt;b&gt;HTML Markup&lt;/b&gt;
+
+Surrounding text with angled-brackets uses HTML formatting. To escape, rename the first angle-bracket to &amp;lt'''';
+
+```
+&amp;lt;b&gt;HTML Markup&lt;/b&gt;
+```
+
+&amp;lt;b&gt;HTML Markup&lt;/b&gt;
+
+!!HTML Literals
+
+```
+&amp;lt;
+
+Note: &amp;lt; represents a left angle-bracket, or the less-than symbol (&lt;).
+```
+
+&amp;lt;
+
+Surrounding text with an ampersand (&amp;) and a semi-colon translate to an HTML literal. To escape, place four single-quotes after the ampersand.
+
+```
+&amp;lt;
+```
+
+&amp;''''lt;
+</pre>
 </div>
 <div created="20190925054126842" modified="20200101065302014" tags="META" title="TiddlyWiki Startup Options">
 <pre>Here is some notes on [[How to setup a Tiddly Wiki file|Articles on how to use Tiddly Wiki]].
