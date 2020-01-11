@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>ASLSJ Documentation — Design notes</title>
+<title>GitHub Website Hosting — How to setup repository</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -193,15 +193,13 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>ASLSJ Links</li>
+<li>GitHub Repository Setup</li>
 
-<li>GitHub Documentation</li>
+<li>GitHub Website Hosting</li>
 
-<li>GitHubWebsiteHosting</li>
+<li>HideHeader</li>
 
 <li>INDEX</li>
-
-<li>META</li>
 
 <li>TiddlyWiki Startup Options</li>
 
@@ -9489,16 +9487,16 @@ exports.startup = function() {
 <div created="20190925052027956" modified="20190925052030401" title="$:/language/DefaultNewTiddlerTitle">
 <pre>New Entry</pre>
 </div>
-<div created="20190925014420922" modified="20200111050132972" title="$:/SiteSubtitle">
-<pre>Design notes</pre>
+<div created="20190925014420922" modified="20200111045842366" title="$:/SiteSubtitle">
+<pre>How to setup repository</pre>
 </div>
-<div created="20190925014404111" modified="20200111050102562" title="$:/SiteTitle">
-<pre>ASLSJ Documentation</pre>
+<div created="20190925014404111" modified="20200111045832719" title="$:/SiteTitle">
+<pre>GitHub Website Hosting</pre>
 </div>
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200111050422491" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200111045808836" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
@@ -9507,10 +9505,10 @@ exports.startup = function() {
 <div created="20190925051414187" modified="20200101055844847" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200111050424550" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200111045848966" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20200111050035099" list="[[GitHub Documentation]] [[ASLSJ Links]]" modified="20200111050726236" title="$:/StoryList">
+<div created="20200111045820675" list="[[GitHub Repository Setup]] [[GitHub Website Hosting]]" modified="20200111045820675" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9526,7 +9524,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/index.html&quot;
+            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/GitHub/TW_Init.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9546,7 +9544,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/BBK/aslsj/index.html&quot;
+            &quot;text&quot;: &quot;/C:/BBK/aslsj/GitHub/TW_Init.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9680,22 +9678,24 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20190925014523514" modified="20200111050220288" tags="INDEX" title="ASLSJ Links">
-<pre>&lt;&lt;list-links filter:&quot;[tag[LOCALPAGE]sort[title]]&quot;&gt;&gt;</pre>
-</div>
-<div created="20200111050226171" modified="20200111050609203" tags="LOCALPAGE" title="GitHub Documentation">
-<pre>This website is hosted on GitHub.io.
+<div created="20200111045227944" modified="20200111045647966" tags="GITHUB" title="GitHub Repository Setup">
+<pre>Setup the Git Repository
 
-&lt;a href={{GitHubWebsiteHosting}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;GitHub Website Hosting&lt;/a&gt;
-</pre>
+If you know your UrUserName and UrRepository, files in the repository will be accessible under the following URL:
+
+https://UrUserName.github.io/UrRepository/
+
+For PositiveSigner's repository ASLSJ:
+
+https://positivesigner.github.io/aslsj/</pre>
 </div>
-<div created="20200111050532009" modified="20200111050545846" tags="EXTLINK" title="GitHubWebsiteHosting">
-<pre>GitHub/GitHubWebsiteHosting.html</pre>
+<div created="20190925014523514" modified="20200111045251739" tags="INDEX" title="GitHub Website Hosting">
+<pre>&lt;&lt;list-links filter:&quot;[tag[GITHUB]sort[title]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20190925053827947" modified="20190925060934266" tags="EXTLINK" title="HideHeader">
+<pre>TiddlyWiki Plugin Hiding The Sidebar On Startup.html</pre>
 </div>
 <div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
-<pre></pre>
-</div>
-<div created="20200111050431021" list="[[TiddlyWiki Startup Options]] [[What is this Wiki Stuff?]]" modified="20200111050448488" title="META">
 <pre></pre>
 </div>
 <div created="20190925054126842" modified="20200101065302014" tags="META" title="TiddlyWiki Startup Options">
