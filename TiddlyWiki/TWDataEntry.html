@@ -209,6 +209,8 @@ Error message and password prompt
 
 <li>INDEX</li>
 
+<li>Linking</li>
+
 <li>META</li>
 
 <li>Other Tiddler Title</li>
@@ -216,6 +218,10 @@ Error message and password prompt
 <li>Standard Text</li>
 
 <li>TiddlyWiki Startup Options</li>
+
+<li>TW Init Template</li>
+
+<li>TW Init Template2</li>
 
 <li>What is this Wiki Stuff?</li>
 
@@ -9513,7 +9519,7 @@ exports.startup = function() {
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200111070915771" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200111080521025" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200111070743462" modified="20200111070743462" title="$:/state/tab--1498284803">
@@ -9528,7 +9534,7 @@ exports.startup = function() {
 <div created="20190925014513912" modified="20200111070917974" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20200111063902951" list="[[How to present data]] [[Compare TW Files]] $:/AdvancedSearch" modified="20200111071011658" title="$:/StoryList">
+<div created="20200111074657248" list="[[How to present data]] Linking" modified="20200111081044272" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111071059087" modified="20200111071059087" title="$:/temp/advancedsearch">
@@ -9752,13 +9758,59 @@ exports.startup = function() {
 <div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
 <pre></pre>
 </div>
+<div created="20200111074534709" modified="20200111081244973" tags="TWFORMAT" title="Linking">
+<pre>There are different kinds of file links you can create in tiddler content.
+
+!Tiddler Link
+
+```
+[[Create new|Create new TW File]]
+```
+
+[[Create new|Create new TW File]]
+
+When you enclose text within doubled square-brackets, it creates a Tiddler link. If you separate the text with a vertical bar ( | ), the first part is the link text and the second part is the tiddler title.
+
+!External Link
+
+```
+[ext[TW_Init.html]]
+```
+
+[ext[TW_Init.html]]
+
+When you put &quot;ext&quot; between the openeing doubled square-brackets of a Tiddler link, the browser will open the external linke in a new tab, looking for the specified file name in the same directory as the current document.
+
+!URL Link
+
+```
+https://tiddlywiki.com/
+```
+
+https://tiddlywiki.com/
+
+When you type an &quot;http'''':/''''/&quot; or &quot;https'''':/''''/&quot; URL, it automatically appears as an external link.
+
+!HTML Link
+
+```
+&lt;a href={{TW Init Template}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;HTML Link&lt;/a&gt;
+```
+
+&lt;a href={{TW Init Template}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;HTML Link&lt;/a&gt;
+
+I prefer to create the &quot;[ext[&quot; External link title and relative path in an EXTLINK tagged tiddler and transclude the tiddler's content.
+
+{{TW Init Template2}}
+</pre>
+</div>
 <div created="20200111071010543" list="[[TiddlyWiki Startup Options]] [[What is this Wiki Stuff?]]" modified="20200111071010543" title="META">
 <pre></pre>
 </div>
 <div created="20200111063143776" modified="20200111063226190" tags="EXTLINK" title="Other Tiddler Title">
 <pre>Other Tiddler Transcluded Text</pre>
 </div>
-<div created="20200111053354295" modified="20200111064639163" tags="TWFORMAT" title="Standard Text" type="">
+<div created="20200111053354295" modified="20200111075911941" tags="TWFORMAT" title="Standard Text" type="">
 <pre>You can type most standard text without problems. Leading, repeated, or paired special characters may need escaped.
 
 !Vertical Spacing
@@ -9781,6 +9833,22 @@ Press enter twice.
 
 
 !Leading Special Characters
+
+!!Bulleted List Entry
+
+```
+*Bulleted List Entry
+```
+
+*Bulleted List Entry
+
+Leading with an asterisk creates a bulleted list entry. To escape, prefix with four single-quotes.
+
+```
+''''*Bulleted List Entry
+```
+
+''''*Bulleted List Entry
 
 !!Heading Line
 
@@ -9822,6 +9890,22 @@ Leading with a triple back-tick creates a mono-space text block. To escape, surr
 
 [[```]] Regular typeface
 
+!!Numbered List Entry
+
+```
+#Numbered List Entry
+```
+
+#Numbered List Entry
+
+Leading with a pound-sign creates a numbered list entry. To escape, prefix with four single-quotes.
+
+```
+''''#Numbered List Entry
+```
+
+''''#Numbered List Entry
+
 !!Quoted text block
 ```
 &lt;&lt;&lt;
@@ -9841,37 +9925,21 @@ Leading with a triple less-than creates a quoted text block. To escape, surround
 
 ''''&lt;&lt;&lt; Unquoted text
 
-!!Bulleted List Entry
+!!URL Links
 
 ```
-*Bulleted List Entry
+https://tiddlywiki.com/
 ```
 
-*Bulleted List Entry
+https://tiddlywiki.com/
 
-Leading with an asterisk creates a bulleted list entry. To escape, prefix with four single-quotes.
-
-```
-''''*Bulleted List Entry
-```
-
-''''*Bulleted List Entry
-
-!!Numbered List Entry
+Start text with an &quot;http'''':/''''/&quot; &quot;http'''':/''''/&quot; will create a URL link. To escape, place four single-quotes before the colon and between the double forward-slashes.
 
 ```
-#Numbered List Entry
+https'''':/''''/tiddlywiki.com/
 ```
 
-#Numbered List Entry
-
-Leading with a pound-sign creates a numbered list entry. To escape, prefix with four single-quotes.
-
-```
-''''#Numbered List Entry
-```
-
-''''#Numbered List Entry
+https'''':/''''/tiddlywiki.com/
 
 
 !Repeated Special Characters
@@ -9967,6 +10035,12 @@ Surrounding text with an ampersand (&amp;) and a semi-colon translate to an HTML
 There is a sidebar with settings. It has a minimum width, so when your browser windows is not wide enough, the sidebar turns into a top menu bar. The below Tiddly describes a plugin that hides the sidebar / top menu bar on startup.
 
 &lt;a href={{HideHeader}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;External Links&lt;/a&gt;</pre>
+</div>
+<div created="20200111080209734" modified="20200111080534897" tags="EXTLINK" title="TW Init Template">
+<pre>TW_Init.html</pre>
+</div>
+<div created="20200111080536248" modified="20200111081110497" tags="EXTLINK" title="TW Init Template2">
+<pre>[ext[Transcluded Link|TW_Init.html]]</pre>
 </div>
 <div created="20190925051442835" modified="20200103151335611" tags="META" title="What is this Wiki Stuff?">
 <pre>Here is some notes on [[How to use markup in Tiddly Wiki|Articles on how to use Tiddly Wiki]].
