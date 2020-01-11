@@ -1,0 +1,13 @@
+start "" "C:\TJBF\zPortableInstalls\VBNetScript\VBNetScript.exe" %0
+exit
+			RetVal = "QUIT"
+            Dim objPCS As New System.Diagnostics.Process()
+            With 1 : Dim prcINFO = objPCS.StartInfo
+                prcINFO.FileName = "C:\TJBF\zPortableInstalls\BeyondCompare\BCompare.exe"
+                prcINFO.Arguments = ".\ C:\Users\Dad\Dropbox\Dad\PD\ /filters=""*.kdbx;*.html;-*\"""
+                prcINFO.UseShellExecute = False
+                prcINFO.RedirectStandardOutput = False
+                prcINFO.CreateNoWindow = True
+            End With 'prcINFO
+
+            objPCS.Start()
