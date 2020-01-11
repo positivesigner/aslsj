@@ -149,6 +149,12 @@ Error message and password prompt
 
 <li>$:/config/MissingLinks</li>
 
+<li>$:/config/Navigation/openLinkFromOutsideRiver</li>
+
+<li>$:/config/Navigation/UpdateAddressBar</li>
+
+<li>$:/config/Navigation/UpdateHistory</li>
+
 <li>$:/config/NewJournal/Title</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
@@ -157,7 +163,11 @@ Error message and password prompt
 
 <li>$:/config/TextEditor/EnableToolbar</li>
 
+<li>$:/config/Tiddlers/TitleLinks</li>
+
 <li>$:/config/Toolbar/Icons</li>
+
+<li>$:/config/Toolbar/Text</li>
 
 <li>$:/config/WikiParserRules/Inline/wikilink</li>
 
@@ -250,13 +260,22 @@ exports.startup = function() {
 
 })();</pre>
 </div>
-<div created="20190925052308177" modified="20190925052323703" title="$:/config/DefaultSidebarTab">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20190925052308177" modified="20200111051301900" title="$:/config/DefaultSidebarTab">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20190925044957682" revision="0" tags="" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
 <div created="20190925061735308" modified="20190925061735308" title="$:/config/MissingLinks">
+<pre>no</pre>
+</div>
+<div created="20200111051331756" modified="20200111051331756" title="$:/config/Navigation/openLinkFromOutsideRiver">
+<pre>bottom</pre>
+</div>
+<div created="20200111051745744" modified="20200111051936331" title="$:/config/Navigation/UpdateAddressBar">
+<pre>no</pre>
+</div>
+<div created="20200111051346280" modified="20200111051938030" title="$:/config/Navigation/UpdateHistory">
 <pre>no</pre>
 </div>
 <div created="20190925052037606" modified="20190925052045771" title="$:/config/NewJournal/Title">
@@ -271,8 +290,14 @@ exports.startup = function() {
 <div created="20190925061557600" modified="20190925062040148" title="$:/config/TextEditor/EnableToolbar">
 <pre>yes</pre>
 </div>
+<div created="20200111051739456" modified="20200111051739456" title="$:/config/Tiddlers/TitleLinks">
+<pre>yes</pre>
+</div>
 <div created="20190925061819062" modified="20190925061910011" title="$:/config/Toolbar/Icons">
 <pre>yes</pre>
+</div>
+<div created="20200111051436973" modified="20200111051447985" title="$:/config/Toolbar/Text">
+<pre>no</pre>
 </div>
 <div created="20190925061714843" modified="20190925061714843" title="$:/config/WikiParserRules/Inline/wikilink">
 <pre>disable</pre>
@@ -9498,19 +9523,19 @@ exports.startup = function() {
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200111050422491" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200111051924229" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20190925051414187" modified="20200101055844847" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20190925051414187" modified="20200111051215290" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
-<div created="20190925014513912" modified="20200111050424550" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200111051946725" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20200111050035099" list="[[GitHub Documentation]] [[ASLSJ Links]]" modified="20200111050726236" title="$:/StoryList">
+<div created="20200111051928130" list="[[ASLSJ Links]] [[GitHub Documentation]]" modified="20200111051949687" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9683,7 +9708,7 @@ exports.startup = function() {
 <div created="20190925014523514" modified="20200111050220288" tags="INDEX" title="ASLSJ Links">
 <pre>&lt;&lt;list-links filter:&quot;[tag[LOCALPAGE]sort[title]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200111050226171" modified="20200111050609203" tags="LOCALPAGE" title="GitHub Documentation">
+<div created="20200111050226171" modified="20200111052006816" tags="LOCALPAGE" title="GitHub Documentation">
 <pre>This website is hosted on GitHub.io.
 
 &lt;a href={{GitHubWebsiteHosting}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;GitHub Website Hosting&lt;/a&gt;
