@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>ASLSJ Documentation — Design notes</title>
+<title>ASLSJ — American Sign Language Sign Jotting</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -151,23 +151,21 @@ Error message and password prompt
 
 <li>$:/config/Navigation/openLinkFromOutsideRiver</li>
 
-<li>$:/config/Navigation/UpdateAddressBar</li>
-
-<li>$:/config/Navigation/UpdateHistory</li>
-
 <li>$:/config/NewJournal/Title</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/config/ShortcutInfo/save-all-changes</li>
+
+<li>$:/config/shortcuts/save-all-changes</li>
 
 <li>$:/config/TextEditor/EnableToolbar</li>
 
-<li>$:/config/Tiddlers/TitleLinks</li>
-
 <li>$:/config/Toolbar/Icons</li>
-
-<li>$:/config/Toolbar/Text</li>
 
 <li>$:/config/WikiParserRules/Inline/wikilink</li>
 
@@ -185,17 +183,23 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/dropdown/keyboardshortcut/save-all-changes-286565879</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab--1498284803</li>
 
+<li>$:/state/tab--1963855381</li>
+
 <li>$:/state/tab--2112689675</li>
 
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
+
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/StoryList</li>
 
@@ -207,31 +211,23 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>AdroidAppsFeatures</li>
-
-<li>Android Documentation</li>
-
 <li>ASLSJ Links</li>
 
-<li>Documents To Do</li>
+<li>ext Root doc</li>
 
-<li>GitHub Documentation</li>
-
-<li>GitHubWebsiteHosting</li>
-
-<li>Housework to do</li>
+<li>HideHeader</li>
 
 <li>INDEX</li>
 
-<li>Maintain Documentation</li>
+<li>keyboard action SaveAllChanges</li>
 
-<li>META</li>
+<li>Recent entries</li>
 
-<li>TiddlyWiki Documentation</li>
+<li>Sources</li>
+
+<li>template Home Button</li>
 
 <li>TiddlyWiki Startup Options</li>
-
-<li>TiddlyWikiMarkup</li>
 
 <li>What is this Wiki Stuff?</li>
 
@@ -278,8 +274,8 @@ exports.startup = function() {
 
 })();</pre>
 </div>
-<div created="20190925052308177" modified="20200111051301900" title="$:/config/DefaultSidebarTab">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20190925052308177" modified="20190925052323703" title="$:/config/DefaultSidebarTab">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20190925044957682" revision="0" tags="" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
@@ -287,14 +283,8 @@ exports.startup = function() {
 <div created="20190925061735308" modified="20190925061735308" title="$:/config/MissingLinks">
 <pre>no</pre>
 </div>
-<div created="20200111051331756" modified="20200111051331756" title="$:/config/Navigation/openLinkFromOutsideRiver">
+<div created="20200111053033740" modified="20200111053033740" title="$:/config/Navigation/openLinkFromOutsideRiver">
 <pre>bottom</pre>
-</div>
-<div created="20200111051745744" modified="20200111051936331" title="$:/config/Navigation/UpdateAddressBar">
-<pre>no</pre>
-</div>
-<div created="20200111051346280" modified="20200111051938030" title="$:/config/Navigation/UpdateHistory">
-<pre>no</pre>
 </div>
 <div created="20190925052037606" modified="20190925052045771" title="$:/config/NewJournal/Title">
 <pre>YYYYmMMdDD</pre>
@@ -302,20 +292,23 @@ exports.startup = function() {
 <div created="20190925051433967" modified="20190925051433967" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>hide</pre>
 </div>
+<div created="20200115061141467" modified="20200115061141467" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
+</div>
 <div created="20190925051431806" modified="20190925051431807" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
 </div>
-<div created="20190925061557600" modified="20190925062040148" title="$:/config/TextEditor/EnableToolbar">
-<pre>yes</pre>
+<div created="20200223012716802" modified="20200223013001664" tags="META" title="$:/config/ShortcutInfo/save-all-changes">
+<pre></pre>
 </div>
-<div created="20200111051739456" modified="20200111051739456" title="$:/config/Tiddlers/TitleLinks">
-<pre>yes</pre>
+<div created="20200223012858820" modified="20200223012858820" title="$:/config/shortcuts/save-all-changes">
+<pre>alt-S</pre>
+</div>
+<div created="20190925061557600" modified="20200116064526517" title="$:/config/TextEditor/EnableToolbar">
+<pre>no</pre>
 </div>
 <div created="20190925061819062" modified="20190925061910011" title="$:/config/Toolbar/Icons">
 <pre>yes</pre>
-</div>
-<div created="20200111051436973" modified="20200111051447985" title="$:/config/Toolbar/Text">
-<pre>no</pre>
 </div>
 <div created="20190925061714843" modified="20190925061714843" title="$:/config/WikiParserRules/Inline/wikilink">
 <pre>disable</pre>
@@ -9521,7 +9514,7 @@ exports.startup = function() {
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;&lt;span style=\&quot;color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\&quot;&gt;GitHub/GitHubWebsiteHosting.html&lt;/span&gt;&lt;span style=\&quot;color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\&quot;&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;a class=\&quot;tc-tiddlylink-external\&quot; href=\&quot;Git\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot; style=\&quot;box-sizing: border-box; background: rgb(255, 255, 255); text-decoration: underline; color: rgb(0, 0, 170); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;\&quot;&gt;GitHub Website Hosting&lt;/a&gt;&quot;
+            &quot;text&quot;: &quot;&lt;br class=\&quot;Apple-interchange-newline\&quot;&gt;&lt;span style=\&quot;color: rgb(192, 192, 192); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 12.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\&quot;&gt;24th September 2019 at 10:44pm&lt;/span&gt;&quot;
         }
     }
 }</pre>
@@ -9532,34 +9525,43 @@ exports.startup = function() {
 <div created="20190925052027956" modified="20190925052030401" title="$:/language/DefaultNewTiddlerTitle">
 <pre>New Entry</pre>
 </div>
-<div created="20190925014420922" modified="20200111050132972" title="$:/SiteSubtitle">
-<pre>Design notes</pre>
+<div created="20190925014420922" modified="20200223061611574" title="$:/SiteSubtitle">
+<pre>American Sign Language Sign Jotting</pre>
 </div>
-<div created="20190925014404111" modified="20200111050102562" title="$:/SiteTitle">
-<pre>ASLSJ Documentation</pre>
+<div created="20190925014404111" modified="20200223062013390" title="$:/SiteTitle">
+<pre>ASLSJ</pre>
+</div>
+<div created="20200223012850920" modified="20200223012850920" title="$:/state/dropdown/keyboardshortcut/save-all-changes-286565879">
+<pre>open</pre>
 </div>
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200111202643567" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20190925044925672" modified="20200223062040894" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
-<div created="20200111081838062" modified="20200111081838062" title="$:/state/tab--1498284803">
+<div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
+<div created="20200115080054808" modified="20200115080137665" title="$:/state/tab--1963855381">
+<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+</div>
+<div created="20190925052229880" modified="20200115080408562" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20190925051414187" modified="20200111051215290" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Settings</pre>
+<div created="20190925051414187" modified="20200223043750307" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200111081844227" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200223062018371" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20200111201740433" list="[[ASLSJ Links]]" modified="20200111201740433" title="$:/StoryList">
+<div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
+</div>
+<div created="20200223061556331" list="[[ASLSJ Links]] Sources" modified="20200223062011196" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20200111081750908" modified="20200111081839652" title="$:/temp/advancedsearch">
+<div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
 <pre>[all[tiddlers]tag[INDEX]sort[title]][all[tiddlers]!tag[EXTLINK]!tag[INDEX]!tag[META]!prefix[Draft of]!is[image]!is[tag]!is[system]sort[title]]</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9575,7 +9577,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/index.html&quot;
+            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/TW_Template.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9595,7 +9597,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/BBK/aslsj/index.html&quot;
+            &quot;text&quot;: &quot;/C:/BBK/aslsj/TW_Template.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9729,64 +9731,62 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20200111073911759" modified="20200111081600881" tags="EXTLINK" title="AdroidAppsFeatures">
-<pre>[ext[Android Application Features|Android/AndroidApps.html]]</pre>
+<div created="20190925014523514" modified="20200223062037274" tags="INDEX" title="ASLSJ Links">
+<pre>&lt;&lt;list-links filter:&quot;[tag[DOC]sort[title]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200111073502562" modified="20200111081619020" tags="LOCALPAGE" title="Android Documentation">
-<pre>Android Applications have options that are sometimes hard to find.
-
-{{AdroidAppsFeatures}}</pre>
+<div created="20200223043825137" modified="20200223043838783" tags="EXTLINK" title="ext Root doc">
+<pre>&lt;div style=&quot;float:right&quot;&gt;Back to [ext[Main Index|../index.html]]&lt;/div&gt;</pre>
 </div>
-<div created="20190925014523514" modified="20200111050220288" tags="INDEX" title="ASLSJ Links">
-<pre>&lt;&lt;list-links filter:&quot;[tag[LOCALPAGE]sort[title]]&quot;&gt;&gt;</pre>
-</div>
-<div created="20200111200452151" modified="20200111200529103" tags="EXTLINK" title="Documents To Do">
-<pre>[ext[Documents To Do|ToDo.html]]</pre>
-</div>
-<div created="20200111050226171" modified="20200111081657697" tags="LOCALPAGE" title="GitHub Documentation">
-<pre>This website is hosted on GitHub.io.
-
-{{GitHubWebsiteHosting}}
-</pre>
-</div>
-<div created="20200111050532009" modified="20200111081644844" tags="EXTLINK" title="GitHubWebsiteHosting">
-<pre>[ext[GitHub Website Hosting|GitHub/GitHubWebsiteHosting.html]]</pre>
-</div>
-<div created="20200111202533666" modified="20200111202608944" tags="EXTLINK" title="Housework to do">
-<pre>[ext[Housework to do|Personal.html]]</pre>
+<div created="20190925053827947" modified="20200111081344048" tags="EXTLINK" title="HideHeader">
+<pre>[ext[Hiding The Sidebar On Startup|TiddlyWiki Plugin Hiding The Sidebar On Startup.html]]</pre>
 </div>
 <div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
 <pre></pre>
 </div>
-<div created="20200111200430770" modified="20200111202634724" tags="LOCALPAGE" title="Maintain Documentation">
-<pre>Ideas of what to document next
-
-{{Documents To Do}}
-
-IRL tasks
-
-{{Housework to do}}</pre>
+<div created="20200223012728498" key="((save-all-changes))" modified="20200223013015060" tags="META $:/tags/KeyboardShortcut" title="keyboard action SaveAllChanges">
+<pre>&lt;$action-sendmessage $message=&quot;tm-save-wiki&quot;/&gt;
+&lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text=&quot;no&quot;/&gt;
+</pre>
 </div>
-<div created="20200111050431021" list="[[TiddlyWiki Startup Options]] [[What is this Wiki Stuff?]]" modified="20200111050448488" title="META">
-<pre></pre>
+<div created="20200203145715457" modified="20200203145738704" tags="META" title="Recent entries">
+<pre>&lt;&lt;timeline limit:30 format:&quot;YYYY-0MM-0DD&quot;&gt;&gt;</pre>
 </div>
-<div created="20200111063546473" modified="20200111081734987" tags="LOCALPAGE" title="TiddlyWiki Documentation">
-<pre>TiddlyWiki files use specific markup codes.
+<div created="20200223061627844" modified="20200223061956999" tags="DOC" title="Sources">
+<pre>A Deaf signer speaks fluently and visually, and therefore provide the best examples to imitate. Many videos on the internet are from people who are learning ASL and are not good examples of the language. There are some videos by CODAs or interpreters which are good examples.
 
-{{TiddlyWikiMarkup}}</pre>
+</pre>
 </div>
-<div created="20190925054126842" modified="20200101065302014" tags="META" title="TiddlyWiki Startup Options">
-<pre>Here is some notes on [[How to setup a Tiddly Wiki file|Articles on how to use Tiddly Wiki]].
+<div created="20200115085810255" modified="20200130192534318" tags="META $:/tags/ViewTemplate" title="template Home Button">
+<pre>&lt;div style=&quot;float:right&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&gt;&gt;
+&lt;/$button&gt;&lt;/div&gt;
+
+&lt;div style=&quot;float:right&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; tooltip={{$:/language/Buttons/Home/Hint}} aria-label={{$:/language/Buttons/Home/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;span class=&quot;tc-dirty-indicator&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/core/images/home-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/Home/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/span&gt;
+&lt;$action-sendmessage $message=&quot;tm-home&quot;/&gt;
+&lt;/$button&gt;&lt;/div&gt;
+</pre>
+</div>
+<div created="20190925054126842" modified="20200115085901486" tags="META" title="TiddlyWiki Startup Options">
+<pre>{{snip Home Button}}
+
+Here is some notes on [[How to setup a Tiddly Wiki file|Articles on how to use Tiddly Wiki]].
 
 There is a sidebar with settings. It has a minimum width, so when your browser windows is not wide enough, the sidebar turns into a top menu bar. The below Tiddly describes a plugin that hides the sidebar / top menu bar on startup.
 
-&lt;a href={{HideHeader}}  rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;External Links&lt;/a&gt;</pre>
+{{HideHeader}}</pre>
 </div>
-<div created="20200111063617534" modified="20200111081723792" tags="EXTLINK" title="TiddlyWikiMarkup">
-<pre>[ext[TiddlyWiki Data Entry|TiddlyWiki/TWDataEntry.html]]</pre>
-</div>
-<div created="20190925051442835" modified="20200103151335611" tags="META" title="What is this Wiki Stuff?">
-<pre>Here is some notes on [[How to use markup in Tiddly Wiki|Articles on how to use Tiddly Wiki]].
+<div created="20190925051442835" modified="20200115085918302" tags="META" title="What is this Wiki Stuff?">
+<pre>{{snip Home Button}}
+
+Here is some notes on [[How to use markup in Tiddly Wiki|Articles on how to use Tiddly Wiki]].
 
 To open every Tiddler :
 

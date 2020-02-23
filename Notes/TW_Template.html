@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Personal Tasks — Priorities</title>
+<title>TiddlyWiki Template — Design notes</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -155,7 +155,13 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/config/ShortcutInfo/save-all-changes</li>
+
+<li>$:/config/shortcuts/save-all-changes</li>
 
 <li>$:/config/TextEditor/EnableToolbar</li>
 
@@ -177,17 +183,23 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/dropdown/keyboardshortcut/save-all-changes-286565879</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab--1498284803</li>
 
+<li>$:/state/tab--1963855381</li>
+
 <li>$:/state/tab--2112689675</li>
 
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
+
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/StoryList</li>
 
@@ -199,31 +211,23 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>Bedroom boxes</li>
-
-<li>Boxes</li>
-
-<li>Closet boxes</li>
-
-<li>Dishes</li>
-
-<li>Front Room boxes</li>
+<li>ext Root doc</li>
 
 <li>HideHeader</li>
 
 <li>INDEX</li>
 
-<li>Kitchen</li>
+<li>keyboard action SaveAllChanges</li>
 
-<li>Mop</li>
+<li>Recent entries</li>
 
-<li>Personal To Do</li>
-
-<li>Scrub cabinet doors</li>
+<li>template Home Button</li>
 
 <li>TiddlyWiki Startup Options</li>
 
 <li>What is this Wiki Stuff?</li>
+
+<li>WikiFile Title</li>
 
 </ul>
 </p>
@@ -286,11 +290,20 @@ exports.startup = function() {
 <div created="20190925051433967" modified="20190925051433967" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>hide</pre>
 </div>
+<div created="20200115061141467" modified="20200115061141467" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
+</div>
 <div created="20190925051431806" modified="20190925051431807" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
 </div>
-<div created="20190925061557600" modified="20190925062040148" title="$:/config/TextEditor/EnableToolbar">
-<pre>yes</pre>
+<div created="20200223012716802" modified="20200223013001664" tags="META" title="$:/config/ShortcutInfo/save-all-changes">
+<pre></pre>
+</div>
+<div created="20200223012858820" modified="20200223012858820" title="$:/config/shortcuts/save-all-changes">
+<pre>alt-S</pre>
+</div>
+<div created="20190925061557600" modified="20200116064526517" title="$:/config/TextEditor/EnableToolbar">
+<pre>no</pre>
 </div>
 <div created="20190925061819062" modified="20190925061910011" title="$:/config/Toolbar/Icons">
 <pre>yes</pre>
@@ -9510,31 +9523,40 @@ exports.startup = function() {
 <div created="20190925052027956" modified="20190925052030401" title="$:/language/DefaultNewTiddlerTitle">
 <pre>New Entry</pre>
 </div>
-<div created="20190925014420922" modified="20200111202723291" title="$:/SiteSubtitle">
-<pre>Priorities</pre>
+<div created="20190925014420922" modified="20200111053100183" title="$:/SiteSubtitle">
+<pre>Design notes</pre>
 </div>
-<div created="20190925014404111" modified="20200111202715119" title="$:/SiteTitle">
-<pre>Personal Tasks</pre>
+<div created="20190925014404111" modified="20200116073709673" title="$:/SiteTitle">
+<pre>TiddlyWiki Template</pre>
+</div>
+<div created="20200223012850920" modified="20200223012850920" title="$:/state/dropdown/keyboardshortcut/save-all-changes-286565879">
+<pre>open</pre>
 </div>
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200111202701928" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200223043738034" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20190925052229880" modified="20190925052234369" title="$:/state/tab--2112689675">
+<div created="20200115080054808" modified="20200115080137665" title="$:/state/tab--1963855381">
+<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+</div>
+<div created="20190925052229880" modified="20200115080408562" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20190925051414187" modified="20200111053052887" title="$:/state/tab-1749438307">
+<div created="20190925051414187" modified="20200223043750307" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200111202751662" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200223043754245" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20200111202708231" list="[[Personal To Do]]" modified="20200111203603712" title="$:/StoryList">
+<div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
+</div>
+<div created="20200223043746744" list="[[WikiFile Title]]" modified="20200223043746744" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
@@ -9553,7 +9575,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/Personal.html&quot;
+            &quot;text&quot;: &quot;file:///C:/BBK/journal/TiddlyWiki/TW_Template.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9573,7 +9595,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/BBK/aslsj/Personal.html&quot;
+            &quot;text&quot;: &quot;/C:/BBK/journal/TiddlyWiki/TW_Template.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9707,28 +9729,8 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20200111203456865" modified="20200111203509197" tags="BOXES2" title="Bedroom boxes">
-<pre></pre>
-</div>
-<div created="20200111203329897" modified="20200111203559147" tags="TODO" title="Boxes">
-<pre>Priority 1
-&lt;&lt;list-links filter:&quot;[tag[BOXES1]sort[title]]&quot;&gt;&gt;
-
-Priority 2
-&lt;&lt;list-links filter:&quot;[tag[BOXES2]sort[title]]&quot;&gt;&gt;
-
-Priority 3
-&lt;&lt;list-links filter:&quot;[tag[BOXES3]sort[title]]&quot;&gt;&gt;
-</pre>
-</div>
-<div created="20200111203521147" modified="20200111203533644" tags="BOXES3" title="Closet boxes">
-<pre></pre>
-</div>
-<div created="20200111203243102" modified="20200111203252516" tags="KITCHEN1" title="Dishes">
-<pre></pre>
-</div>
-<div created="20200111203434377" modified="20200111203449870" tags="BOXES1" title="Front Room boxes">
-<pre></pre>
+<div created="20200223043825137" modified="20200223043838783" tags="EXTLINK" title="ext Root doc">
+<pre>&lt;div style=&quot;float:right&quot;&gt;Back to [ext[Main Index|../index.html]]&lt;/div&gt;</pre>
 </div>
 <div created="20190925053827947" modified="20200111081344048" tags="EXTLINK" title="HideHeader">
 <pre>[ext[Hiding The Sidebar On Startup|TiddlyWiki Plugin Hiding The Sidebar On Startup.html]]</pre>
@@ -9736,36 +9738,45 @@ Priority 3
 <div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
 <pre></pre>
 </div>
-<div created="20200111202752736" modified="20200111203612411" tags="TODO" title="Kitchen">
-<pre>Priority 1
-&lt;&lt;list-links filter:&quot;[tag[KITCHEN1]sort[title]]&quot;&gt;&gt;
-
-Priority 2
-&lt;&lt;list-links filter:&quot;[tag[KITCHEN2]sort[title]]&quot;&gt;&gt;
-
-Priority 3
-&lt;&lt;list-links filter:&quot;[tag[KITCHEN3]sort[title]]&quot;&gt;&gt;
-
+<div created="20200223012728498" key="((save-all-changes))" modified="20200223013015060" tags="META $:/tags/KeyboardShortcut" title="keyboard action SaveAllChanges">
+<pre>&lt;$action-sendmessage $message=&quot;tm-save-wiki&quot;/&gt;
+&lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text=&quot;no&quot;/&gt;
 </pre>
 </div>
-<div created="20200111203259365" modified="20200111203306113" tags="KITCHEN1" title="Mop">
-<pre></pre>
+<div created="20200203145715457" modified="20200203145738704" tags="META" title="Recent entries">
+<pre>&lt;&lt;timeline limit:30 format:&quot;YYYY-0MM-0DD&quot;&gt;&gt;</pre>
 </div>
-<div created="20190925014523514" modified="20200111202746563" tags="INDEX" title="Personal To Do">
-<pre>&lt;&lt;list-links filter:&quot;[tag[TODO]sort[title]]&quot;&gt;&gt;</pre>
+<div created="20200115085810255" modified="20200130192534318" tags="META $:/tags/ViewTemplate" title="template Home Button">
+<pre>&lt;div style=&quot;float:right&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&gt;&gt;
+&lt;/$button&gt;&lt;/div&gt;
+
+&lt;div style=&quot;float:right&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; tooltip={{$:/language/Buttons/Home/Hint}} aria-label={{$:/language/Buttons/Home/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;span class=&quot;tc-dirty-indicator&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/core/images/home-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/Home/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/span&gt;
+&lt;$action-sendmessage $message=&quot;tm-home&quot;/&gt;
+&lt;/$button&gt;&lt;/div&gt;
+</pre>
 </div>
-<div created="20200111203308555" modified="20200111203317610" tags="KITCHEN1" title="Scrub cabinet doors">
-<pre></pre>
-</div>
-<div created="20190925054126842" modified="20200111081406147" tags="META" title="TiddlyWiki Startup Options">
-<pre>Here is some notes on [[How to setup a Tiddly Wiki file|Articles on how to use Tiddly Wiki]].
+<div created="20190925054126842" modified="20200115085901486" tags="META" title="TiddlyWiki Startup Options">
+<pre>{{snip Home Button}}
+
+Here is some notes on [[How to setup a Tiddly Wiki file|Articles on how to use Tiddly Wiki]].
 
 There is a sidebar with settings. It has a minimum width, so when your browser windows is not wide enough, the sidebar turns into a top menu bar. The below Tiddly describes a plugin that hides the sidebar / top menu bar on startup.
 
 {{HideHeader}}</pre>
 </div>
-<div created="20190925051442835" modified="20200111074234922" tags="META" title="What is this Wiki Stuff?">
-<pre>Here is some notes on [[How to use markup in Tiddly Wiki|Articles on how to use Tiddly Wiki]].
+<div created="20190925051442835" modified="20200115085918302" tags="META" title="What is this Wiki Stuff?">
+<pre>{{snip Home Button}}
+
+Here is some notes on [[How to use markup in Tiddly Wiki|Articles on how to use Tiddly Wiki]].
 
 To open every Tiddler :
 
@@ -9823,6 +9834,11 @@ Test your Tiddler filter using a drop-down list:
 
 * Filter categories found here: https://tiddlywiki.com/static/is%2520Operator.html
 </pre>
+</div>
+<div created="20190925014523514" modified="20200223043848468" tags="INDEX" title="WikiFile Title">
+<pre>{{ext Root doc}}
+
+&lt;&lt;list-links filter:&quot;[tag[META]sort[title]]&quot;&gt;&gt;</pre>
 </div>
 
 </div>
