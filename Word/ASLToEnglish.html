@@ -143,8 +143,6 @@ Error message and password prompt
 
 <li>\</li>
 
-<li>#</li>
-
 <li>&gt;</li>
 
 <li>$:/.tb/modules/startup/hide-sidebar.js</li>
@@ -219,13 +217,15 @@ Error message and password prompt
 
 <li>3</li>
 
-<li>3B</li>
+<li>3-B</li>
 
 <li>3B\</li>
 
 <li>ASL to English</li>
 
 <li>B</li>
+
+<li>Draft of 'abc'</li>
 
 <li>ext Root doc</li>
 
@@ -241,15 +241,15 @@ Error message and password prompt
 
 <li>img KY.png</li>
 
-<li>img o6.png</li>
+<li>img o#.png</li>
 
-<li>img o7.png</li>
+<li>img o&gt;.png</li>
 
-<li>img oE.png</li>
+<li>img oh.png</li>
 
 <li>img oo.png</li>
 
-<li>img ov.png</li>
+<li>img oq.png</li>
 
 <li>img S2.png</li>
 
@@ -261,11 +261,11 @@ Error message and password prompt
 
 <li>img SS.png</li>
 
+<li>img U\.png</li>
+
 <li>img Ui.png</li>
 
 <li>img UU.png</li>
-
-<li>img Uy.png</li>
 
 <li>INDEX</li>
 
@@ -274,6 +274,36 @@ Error message and password prompt
 <li>keyboard action SaveAllChanges</li>
 
 <li>L1-S3</li>
+
+<li>L1HeaderTemplate</li>
+
+<li>L1TemplateLinks</li>
+
+<li>L1Test_xU</li>
+
+<li>L1Test-xK</li>
+
+<li>L1Test-xS</li>
+
+<li>L2HeaderTemplate</li>
+
+<li>L2Template-Kx</li>
+
+<li>L2Template-Sx</li>
+
+<li>L2Template-Ux</li>
+
+<li>L2Template-xK</li>
+
+<li>L2Template-xo</li>
+
+<li>L2Template-xU</li>
+
+<li>L2TemplateListPrefix</li>
+
+<li>L2TemplateListSuffix</li>
+
+<li>L2Test_Link</li>
 
 <li>Recent entries</li>
 
@@ -293,14 +323,43 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200226092210381" modified="20200226094627936" tags="\ L1" title="\">
-<pre></pre>
+<div created="20200226092210381" modified="20200226143321838" tags="\ L1" title="\">
+<pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;U&quot;&gt;
+{{L1HeaderTemplate}}
+
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot;&gt;
+{{L2TemplateListPrefix}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot;&gt;
+{{L2TemplateListPrefix}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;&gt;
+{{L2TemplateListSuffix}}
+&lt;/$vars&gt;
+
+&lt;/$vars&gt;
+</pre>
 </div>
-<div created="20200226092541259" modified="20200226094701709" tags="L1 #" title="#">
-<pre></pre>
-</div>
-<div created="20200226092551646" modified="20200226094644260" tags="&gt; L1" title="&gt;">
-<pre></pre>
+<div created="20200226092551646" modified="20200226143411595" tags="&gt; L1" title="&gt;">
+<pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;o&quot;&gt;
+{{L1HeaderTemplate}}
+
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot;&gt;
+{{L2TemplateListPrefix}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot;&gt;
+{{L2TemplateListPrefix}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot;&gt;
+{{L2TemplateListPrefix}}
+&lt;/$vars&gt;
+
+&lt;/$vars&gt;
+</pre>
 </div>
 <div bag="default" created="20151010151732122" creator="Tobias Beer" modified="20151010151750739" module-type="startup" revision="0" title="$:/.tb/modules/startup/hide-sidebar.js" type="application/javascript">
 <pre>/*\
@@ -9575,7 +9634,7 @@ exports.startup = function() {
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/Word/ASLToEnglish.html#3&quot;
+            &quot;text&quot;: &quot;data:image/png;base64,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&quot;
         }
     }
 }</pre>
@@ -9598,7 +9657,7 @@ exports.startup = function() {
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200226094705151" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200226143212755" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
@@ -9613,13 +9672,13 @@ exports.startup = function() {
 <div created="20190925051414187" modified="20200223043750307" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200226075911840" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200226125848466" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
-<div created="20200226094720192" list="[[ASL to English]]" modified="20200226094720192" title="$:/StoryList">
+<div created="20200226135946390" list="[[ASL to English]]" modified="20200226143343335" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
@@ -9792,32 +9851,29 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20200226084409125" modified="20200226094451830" tags="3 L1" title="3">
-<pre>| 3 |
-| [img width=50px [img S3.png]] |
+<div created="20200226084409125" modified="20200226143011402" tags="3 L1" title="3">
+<pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;S&quot;&gt;
+{{L1HeaderTemplate}}
 
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot;&gt;
+{{L2TemplateListSuffix}}
+&lt;/$vars&gt;
 
-Location:
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot;&gt;
+{{L2TemplateListSuffix}}
+&lt;/$vars&gt;
 
-| &lt;$list filter=&quot;[title[3W]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3C]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3B]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3K]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Y]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3W]]&quot;&gt;&lt;$link&gt;[img width=50px [img KW.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3C]]&quot;&gt;&lt;$link&gt;[img width=50px [img KC.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3B]]&quot;&gt;&lt;$link&gt;[img width=50px [img KB.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3K]]&quot;&gt;&lt;$link&gt;[img width=50px [img KK.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Y]]&quot;&gt;&lt;$link&gt;[img width=50px [img KY.png]]&lt;/$link&gt;&lt;/$list&gt; |
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;&gt;
+{{L2TemplateListSuffix}}
+&lt;/$vars&gt;
 
-Palm Facing:
-
-| &lt;$list filter=&quot;[title[3-U]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-i]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-\]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3-U]]&quot;&gt;&lt;$link&gt;[img width=50px [img UU.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-i]]&quot;&gt;&lt;$link&gt;[img width=50px [img Ui.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-\]]&quot;&gt;&lt;$link&gt;[img width=50px [img Uy.png]]&lt;/$link&gt;&lt;/$list&gt; |
-
-Movement:
-
-| &lt;$list filter=&quot;[title[3-&gt;]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-h]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-q]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-o]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-#]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3-&gt;]]&quot;&gt;&lt;$link&gt;[img width=50px [img o7.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-h]]&quot;&gt;&lt;$link&gt;[img width=50px [img ov.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-q]]&quot;&gt;&lt;$link&gt;[img width=50px [img o6.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-o]]&quot;&gt;&lt;$link&gt;[img width=50px [img oo.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3-#]]&quot;&gt;&lt;$link&gt;[img width=50px [img oE.png]]&lt;/$link&gt;&lt;/$list&gt; |
-
-
+&lt;/$vars&gt;
 </pre>
 </div>
-<div created="20200226092835904" modified="20200226094520640" tags="B 3 L2" title="3B">
-<pre>| [[3]] | [[B]] |
-| &lt;$list filter=&quot;[title[3]]&quot;&gt;&lt;$link&gt;[img width=50px [img S3.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[B]]&quot;&gt;&lt;$link&gt;[img width=50px [img KB.png]]&lt;/$link&gt;&lt;/$list&gt; |
+<div created="20200226092835904" modified="20200226135801903" tags="B 3 L2" title="3-B">
+<pre>&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;K&quot; ur_t1=&quot;3&quot; ur_t2=&quot;B&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
 
 Palm Facing:
 
@@ -9830,7 +9886,7 @@ Movement:
 | &lt;$list filter=&quot;[title[3B&gt;]]&quot;&gt;&lt;$link&gt;[img width=50px [img o7.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bh]]&quot;&gt;&lt;$link&gt;[img width=50px [img ov.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bq]]&quot;&gt;&lt;$link&gt;[img width=50px [img o6.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bo]]&quot;&gt;&lt;$link&gt;[img width=50px [img oo.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3B#]]&quot;&gt;&lt;$link&gt;[img width=50px [img oE.png]]&lt;/$link&gt;&lt;/$list&gt; |
 </pre>
 </div>
-<div created="20200226093321015" modified="20200226094534603" tags="\ 3 B L3" title="3B\">
+<div created="20200226093321015" modified="20200226121749325" tags="\ 3 B L3" title="3B\">
 <pre>| [[3]] | [[B]] | [[\]] |
 | &lt;$list filter=&quot;[title[3]]&quot;&gt;&lt;$link&gt;[img width=50px [img S3.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[B]]&quot;&gt;&lt;$link&gt;[img width=50px [img KB.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[\]]&quot;&gt;&lt;$link&gt;[img width=50px [img Uy.png]]&lt;/$link&gt;&lt;/$list&gt; |
 
@@ -9841,48 +9897,65 @@ Movement:
 
 &lt;&lt;list-links filter:&quot;[tag[3]tag[B]tag[\]tag[&gt;]sort[title]]&quot;&gt;&gt;
 
-| &lt;$list filter=&quot;[title[3B\h]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3B\h]]&quot;&gt;&lt;$link&gt;[img width=50px [img ov.png]]&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[h]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[h]]&quot;&gt;&lt;$link&gt;[img width=50px [img ov.png]]&lt;/$link&gt;&lt;/$list&gt; |
 
-| &lt;$list filter=&quot;[title[3B\q]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3B\q]]&quot;&gt;&lt;$link&gt;[img width=50px [img o6.png]]&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[q]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[q]]&quot;&gt;&lt;$link&gt;[img width=50px [img o6.png]]&lt;/$link&gt;&lt;/$list&gt; |
 
-| &lt;$list filter=&quot;[title[3B\o]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3B\o]]&quot;&gt;&lt;$link&gt;[img width=50px [img oo.png]]&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[o]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[o]]&quot;&gt;&lt;$link&gt;[img width=50px [img oo.png]]&lt;/$link&gt;&lt;/$list&gt; |
 
-|&lt;$list filter=&quot;[title[3B\#]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3B\#]]&quot;&gt;&lt;$link&gt;[img width=50px [img oE.png]]&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[#]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
+| &lt;$list filter=&quot;[title[#]]&quot;&gt;&lt;$link&gt;[img width=50px [img oE.png]]&lt;/$link&gt;&lt;/$list&gt; |
 </pre>
 </div>
-<div created="20190925014523514" modified="20200226092537833" tags="INDEX" title="ASL to English">
+<div created="20190925014523514" modified="20200226141358186" tags="INDEX" title="ASL to English">
 <pre>{{ext Root doc}}
 
-Handshape sizes:
+&lt;$vars t1=&quot;S l 2 3 4&quot; p1=&quot;S&quot; note=&quot;Handshape Size&quot;&gt;
+{{L1TemplateLinks}}
+&lt;/$vars&gt;
 
+&lt;$vars t1=&quot;W C B K Y&quot; p1=&quot;K&quot; note=&quot;Location&quot;&gt;
+{{L1TemplateLinks}}
+&lt;/$vars&gt;
 
-| &lt;$list filter=&quot;[title[S]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[l]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[2]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt;  | &lt;$list filter=&quot;[title[4]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt;  |
-| &lt;$list filter=&quot;[title[S]]&quot;&gt;&lt;$link&gt;[img width=50px [img SS.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[l]]&quot;&gt;&lt;$link&gt;[img width=50px [img Sl.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[2]]&quot;&gt;&lt;$link&gt;[img width=50px [img S2.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3]]&quot;&gt;&lt;$link&gt;[img width=50px [img S3.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[4]]&quot;&gt;&lt;$link&gt;[img width=50px [img S4.png]]&lt;/$link&gt;&lt;/$list&gt; |
+&lt;$vars t1=&quot;U i \&quot; p1=&quot;U&quot; note=&quot;Palm Facing&quot;&gt;
+{{L1TemplateLinks}}
+&lt;/$vars&gt;
 
-Location:
-
-| &lt;$list filter=&quot;[title[W]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[C]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[B]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[K]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[Y]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[W]]&quot;&gt;&lt;$link&gt;[img width=50px [img KW.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[C]]&quot;&gt;&lt;$link&gt;[img width=50px [img KC.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[B]]&quot;&gt;&lt;$link&gt;[img width=50px [img KB.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[K]]&quot;&gt;&lt;$link&gt;[img width=50px [img KK.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[Y]]&quot;&gt;&lt;$link&gt;[img width=50px [img KY.png]]&lt;/$link&gt;&lt;/$list&gt; |
-
-Palm Facing:
-
-| &lt;$list filter=&quot;[title[U]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[i]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[\]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[U]]&quot;&gt;&lt;$link&gt;[img width=50px [img UU.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[i]]&quot;&gt;&lt;$link&gt;[img width=50px [img Ui.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[\]]&quot;&gt;&lt;$link&gt;[img width=50px [img Uy.png]]&lt;/$link&gt;&lt;/$list&gt; |
-
-Movement:
-
-| &lt;$list filter=&quot;[title[&gt;]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[h]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[q]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[o]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[#]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[&gt;]]&quot;&gt;&lt;$link&gt;[img width=50px [img o7.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[h]]&quot;&gt;&lt;$link&gt;[img width=50px [img ov.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[q]]&quot;&gt;&lt;$link&gt;[img width=50px [img o6.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[o]]&quot;&gt;&lt;$link&gt;[img width=50px [img oo.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[#]]&quot;&gt;&lt;$link&gt;[img width=50px [img oE.png]]&lt;/$link&gt;&lt;/$list&gt; |
-
+&lt;$vars t1=&quot;&gt; h q o #&quot; p1=&quot;o&quot; note=&quot;Movement&quot;&gt;
+{{L1TemplateLinks}}
+&lt;/$vars&gt;
 
 &lt;&lt;list-links filter:&quot;[tag[DOC]sort[title]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200226094331723" modified="20200226094554400" tags="B L1" title="B">
-<pre></pre>
+<div created="20200226094331723" modified="20200226143205452" tags="B L1" title="B">
+<pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;K&quot;&gt;
+{{L1HeaderTemplate}}
+
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot;&gt;
+{{L2TemplateListPrefix}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot;&gt;
+{{L2TemplateListSuffix}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;&gt;
+{{L2TemplateListSuffix}}
+&lt;/$vars&gt;
+
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200226110721894" modified="20200226110721894" title="Draft of 'abc'">
+<pre>Handshape sizes:
+
+&lt;$set name=&quot;l-suffix&quot; value=&quot;B&quot;&gt;
+{{L1Template}}
+&lt;/$set&gt;</pre>
 </div>
 <div created="20200223043825137" modified="20200223043838783" tags="EXTLINK" title="ext Root doc">
 <pre>&lt;div style=&quot;float:right&quot;&gt;Back to [ext[Main Index|../index.html]]&lt;/div&gt;</pre>
@@ -9905,20 +9978,20 @@ Movement:
 <div created="20200226082212297" modified="20200226082214108" tags="META" title="img KY.png" type="image/png">
 <pre>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</pre>
 </div>
-<div created="20200226082229688" modified="20200226082231331" tags="META" title="img o6.png" type="image/png">
-<pre>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</pre>
+<div created="20200226082154219" modified="20200226124809860" tags="META" title="img o#.png" type="image/png">
+<pre>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</pre>
 </div>
-<div created="20200226082203386" modified="20200226082204985" tags="META" title="img o7.png" type="image/png">
+<div created="20200226082203386" modified="20200226124754357" tags="META" title="img o&gt;.png" type="image/png">
 <pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQOSURBVHhe7ZvPK21RFMc3N8rN7/IjP0opE7+jKHP5MZAJf4GJGBgpBkwM/QNiaGSs5M5FBlfq+pEQClGIi8LlrXf34p281+uu9zrnrFPfz8TaZ917zzmfzt577XOOtI+PDwNSI53/ghSALAGQJQCyBECWAMgSAFkCIEsAZAmALAGQJQCyBECWAMgSAFkCIEsAZAmALAGQJQCyBECWAMgSAFkCIEsAZAmALAGQJQCyBECWAKWybm5u0j7hTQpQ+srRN0fkrqCggBv+ofHKur295eiTlpYWjnwlGFcWcXV1VVRUxA2fUDpmxePxwcFBbiSZnJzkyEfoylLL9vZ2OBy2x5menk5NTviE6tKhvr5+fHzcxu/v72NjYzb2DZamlcfHx/Lycj5WYxYWFjjhB9plEYuLi6zKmJycnMvLS054TgBkEb29vWzLmOHhYd7qOcF4D/78/Lympoa6JMWZmZlnZ2fFxcU25SXBWBuWlZWNjo7a+OXlZW5uzsYeE5j/sDg+Pq6urrZHS/XE0dFRSUmJTXlGaHp6mkP3ub6+Pjg4ODw83NnZoZN/enpK/YRpbXh6ehqNRil+fX2tqKhob2+3Ke/4OXC5zMDAAO/sN7KysmjAvru744/+FRLNXzOmsLCQpHPCK1zvhineY+nq6qJeRoN3dnZ2c3NzW1sbjVOcc9Dd3b2ysmLjhoaGSCTi5UjvrqxYLFZXV8cNIfn5+TQD1tbWXlxc0PRHyx3qts/PzzQz8ieSLC8v9/T0cMNl3JVFkz1dKdxIQuV4X18fXRR0/jMzM7z1/3C7c/yC9uQq8/PzdkdLS0u8ycHW1tbQ0JBzQfMP8G+5j5bSIR6PUzVgp0gyuL+/v7e3R0P429tbKBQqLS2lsY/6YyKR4C848O4UksqUQqZoJUhVKMUTExN8xA48XieqlvXF7Ows60lCdcMfO7XbBEDW6uoq9UT2ZExnZyf1R855i3ZZGxsbzvm0v7+f+ibnPEe1rM3NTepx7MmYxsZGqkU45wd6Za2vr+fm5rInYyorK09OTjjnE0pl0ZrZuY6heHd3l3P+oVEW1Qqtra3sKXkzS4MpQqOsqakp9mRMXl4eVaec8Bt1sqLRaEZGhjVFVTutkzmhAF2yqCxoamqypggfn038EV2yRkZG2JMxVVVVDw8PnNCBIllfD58tkUiEE2rQctdhbW2to6ODG0mUHJgTLbK+3X2mYd45eClBy3PDby99KDRFaLmyEokELf1isVg4HL6/v3feZtCDFlmBIBiP75UAWQIgSwBkCYAsAZAlALIEQJYAyBIAWQIgSwBkCYAsAZAlALIEQJYAyBIAWQIgSwBkCYAsAZAlALIEQJYAyBIAWQIgSwBkCYAsAZAlALIEQFbKGPMD+HiVX3TPkNEAAAAASUVORK5CYII=</pre>
 </div>
-<div created="20200226082154219" modified="20200226082155547" tags="META" title="img oE.png" type="image/png">
-<pre>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</pre>
+<div created="20200226082247272" modified="20200226124738708" tags="META" title="img oh.png" type="image/png">
+<pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARBSURBVHhe7ZxNKHRRGMfP0EjM+AqhRFHY27AQm7FQajZWPspKWbCZjVhbWKjJCklSFkoWrDQsTDIldjY2lFI+xuf4HOY97vPM7aK317O553nr+W38z8fizK9zzzn33jGeVCqlhN+RgX+FXyCyCIgsAiKLgMgiILIIiCwCIouAyCIgsgiILAIii4DIIiCyCIgsAiKLgMgiILIIiCwCIouAyCIgsgiILAIii4DIIiCyCLCQtb297bEoLi7GKpaYl5VIJFpaWiBfXV0Fg8GPjw8ocsO8rMPDQ0wWq6urg4ODWGCGeVn19fWY0kSjUUzMMC/L7/ePjY1hwWJ4eBgTN1IMiMViOBqlQqEQ1vKDxW5YVlaGSann52dM/GAhq6ioCJNS8XgcEz9YyPL5fF6vF/LNzQ0EhrCQpcnOzobw8vICgSFcZL29vUGwpxhDuMh6fX2FkJWVBYEhLGQ9Pj7atzi5ubkQGMJC1sXFBSalSktLMfGDhSzn2SonJwcTP1jIci7qcij9BwUFBZiUuru7w8QPdjPL3hYZwkKW3++3fV1eXkJgCAtZ7+/vyWQSspyzvqNvALUgLFizKZX+Tz7Oj+HdlqVv/SorKwsLCysqKnZ3d6Hy7OwMgqa8vBwTP9yWtbKycnp6qsP5+XlTU9PBwYHO19fXVuMnJSUlmPjhtqzq6mpMFl1dXXr7c77OyczMxPSDxcXFycnJ+/t7LLsPPDB1E/vFFzA+Pr61tYUFpcLhMPb7ysjICHQIBAJY5TpmnsFrOx6PBz68z+dbW1uDrNFzBzt9BZstsMp1zOyGra2tfX19kB8eHiKRCGSNc5e02d/fx2QUM7I0o6OjmJRaXl7G9BcWFhYwKbW0tITJfXCGmaC9vR0H4WB2dhab0+gVPT8/H1r1WT+RSGCD6xibWZr+/n5MDn6e4Ofn529vbyF3d3ebfIaD0kygFfw8KMzNzWGzhT5YVFVVYZv1xQhsMIHJmZWXl9fY2IiFNN++QjM9PX1ycgK5o6OjoaEBshlQmiGmpqZwHGk6OzuxzZp6zgN9LBbDBkMYlhWPx39eidiWSg0NDWGVUsFgEGvNYViWpq2tDX2kgfqdnZ2MDFwlvF7v0dER1BvE5JoF6A0OkwN9XOjp6bHXr1AoVFtbC9kkKM0cx8fHOBSLaDSqK50G6+rqnp6eoLNZzMvS1NTUgBd95kwmkzMzM1DU6Atwb28P+5mGhayBgQF0o5Q+rNv32JqJiQnsxAAWsjY2NtDNVwKBgF62sBMDWPyMnR6DvfHZNDc3r6+vO18pGsf8bqjR1923PbG3tzcSibAy9Yk1v1gQDodhSJubm1jFDPk1SQIsLsP/BZFFQGQREFkERBYBkUVAZBEQWQREFgGRRUBkERBZBEQWAZFFQGQREFkERBYBkUVAZBEQWQREFgGRRUBkERBZBEQWAZFFQGQREFkERNavUeoPizmK+6Uu2DEAAAAASUVORK5CYII=</pre>
 </div>
 <div created="20200226082238812" modified="20200226082240298" tags="META" title="img oo.png" type="image/png">
 <pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA1gSURBVHhe7Zx5bBVVG8anUCxCESrKDmIFhYKyWvZgAyIEQgQBKSYQjBggIUFDTIQUSdhaohhDJFYiNEVIgBJAFitQCAoIhcouFKt87GrFhU1R4H6P5zwzOXeWywx35vZ+X+7vj/Y9z3lnue89c857Zs7cpFAopCVwRzX+T+CCRLA8kAiWBxLB8kAiWB5IBMsD8RWsGzduJCkcPHiQFfFBHOVZpaWl3bp1YyGcODnJeGlZFy5ccIoU2LJlC60qJS6CdefOnUGDBrFgx6ZNm2jpLF68OCsrq2PHjrha09PTKysrWREoaOFVzhdffMGz0SkrK6OlU15eLp1ZtoAOTjoER1wEa+jQofzEmvbJJ59QDYWGDBlCVQCFlgNooXLDgKiaYJ0+ffqtt956SbBy5Up+Vk1r3Ljx7du36RQKXblyhRWCxx57jJYDw4cP55bBUAXBWrt2bc2aNfn5wunQoQOddJ588knW2TF37lxaOtwsGGIdrKNHjyYnJ/OTWejcuTP9dD744APWhXPt2jXpgNSMkkCKARHrYI0YMYIfy44JEybQT+fvv/9mncL27dtZLcCAKPU2bdpQCoaYpg7og4qKiljQtNmzZ9NypkaNGrQU2rVrR0uAGEnj3Llz0ggKBi0mvPHGGzyqpr3yyitQWNDJzMyUnipt27ZltSAlJYUVOn379mWdph04cIBqAMSuZSFvfP/996WNDv6dd96Rtopp+JM8+OCDtAS3bt2ipXPz5k1amrZ582ZaARC7YGVkZNDStNGjR7du3RpG7dq1pSKpVs3mfCIMCJJHHnmElqbNmzePVgDELli//PILLU3Lzs6Whmkse+KJJ2gp3L17l5bO+fPnaQkef/xxWprWpUsXWgEQu2AZjahWrVoDBgyQtgn1gjJAZ0FLp6KigpYAmS0tTevatSutAIhdsB566CFpNGnSRBogLy+PlsA2Wa1Xrx4tHUwAaAnUxPWnn36iFQCxC1bdunWlobYUTHqQNLEQ3vtI4FxaWsqCA82aNTO+gGPHjkkjCAIMFrKenJycjz76SBZTU1OlYeqnunfvTgtnY+ngsRMk6yzo1KlTh5aOseHJkyelEQRBBSs3Nxfz3jlz5kyaNElm2A8//LCs+u2339TGdfHiRVpKQA0uXbpES8HafC5cuEArSAIJ1syZM99++20WBOhljIkLEiW1I1c/eYMGDWjpYDSgpbBx40ZaMQZfsr9cvXqVuw6nYcOG0mjUqBFdBSNHjpQ6eOGFF6jqoBm2aNGC1Qqs1qEqoBQA/resDRs20ArHGKdMA1ZaWhotTSspKaGlg6Fw9+7dBQUFTru1cufOHVq+w6D5h9pSnKCrYMmSJVQFVO2gh6YNGjSIksCUtVINAJ9bFkY6o0Mx5QFyfmMl8u09A3VMNN23waVKK2B8Dta2bdv++usvaY8aNQr2rFmzXn755T179vz5559SB/iWaFmmh06oY4Jp7Ovfvz8tTRs8eDCtIJANzC8WLlzI/Wrap59+SlWA1FHqDzzwACXBrl27pC6hasHUE1EVUBLs37+fagD43LLUkeuHH36gJTCag+kicjlBMeWrf/zxhzS2bt0qDUlmZiYtBw4fPjxjxowXX3yxU6dOGJfxt3379m3btv13uUBSEhJD+tnCoPmE2kxwTlQFVAX4qFRDoZ07d1IVULWDHoLff/9divjYlARStKWsrEydckcAIy+3CcfnYB04cIAH1DR0VVQF6tP5pUuXUrVcXxgiWGGBHoItW7ZYxWnTpknRhKmNu2HgwIHcWMHnYN2+ffvRRx+VxzM915oyZYrUJVQFlASY31C1QA9BRkaGVVQf0BpEvtOPPM7oTK2oDzGBz8EC6ALkkerXr09JsHz5cqlLqAooCTAZomqBHjpSVBvst99+K0VJUVGR6Za0BNP7iooK9KEYoOkaCq1atYrV4bBa4H+w1GfuajOJ8IBP7UqQbVC1QA8dKfbo0YNlTVuxYoUUbe/lS/bt2yd9VJAbOmUwn3/+OZ2CCJba7DF9oSqgKlC/1ZMnT+KaTUlJwfSbkh35+fncWLnGO3bsSEmAhO61115jQQFJPyIoNzGBFIdODtAviGCpy4OqV69OVaBeFIgpVR2knbScyc3NxbbDhg1jORSyTidNIC1YtmwZpkTcIBynG9wqdA0iWKZ7dVQF6uPoLl26UI0O9MHcox3I+5DW0dUCkiz66Xz99dfQT5w4wbJAOgP/g2U6e/SjrAiFkH8ad9lXr15NNWp69eol96ny7LPPIv+khwN01SkuLpb6/PnzKYkprRSB/8ECPI4gLS2NqqC8vPzdd9/FpcqyT8ycOZPH07T33nvPWDYSgV9//ZUbCCZNmiR100PcxYsXSx0EHixANc74+OOPeX5iMi/F48ePUxI0adJETWX8v/kHsF9aggDvxkXBjz/+SEssvEAKgrmhkSRK8vLyMO1nAciY+Q73LmjXrh3VeKKwsJDn50D//v3pqhNUsCZOnMhjCtRuPk5AdsqTswPToOvXr9NVJ6hgGbcADVgRB5w6dWrcuHE8LTvUTl0lwM+AZJoHF9jOM2IMEijbhToSdPkRJlsg2C+cZyFS+eeee45qVYAMvlWrVjwbC1OnTnVK8VWCDVZlZaU6mjg176A5dOgQzyCcBg0a3DNxVQm8K1HTRaDOn2PDmjVreOxwsrOzvb5kEHiwTD19t27dWBETbNtUnTp1ItyPjUDgwbKugXG6VeI71kMD07JwTwSSwatYlwctWrSIVsCkp6fT0tmxY0e/fv1Y8I5jsEpKSnr27Gm7pjhKMJemFSQLFy40vVeHjDwrK4uF+4MtLJzi4mJWCxYsWPDZZ58tX7587969XjtFTLu4FwXWBcaXX37JI+m0aNHCTXIQGfvz5hHsSE5Olg8yX331VQw03CAi1gVp33//PesCwPY9iw8//JDVUWAfrJycHB7EBZMnT77nlwYHeguaNm3KCr+xfUSIfCrC/VL32AfL6zLW+fPnc0tnZs2aRW8BVV8xPUAymDdvHj2iw/6kL1++zOOE89RTT9EKJzU11fQ80hZ6CwoLC6n6B3cdztNPP+21n3XCPlimW64GGzduRO3NmzeR7BnLHgG6TzcnRG8dqj7BnepgYFm/fj0mWMaqiOixP2OndaGAHoJbt25NmDChb9++yF8oRcS0cDb64UmFO9Wh6iv2OzWtFlP56quv6HRfcC+CgoICqn7AnQpwZUB5/vnnYefm5kqH6LEPFq6pJP31UOtr3HS6L7gLwejRo6lGjbqsEEChpTN37lw3D3EjY5/BV6tWzXj2j8TK9IjciGOU9O7dm1bUmJ7KWJkxY0a9evXefPPNf/75h9J9wKBZMN637dSpE4qmeI0YMUK6eQINltsLPN1Lioz6mgaAQsuOEydOyK284hisRo0ayV0jo0PR+oWMHDlSerqHW+pQ9YMzZ85wpwIpsmAB1w1Gc+njCccz5o4F8o6dNeWbOHGiuuAxMqZmlZeXxwo/MN01oxoKLVu2jJKF+3ib2lWwVq1aJUVrvNLT001LyCLAbQR+JYoG3K94sZGSAFPFtWvXIhkaPnw4PXRwudDJHa6CBaiGQq+//jolnbS0NJe9D4Y/uQm6dkr+YbzDit7WaeAzLcXaunUrK9zhGCyZpBjI994kP//88/Tp08Oea4vV+jt37qRHVaD+okGEx25GXwymTJlC1R2OwTKtNJw8eTIrdHBCxlpbgzZt2ixYsMCXKb4nvvvuO56BAHNbVlhAUk0nMdWl6g7HYAH1ZeY+ffpQVSgrK1NniCrDhg1DN0G/gMG0SU3Z7jlM009AyR2O3tu2batevTp3qWn5+fmsCAcTi5ycHNtXAkFWVhaaZGFhIYZqf2eCKkeOHOHxRKJTWVnJCgfoKnBzs8TAPljnz5833tIFpuX/VjCsrF69Wn3hyAr6lNmzZxcXF7vPNlxy+vRp43tdt24dVWekp4SSO+y91d+l6tChg/unbBhfevbsyS0dwGjVvn37IUOG4HrBmHD27FluHAVFRUXZ2dlGihMB04BI1R323kYuV79+fSTHVF2za9eusWPHNm/eXO7kntSqVQsDP5KSFStWHDx40M0ix/ujtLTU+HkJCSvcYf87pbiSlyxZUlFRMX78eNNiOE8g80SHcuzYMXyfO3bsMN2JjwByXczkU1NTMzMzcf1ifhrhdS9MMJDo/UcH3SiUkpISmdaPGTMGs2gkOt27dzcN8XBISUlhwQWx+1FXnOg333yDRrd9+/b9+/dT9QKyX4S7Zs2aiCPmd8aPrCQnJ0de4G0FA/3u3bvVH7FxQ5X9Am55eTlSHowkmC0hBTHNhIPm1KlTTs8TIlBlwTKBMaSgoGDTpk34tpFnYMTENXLp0iXTQmtfQFKmpqbuiZdg2YJ4oaczXnvu1asXupjr169DR8aL7knqGRkZ8EHX1rp162aCf19KTUrau3cvJs9wbtmyJXq9Z555Bvng0KFDPfVTKnEdrMign7rn75D5y/9wsGJP4EuO/p9IBMsDiWB5IBEsDySC5YFEsDyQCJYHEsHyQCJYHkgEywOJYHkgESwPJILlGk37L9cFmdYbamVkAAAAAElFTkSuQmCC</pre>
 </div>
-<div created="20200226082247272" modified="20200226082249500" tags="META" title="img ov.png" type="image/png">
-<pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARBSURBVHhe7ZxNKHRRGMfP0EjM+AqhRFHY27AQm7FQajZWPspKWbCZjVhbWKjJCklSFkoWrDQsTDIldjY2lFI+xuf4HOY97vPM7aK317O553nr+W38z8fizK9zzzn33jGeVCqlhN+RgX+FXyCyCIgsAiKLgMgiILIIiCwCIouAyCIgsgiILAIii4DIIiCyCIgsAiKLgMgiILIIiCwCIouAyCIgsgiILAIii4DIIiCyCLCQtb297bEoLi7GKpaYl5VIJFpaWiBfXV0Fg8GPjw8ocsO8rMPDQ0wWq6urg4ODWGCGeVn19fWY0kSjUUzMMC/L7/ePjY1hwWJ4eBgTN1IMiMViOBqlQqEQ1vKDxW5YVlaGSann52dM/GAhq6ioCJNS8XgcEz9YyPL5fF6vF/LNzQ0EhrCQpcnOzobw8vICgSFcZL29vUGwpxhDuMh6fX2FkJWVBYEhLGQ9Pj7atzi5ubkQGMJC1sXFBSalSktLMfGDhSzn2SonJwcTP1jIci7qcij9BwUFBZiUuru7w8QPdjPL3hYZwkKW3++3fV1eXkJgCAtZ7+/vyWQSspyzvqNvALUgLFizKZX+Tz7Oj+HdlqVv/SorKwsLCysqKnZ3d6Hy7OwMgqa8vBwTP9yWtbKycnp6qsP5+XlTU9PBwYHO19fXVuMnJSUlmPjhtqzq6mpMFl1dXXr7c77OyczMxPSDxcXFycnJ+/t7LLsPPDB1E/vFFzA+Pr61tYUFpcLhMPb7ysjICHQIBAJY5TpmnsFrOx6PBz68z+dbW1uDrNFzBzt9BZstsMp1zOyGra2tfX19kB8eHiKRCGSNc5e02d/fx2QUM7I0o6OjmJRaXl7G9BcWFhYwKbW0tITJfXCGmaC9vR0H4WB2dhab0+gVPT8/H1r1WT+RSGCD6xibWZr+/n5MDn6e4Ofn529vbyF3d3ebfIaD0kygFfw8KMzNzWGzhT5YVFVVYZv1xQhsMIHJmZWXl9fY2IiFNN++QjM9PX1ycgK5o6OjoaEBshlQmiGmpqZwHGk6OzuxzZp6zgN9LBbDBkMYlhWPx39eidiWSg0NDWGVUsFgEGvNYViWpq2tDX2kgfqdnZ2MDFwlvF7v0dER1BvE5JoF6A0OkwN9XOjp6bHXr1AoVFtbC9kkKM0cx8fHOBSLaDSqK50G6+rqnp6eoLNZzMvS1NTUgBd95kwmkzMzM1DU6Atwb28P+5mGhayBgQF0o5Q+rNv32JqJiQnsxAAWsjY2NtDNVwKBgF62sBMDWPyMnR6DvfHZNDc3r6+vO18pGsf8bqjR1923PbG3tzcSibAy9Yk1v1gQDodhSJubm1jFDPk1SQIsLsP/BZFFQGQREFkERBYBkUVAZBEQWQREFgGRRUBkERBZBEQWAZFFQGQREFkERBYBkUVAZBEQWQREFgGRRUBkERBZBEQWAZFFQGQREFkERNavUeoPizmK+6Uu2DEAAAAASUVORK5CYII=</pre>
+<div created="20200226082229688" modified="20200226124716929" tags="META" title="img oq.png" type="image/png">
+<pre>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</pre>
 </div>
 <div created="20200226081922663" modified="20200226081926240" tags="META" title="img S2.png" type="image/png">
 <pre>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</pre>
@@ -9935,14 +10008,14 @@ Movement:
 <div created="20200226082027381" modified="20200226082028889" tags="META" title="img SS.png" type="image/png">
 <pre>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</pre>
 </div>
+<div created="20200226082323902" modified="20200226124524984" tags="META" title="img U\.png" type="image/png">
+<pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAp0SURBVHhe7Zx5bExbHMfPQ59WLCFNLaUl2ipt0SaNpXZBkBL8QQWxhNA0iCCWkliCEqQiSJsKIkgVtUSkSomUqDZK29jFEmppLUFRS9/vnfOdyZl7Z8bcO3c6MzKfP977nd9y9fzm3nN/Z5n5p66ujvlwjAb4vw8H8CVLA75kacCXLA34kqUBX7I04EuWBvQn68SJE/+YePLkCbR/N1SU6iA7OxvxEt+/f4f5L0VPBf/169cmTZqgYYmOq3kReh7D3bt3Q1LRqFEjSH8jeu4sGqQgMdanT59r166hwXn27FmHDh3Q+Ltw9m24evXqwsJCNDjbtm2D9NehJ1lz5syBxFh5eXnfvn2nT5+ONmOjRo2C9Pfx/yivkdOnTyOYsYSEBKEsKipKTU09efKkaJIAD/5CEEpvR8+Y9fTp044dO6Jh7Q0oD2pmfv/+bVXvReh5DBXjtyJZtjLSoEGD2NhYNLwTPcmibkPiXLp0CRJjlZWVkKxRWlp69+5dNLwQnW/D8PBwSIw9ePAAEmMDBgyAZIOuXbtSoY+Gt6EtWfSICT5+/AgVrx4gMRYYGAiJsS5duvw/KqpGtIiICEjehoZkyd1+8+YNJMZev34NibH27dtDYmzgwIFCoMD+/fsLmaCqNS8vDw3vgn/2joIYFTDX1a1ZswYqDrScf//9F1o+K6qpqYHBe9A5ZhGhoaGQGDt16pQQJk+eLAQ1z58/h8TYz58/5QfWW9CWrE6dOkFiLDo6GhJj+/fvF0JYWJgQBPRpQGIsKCjo0KFDaDBGd1ZGRgYa3oK4wRxkypQpCGOsX79+kDi1tbXCB23OjRs3hNLMokWLYGOsYcOGVKnC4A1oS9bFixfRUY48DI0cOVL4oM1Zv369UJqhGwo2TnJyMgzegLZkEWlpaegoY/7+/pA4VE+QQ3x8PNqMrVixQkTJrFq1CmZOZmYmDB6P5mTR46YYmMzQqEQOO3fuRJsjohR0794dZs7jx49h8Gw0J4soLi728/NDRy3JysqSSzBKCmIsobchPEzA4Nno/CsPHz5sK19kNb80AwIC3r9/L0IUXLlyRfiYgcGD0fknon/WKCwsnDFjBhp84RQxKmbOnAknTm5uLv03KSmprKwMHh6GnmS1aNFCdM8WGzZsgMRYTEwMwlRQ3QAnFceOHYOTJ6Gngpdn0VaRX4h0m9haZqAJua3dWXGXeRp6kjV27FhINhg2bBgkTs+ePSGpoDkTTaopa2ibUGs8AtxhWpDvLHokqWJAQ0KhfPToEYKtsXTpUvhJwOZJ6PybJk2ahD4xtnjxYkh2QaQ1aPCSLyiIjIyE2WPQmayHDx/SzE70KioqSi7rzfTt2xcShwp3BFvj27dvISEhcDWxcOFCmD0D/Xf7iBEj0CfGjh8/3rZtWzRs8+rVKwRbo6CgQN40Ejx48ABmD0B/so4ePYoOMdajR48zZ86gYZu4uDgE26a6uhreJmyVtfWP/mTRQCNvbdGcWfHcWaW0tBTxtpk2bRq8TcDgbpz6O86dO4fecMaMGQOJIy/gyCDYLnJZSzRu3BgGt+Lsh9arVy90iOPIzbVp0yYE20WxO3n79m0Y3IezyaICSi6pxo0bZz6iZaewRLBdXr58CW8TP378gM1NOJssQt5k9ff3p5kwGrapqKhAsF3mz5+PABMwuAn9uztmwsLCJkyYIGQqlxyZqchnbOyQnp7epk0bNDhTp06F5BaQNOe4d++euUalZCUmJgpZgXkYGjJkCCL/hHoSbmfNx9UYdmPPmjULveETQ6snJc3HdjVNZWpra0WUGSrxYKtfDEtWTU2NYmXdDvHx8SLq6dOnMTExQrlnzx6hVCOfEDDz5csXmOsLI4dMehibNm2KrtgmICDg/PnzihrNTGFhIS5nydWrV+EhYd6srB8Mfr9s3LgR/bANzQEh2UDsEqnZtWsXPCTq85sKBieLoJoT/XAOXM6S69evwyzhyBTKEIxPFpGVlYV+OAcuZwmVpjBLpKWlwexKXJIswupGrHr3bPv27Qioq1Ovx4eEhMBmCc3hg4OD4WQiOjoaZpfhqmRRdYpOSERFRTVv3hwNDr3mEMBRb77m5eXBpgIelsDmGlx49Q8fPqAHJqgoVbwEyQfeJn79+gWbibdv38KmYvPmzXAysWDBAthcgGs/CvW3LcwTI8GLFy/gKlFSUgIzZ/DgwTBYg2by8DMhzqe4Atcma+vWreiBCbq52rVrh4btQnTHjh3w4IwcOdLO1zSqqqrgZwIGo3Ftsj59+tS6dWv0wISsoVkRXFWsW7cOTpzY2Fh6Zukpzs/Ph4eEol559+4dDIbi2mQR6enp6IE1aNYNP2so9sfMC40rV66Eh4QwCVJSUqA1FJcni24HxZk3Bfa3fNRDONGwYcPq6mp4mLh16xbM3IFexzAYh8uTRcinZdRfwfjjfKVPnz5wlaB5KMwS8gaKK8p6Axb//sjs2bMh8U0zSCbGjx9va1J98+ZNSq7im7ICq7sh8+bNg+Tw+qI2kDRXQqVmy5YtxT9HibP6ZBH79u1DAGfo0KEwWOPu3bvwk1B8iwpa46iPZBEHDx6kfEVERJSXl9fU1Mjn6dVYXTtWbPbQ3AiXtgRmE9AaRD0li6D7i6pzIasrSfvQ/bh37140ODt37hSXUgCzCWgNov6SpUA9eNkiNzdXhJiX+QVbtmxRb44pThMa+w0htyUrOTkZHeKHIiFZQjUHlbUIqKtT7PQQvXv3Vi8uw8ahKQS0RuC2ZOXk5KBDjK1duxZafg564sSJo0ePptENKhN37txBgETnzp0VE0wYTEBrBG5LljxsOb4zVlRURPVBZGQkIjnh4eFyZTt37lwYONAagduSRZhPPdOkR+vPGdCMR8QKBg0aBIPqhD20RuDOZMlHi7SuC9NAnpmZiWBOdnY2bJZPIlRG4M5kyb/LQkMPtFpQrEwcOXJE6NHmCI0huDNZRFxcHPr0pxPNVqHKQHEStaCggPRocISnIdTH3NAO8pF6qpsgOUxAQMCBAwfQ4NAEG5IrQNLcREVFhfnUjZ+f38OHD2HQwvDhw8UVunTp8vnzZ9KIpsDAutTNySJSUlLQLcZSU1Oh1QgNf5cvXzYX9LgcR73ypRv3/xD1u3fvgoKCxKZOYGDg/fv3zUsUupHPiNF7U246g5vHLKJVq1bm56iqqorKdyEbRXFxMSTnETeYeykrK5M/fBrpYdBLs2bNcC1Dv9biEckili1bhs5xHDx0aoslS5bgQhxoncZTkkUji7w8HxwcrNjZ18SXL19wIc7Zs2dhcA5PSRZBJZLi5EhOTs6FCxf2799fWVkJJ4ehMgJX4T9SCK1zeFCyiPz8fPTPktDQUK2H4Okli2D+qzDQOodnJYtYvnw5umjJ8+fP4eEw8pbH1atXoXUCj0sWoVhOIBITE2HTgry+mJGRAa0TeGKyCMWJEn0HR2traxMSEiicSjlbu0GacH8Fb4t9+/bRJCYpKWnIkCFQaYdeiyUlJd26dTPk57o8N1keiPunO16EL1ka8CVLA75kacCXLA34kqUBX7I04EuWBnzJ0oAvWRrwJcthGPsPqkjC85khfG0AAAAASUVORK5CYII=</pre>
+</div>
 <div created="20200226084006881" modified="20200226084009180" tags="META" title="img Ui.png" type="image/png">
 <pre>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</pre>
 </div>
 <div created="20200226082307409" modified="20200226082314598" tags="META" title="img UU.png" type="image/png">
 <pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA4oSURBVHhe7Z15bFVFFMYHUHBBVAS0gAtiVXAngIjYqLhLXNG4NA3GiHHDuCFxaYgraqIkskmICpIgqGBA3HEJSFjUoqIIKmBVKBZBKUpFSv2853uT8+YuvffR19ua/v7hzJm5r/eeN3PmnJm5jxa1tbWmmXi05L/NxKCpGqusrKxFixaDBg368ssvqco/TXIYVlRUFBQUiNyyZcuqqqq99tpLinmlSfasBx98kJIxO3funDhxIgv5Bj2raTF//nz0Jt69R58+fViXZxrdMDzssMN+/PFHCPvtt19lZeVuu+0megEDsHfv3r/88gvLGRYvXty3b18WjFm7du2oUaP++ecfyD///PPAgQOHDx8uVbuE2KyRcMUVV/C2PI499tjVq1ezzuPCCy9kXTZPPfUUW9TWPvfcc9RmA9uxRa40ImO9//77fCxF165dv/jiC2nw1ltvUesxe/ZsSsbsv//+0mbMmDFU+bj66qulTc40FmOtW7fugAMO4GNl07lz5z/++GPLli0YoVR5VFdXU/JYs2ZNeXn57rvvznIQ3377Lf9eTjSK2RD3cdNNN/32228sZwM7Tp06FQMNnogqjzZt2lDyeOaZZ0aPHi1+ShgyZAisw4LHO++8Qyk3xGbpEjF2hFNOOWXfffdlweP000/HhaWlpSwbc9pppznRFop///333LlzWc5clTPpG2vDhg05hJSXXXaZXG6j0z322EMEDfpaTU1Nly5dpNi2bdsdO3bIhTmQ/jC88847//rrL5Fbt24tgnD77bdT8nHwwQeLcOaZZ4rguDBhypQpCMr69+8vxa1bt8L9iZwDKRsLM920adNERtfYvn27yIiM8E2WlJQ48afl8MMPF+GYY44RQYMYTQR8Plye/TIQtWHeFDkHUjbWLbfcgnxF5EsvvVQEICbo1asXPJFoHA466CARHF8mnH322SJgDH7wwQeIS6XYoUMHpN8i50Caxvr4448/+eQTkTGsNm7cKDJABiOCHW7A9hdgn/mII44QQfP9999TMmbFihXWWIceeqgIOSKuq+FBh7JDCUyePBlfOwvGYBbbvHkz3JkehkcddRQl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</pre>
-</div>
-<div created="20200226082323902" modified="20200226082325386" tags="META" title="img Uy.png" type="image/png">
-<pre>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</pre>
 </div>
 <div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
 <pre></pre>
@@ -9957,6 +10030,362 @@ Movement:
 </div>
 <div created="20200226091205584" modified="20200226091207036" title="L1-S3">
 <pre></pre>
+</div>
+<div created="20200226131131898" modified="20200226134257517" tags="META" title="L1HeaderTemplate">
+<pre>\define Line1()$(ur_title)$
+\define Line2()[img width=50px [img $(ur_prefix)$$(ur_title)$.png]]
+&lt;table&gt;&lt;tr&gt;&lt;td style=&quot;text-align:center&quot;&gt;&lt;&lt;Line1&gt;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&lt;Line2&gt;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</pre>
+</div>
+<div created="20200226094902029" modified="20200226141240107" tags="META" title="L1TemplateLinks">
+<pre>\define L1ListE1()
+&lt;$list filter=&quot;$(t1)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1SubE1&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+\end
+\define L1ListE2()
+&lt;$list filter=&quot;$(t1)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1SubE2&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+\end
+\define L1TopE1()$(note)$
+\define L1SubE1(l-prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$l-prefix$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L1SubE2(l-prefix)&lt;$list filter=&quot;[title[$l-prefix$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(p1)$$l-prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+&lt;&lt;L1TopE1&gt;&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;&lt;L1ListE1&gt;&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;&lt;L1ListE2&gt;&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226121245510" modified="20200226121330540" tags="META" title="L1Test_xU">
+<pre>\define L1Sub(l-prefix)&lt;$list filter=&quot;[title[-$l-prefix$$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(l-prefix)&lt;$count filter=&quot;[title[-$l-prefix$$(l-suffix)$]!is[missing]]&quot; /&gt;
+\define L3Sub(l-prefix)&lt;$count filter=&quot;[tag[$l-prefix$]tag[$(l-suffix)$]]&quot; /&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L3Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226120618223" modified="20200226120956457" tags="META" title="L1Test-xK">
+<pre>\define L1Sub(l-prefix)&lt;$list filter=&quot;[title[-$l-prefix$$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(l-prefix)&lt;$count filter=&quot;[title[-$l-prefix$$(l-suffix)$]!is[missing]]&quot; /&gt;
+\define L3Sub(l-prefix)&lt;$count filter=&quot;[tag[$l-prefix$]tag[$(l-suffix)$]]&quot; /&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L3Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226112806342" modified="20200226120300909" tags="META" title="L1Test-xS">
+<pre>\define L1Sub(l-prefix)&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(l-prefix)&lt;$count filter=&quot;[title[$l-prefix$-$(l-suffix)$]!is[missing]]&quot; /&gt;
+\define L3Sub(l-prefix)&lt;$count filter=&quot;[tag[$l-prefix$]tag[$(l-suffix)$]]&quot; /&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L3Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226134434414" modified="20200226135827734" tags="META" title="L2HeaderTemplate">
+<pre>\define Line1()&lt;$list filter=&quot;[title[$(ur_t1)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt;
+\define Line2()&lt;$list filter=&quot;[title[$(ur_t1)$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_p1)$$(ur_t1)$.png]]&lt;/$link&gt;&lt;/$list&gt;
+\define Line3()&lt;$list filter=&quot;[title[$(ur_t2)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt;
+\define Line4()&lt;$list filter=&quot;[title[$(ur_t2)$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_p2)$$(ur_t2)$.png]]&lt;/$link&gt;&lt;/$list&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td style=&quot;text-align:center&quot;&gt;&lt;&lt;Line1&gt;&gt;&lt;/td&gt;&lt;td style=&quot;text-align:center&quot;&gt;&lt;&lt;Line3&gt;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&lt;Line2&gt;&gt;&lt;/td&gt;&lt;td&gt;&lt;&lt;Line4&gt;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</pre>
+</div>
+<div created="20200226122849552" modified="20200226130057809" tags="META" title="L2Template-Kx">
+<pre>\define L1Sub(l-prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(l-prefix)&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;[img width=50px [img K$l-prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+Location:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226122135624" modified="20200226125858278" tags="META" title="L2Template-Sx">
+<pre>\define L1Sub(l-prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(l-prefix)&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;[img width=50px [img S$l-prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+Handshape sizes:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226130503475" modified="20200226130543577" tags="META" title="L2Template-Ux">
+<pre>\define L1Sub(l-prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(l-prefix)&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;[img width=50px [img U$l-prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+Palm Facing:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226125222815" modified="20200226130105805" tags="META" title="L2Template-xK">
+<pre>\define L1Sub(l-prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$(l-suffix)$-$l-prefix$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(l-prefix)&lt;$list filter=&quot;[title[$(l-suffix)$-$l-prefix$]]&quot;&gt;&lt;$link&gt;[img width=50px [img K$l-prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+Location:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226130701981" modified="20200226130833968" tags="META" title="L2Template-xo">
+<pre>\define L1Sub(l-prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$(l-suffix)$-$l-prefix$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(l-prefix)&lt;$list filter=&quot;[title[$(l-suffix)$-$l-prefix$]]&quot;&gt;&lt;$link&gt;[img width=50px [img o$l-prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+Movement:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226130210877" modified="20200226130324742" tags="META" title="L2Template-xU">
+<pre>\define L1Sub(l-prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$(l-suffix)$-$l-prefix$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(l-prefix)&lt;$list filter=&quot;[title[$(l-suffix)$-$l-prefix$]]&quot;&gt;&lt;$link&gt;[img width=50px [img U$l-prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+Palm Facing:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226141644025" modified="20200226142949721" tags="META" title="L2TemplateListPrefix">
+<pre>\define L1List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+\end
+\define L2List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+\end
+\define L1Top()$(ur_note)$
+\define L1Sub(cur_prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$cur_prefix$-$(ur_title)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(cur_prefix)&lt;$list filter=&quot;[title[$cur_prefix$-$(ur_title)$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$cur_prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+&lt;&lt;L1Top&gt;&gt;:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;&lt;L1List&gt;&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;&lt;L2List&gt;&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226142308488" modified="20200226142923363" tags="META" title="L2TemplateListSuffix">
+<pre>\define L1List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+\end
+\define L2List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;/$list&gt;
+\end
+\define L1Top()$(ur_note)$
+\define L1Sub(cur_prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$(ur_title)$-$cur_prefix$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
+\define L2Sub(cur_prefix)&lt;$list filter=&quot;[title[$(ur_title)$-$cur_prefix$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$cur_prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+&lt;&lt;L1Top&gt;&gt;:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;&lt;L1List&gt;&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;&lt;L2List&gt;&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200226112955598" modified="20200226121412441" tags="" title="L2Test_Link">
+<pre>&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+{{L1Test-xS}}
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+{{L1Test-xS}}
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+{{L1Test-xS}}
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+
+
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+{{L1Test-xK}}
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+{{L1Test-xK}}
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+{{L1Test-xU}}
+&lt;/$set&gt;
+&lt;/$list&gt;
+</pre>
 </div>
 <div created="20200203145715457" modified="20200203145738704" tags="META" title="Recent entries">
 <pre>&lt;&lt;timeline limit:30 format:&quot;YYYY-0MM-0DD&quot;&gt;&gt;</pre>
