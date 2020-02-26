@@ -22,11 +22,13 @@ Namespace Mx
         Public tmrFIVE_SEC As System.Windows.Forms.Timer
         Public lstFOLDER As Mx.Sdata
         Public txtOUTPUT As System.Windows.Forms.TextBox
+		Public intSHOW_FORM As Integer
 
         Const strvLIT_USER_PROFILE_DOWNLOADS = "%USERPROFILE%\downloads"
 
         Public Sub New()
             Dim objPATH_IO = New Mx.glbl.gPathIo
+			Me.intSHOW_FORM = 1
             Me.lstFOLDER = New Mx.Sdata
 
             Me.Name = "Tiddler_Move"
@@ -70,26 +72,49 @@ Namespace Mx
             retOUTPUT = Mx.sub_main.Proc_Exec(retOUTPUT, strvLIT_USER_PROFILE_DOWNLOADS, New Mx.glbl.gDirIo, New Mx.glbl.gEnvironment, New Mx.glbl.gFileIo, New Mx.glbl.gPathIo, New Mx.glbl.gThread)
             If retOUTPUT.gText.HasText Then
                 Me.txtOUTPUT.Text = retOUTPUT.gText.ToString & vbCrLf & Me.txtOUTPUT.Text
+				Me.intSHOW_FORM = 1
             End If
         End Sub 'Look_For_Files
+		
+		Sub Show_Saved()
+		    If Me.intSHOW_FORM = 1 Then
+				Me.WindowState = System.Windows.Forms.FormWindowState.Normal
+				Call AppActivate(sub_main.strLIT_TIDDLER_MOVE_5_SEC)
+				Me.tmrFIVE_SEC.Interval = 800
+				Me.intSHOW_FORM = 2
+			
+			ElseIf Me.intSHOW_FORM = 2 Then
+				Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
+				Me.intSHOW_FORM = 0
+				
+			ElseIf Me.intSHOW_FORM = 0 Then
+				If Me.WindowState <> System.Windows.Forms.FormWindowState.Minimized Then
+					Me.intSHOW_FORM = 6
+				End If
+			
+			Else
+				Me.intSHOW_FORM -= 1
+		    End If
+		End Sub 'Show_Saved
 
         Sub Timer1_Tick(sender As Object, e As System.EventArgs)
             Me.tmrFIVE_SEC.Stop()
             Me.tmrFIVE_SEC.Interval = 5000
             Call Look_For_Files()
+			Call Show_Saved()
             Me.tmrFIVE_SEC.Start()
         End Sub
     End Class 'UIForm
 
 
     Public Class sub_main
-        Const strLIT_TIDDLER_MOVE_5_SEC = "Tiddler Move 5-Sec"
+        Public Const strLIT_TIDDLER_MOVE_5_SEC = "Tiddler Move 5-Sec"
 
         Public Shared Function FormInit(ret_output As CombineTextOutput, ur_update_folder As String, ur_diagnostics As glbl.gDiagnostics, ur_dir_io As glbl.gDirIo, ur_environment As glbl.gEnvironment, ur_file_io As glbl.gFileIo, ur_path_io As glbl.gPathIo, ur_thread As glbl.gThread) As CombineTextOutput
             FormInit = ret_output
             Dim objERR_LIST = New ErrListBase : Try
                 Dim strNEW_DATA_FOLDER = ur_environment.ExpandEnvironmentVariables(ur_update_folder)
-                If ur_diagnostics.IsActiveWindow(strLIT_TIDDLER_MOVE_5_SEC) Then
+                If ur_diagnostics.IsActiveWindow(sub_main.strLIT_TIDDLER_MOVE_5_SEC) Then
                     Dim trwPARMS = New sln.ParmsRow()
                     Dim lstFILE = New sln.FileList()
                     For Each strEXISTING_FOLDER In ret_output.gFolderList
@@ -98,7 +123,7 @@ Namespace Mx
                     Next
 
                     Call ret_output.gFolderList.Clear()
-                    Call AppActivate(strLIT_TIDDLER_MOVE_5_SEC)
+                    Call AppActivate(sub_main.strLIT_TIDDLER_MOVE_5_SEC)
                 End If 'ur_diagnostics
 
             Catch ex As System.Exception
