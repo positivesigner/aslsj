@@ -217,15 +217,31 @@ Error message and password prompt
 
 <li>3</li>
 
+<li>3-\</li>
+
+<li>3-&gt;</li>
+
 <li>3-B</li>
+
+<li>3-h</li>
+
+<li>3-U</li>
 
 <li>3B\</li>
 
 <li>ASL to English</li>
 
+<li>Audit_L2,L3</li>
+
 <li>B</li>
 
-<li>Draft of 'abc'</li>
+<li>B-\</li>
+
+<li>B-&gt;</li>
+
+<li>B-h</li>
+
+<li>B-U</li>
 
 <li>ext Root doc</li>
 
@@ -273,17 +289,9 @@ Error message and password prompt
 
 <li>keyboard action SaveAllChanges</li>
 
-<li>L1-S3</li>
-
 <li>L1HeaderTemplate</li>
 
 <li>L1TemplateLinks</li>
-
-<li>L1Test_xU</li>
-
-<li>L1Test-xK</li>
-
-<li>L1Test-xS</li>
 
 <li>L2HeaderTemplate</li>
 
@@ -299,13 +307,19 @@ Error message and password prompt
 
 <li>L2Template-xU</li>
 
-<li>L2TemplateListPrefix</li>
+<li>L2TemplateP1List</li>
 
-<li>L2TemplateListSuffix</li>
+<li>L2TemplateP2List</li>
 
-<li>L2Test_Link</li>
+<li>L3TemplateP1List</li>
+
+<li>L3TemplateP2List</li>
+
+<li>L3TemplateP3List</li>
 
 <li>Recent entries</li>
+
+<li>soda pop</li>
 
 <li>template Home Button</li>
 
@@ -323,7 +337,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200226092210381" modified="20200226143321838" tags="\ L1" title="\">
+<div created="20200226092210381" modified="20200228094309777" tags="L1" title="\">
 <pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;U&quot;&gt;
 {{L1HeaderTemplate}}
 
@@ -342,7 +356,7 @@ Error message and password prompt
 &lt;/$vars&gt;
 </pre>
 </div>
-<div created="20200226092551646" modified="20200226143411595" tags="&gt; L1" title="&gt;">
+<div created="20200226092551646" modified="20200228094257134" tags="L1" title="&gt;">
 <pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;o&quot;&gt;
 {{L1HeaderTemplate}}
 
@@ -9634,7 +9648,7 @@ exports.startup = function() {
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;data:image/png;base64,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&quot;
+            &quot;text&quot;: &quot;data:image/png;base64,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&quot;
         }
     }
 }</pre>
@@ -9657,7 +9671,7 @@ exports.startup = function() {
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200226143212755" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200228114641055" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
@@ -9672,13 +9686,13 @@ exports.startup = function() {
 <div created="20190925051414187" modified="20200223043750307" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200226125848466" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200228085753040" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
-<div created="20200226135946390" list="[[ASL to English]]" modified="20200226143343335" title="$:/StoryList">
+<div created="20200228083645996" list="[[ASL to English]] B B-&gt; Audit_L2,L3" modified="20200228114656602" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
@@ -9851,42 +9865,96 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20200226084409125" modified="20200226143011402" tags="3 L1" title="3">
+<div created="20200226084409125" modified="20200228112601446" tags="L1" title="3">
 <pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;S&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot;&gt;
-{{L2TemplateListSuffix}}
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p1=3&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot;&gt;
-{{L2TemplateListSuffix}}
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=3&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;&gt;
-{{L2TemplateListSuffix}}
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot; ur_p1=3&gt;
+{{L2TemplateU2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 </pre>
 </div>
-<div created="20200226092835904" modified="20200226135801903" tags="B 3 L2" title="3-B">
+<div created="20200228113134512" modified="20200228113603536" tags="L2" title="3-\">
+<pre>&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;U&quot; ur_t1=&quot;3&quot; ur_t2=&quot;\&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=3 ur_p3=&quot;\&quot; ur_note=&quot;Palm Facing&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=3 ur_p2=&quot;\&quot;  ur_note=&quot;Movement&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200228113310350" modified="20200228113503877" tags="L2" title="3-&gt;">
+<pre>&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;o&quot; ur_t1=&quot;3&quot; ur_t2=&quot;&gt;&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=3 ur_p3=&quot;&gt;&quot; ur_note=&quot;Location&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_p1=3 ur_p3=&quot;&gt;&quot;  ur_note=&quot;Palm Facing&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200226092835904" modified="20200228111440416" tags="L2" title="3-B">
 <pre>&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;K&quot; ur_t1=&quot;3&quot; ur_t2=&quot;B&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-Palm Facing:
+&lt;$vars ur_filter=&quot;U i \&quot; ur_p1=3 ur_p2=B ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
 
-| &lt;$list filter=&quot;[title[3BU]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bi]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3B\]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3BU]]&quot;&gt;&lt;$link&gt;[img width=50px [img UU.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bi]]&quot;&gt;&lt;$link&gt;[img width=50px [img Ui.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3B\]]&quot;&gt;&lt;$link&gt;[img width=50px [img Uy.png]]&lt;/$link&gt;&lt;/$list&gt; |
-
-Movement:
-
-| &lt;$list filter=&quot;[title[3B&gt;]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bh]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bq]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bo]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3B#]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/$list&gt; |
-| &lt;$list filter=&quot;[title[3B&gt;]]&quot;&gt;&lt;$link&gt;[img width=50px [img o7.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bh]]&quot;&gt;&lt;$link&gt;[img width=50px [img ov.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bq]]&quot;&gt;&lt;$link&gt;[img width=50px [img o6.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3Bo]]&quot;&gt;&lt;$link&gt;[img width=50px [img oo.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[3B#]]&quot;&gt;&lt;$link&gt;[img width=50px [img oE.png]]&lt;/$link&gt;&lt;/$list&gt; |
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_p1=3 ur_p2=B ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
 </pre>
 </div>
-<div created="20200226093321015" modified="20200226121749325" tags="\ 3 B L3" title="3B\">
+<div created="20200228113620226" modified="20200228113651232" tags="L2" title="3-h">
+<pre>&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;U&quot; ur_t1=&quot;3&quot; ur_t2=&quot;h&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=3 ur_p3=h ur_note=&quot;Location&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=3 ur_p2=h  ur_note=&quot;Movement&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200228112635983" modified="20200228113713630" tags="L2" title="3-U">
+<pre>&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;U&quot; ur_t1=&quot;3&quot; ur_t2=&quot;U&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=3 ur_p3=U ur_note=&quot;Location&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=3 ur_p2=U  ur_note=&quot;Movement&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200226093321015" modified="20200228094236657" tags="L3" title="3B\">
 <pre>| [[3]] | [[B]] | [[\]] |
 | &lt;$list filter=&quot;[title[3]]&quot;&gt;&lt;$link&gt;[img width=50px [img S3.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[B]]&quot;&gt;&lt;$link&gt;[img width=50px [img KB.png]]&lt;/$link&gt;&lt;/$list&gt; | &lt;$list filter=&quot;[title[\]]&quot;&gt;&lt;$link&gt;[img width=50px [img Uy.png]]&lt;/$link&gt;&lt;/$list&gt; |
 
@@ -9931,31 +9999,168 @@ Movement:
 
 &lt;&lt;list-links filter:&quot;[tag[DOC]sort[title]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200226094331723" modified="20200226143205452" tags="B L1" title="B">
-<pre>&lt;$vars ur_title=&lt;&lt;currentTiddler&gt;&gt; ur_prefix=&quot;K&quot;&gt;
+<div created="20200226112806342" modified="20200228111535746" tags="META" title="Audit_L2,L3">
+<pre>\define t2(ur_p1,ur_p2)
+&lt;$set name=&quot;tag_count&quot; filter=&quot;[tag[$ur_p1$]tag[$ur_p2$]count[]]&quot;&gt;
+&lt;$set name=&quot;ent_count&quot; filter=&quot;[[$ur_p1$-$ur_p2$]is[missing]count[]]&quot;&gt;
+&lt;$list filter=&quot;[&lt;tag_count&gt;!match[0]]&quot;&gt;&lt;$list filter=&quot;[&lt;ent_count&gt;!match[0]]&quot;&gt;$ur_p1$-$ur_p2$ missing&lt;br&gt;&lt;/$list&gt;&lt;/$list&gt;
+&lt;/$set&gt;&lt;/$set&gt;
+\end
+
+\define t3(ur_p1,ur_p2, ur_p3)
+&lt;$set name=&quot;tag_count&quot; filter=&quot;[tag[$ur_p1$]tag[$ur_p2$]tag[$ur_p3$]count[]]&quot;&gt;
+&lt;$set name=&quot;ent_count&quot; filter=&quot;[[$ur_p1$$ur_p2$$ur_p3$]is[missing]count[]]&quot;&gt;
+&lt;$list filter=&quot;[&lt;tag_count&gt;!match[0]]&quot;&gt;&lt;$list filter=&quot;[&lt;ent_count&gt;!match[0]]&quot;&gt;$ur_p1$$ur_p2$$ur_p3$ missing&lt;br&gt;&lt;/$list&gt;&lt;/$list&gt;
+&lt;/$set&gt;&lt;/$set&gt;
+\end
+
+&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
+&lt;$set name=&quot;h1&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$macrocall $name=&quot;t2&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$macrocall $name=&quot;t2&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$macrocall $name=&quot;t2&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;h1&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$macrocall $name=&quot;t2&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$macrocall $name=&quot;t2&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;h1&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;&gt; h v o #&quot;&gt;
+&lt;$macrocall $name=&quot;t2&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
+&lt;$set name=&quot;h1&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;h2&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$macrocall $name=&quot;t3&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;h2&gt;&gt; ur_p3=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$macrocall $name=&quot;t3&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;h2&gt;&gt; ur_p3=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;h2&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$macrocall $name=&quot;t3&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;h2&gt;&gt; ur_p3=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+
+&lt;$list filter=&quot;W C B K Y&quot;&gt;
+&lt;$set name=&quot;h1&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;U i \&quot;&gt;
+&lt;$set name=&quot;h2&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
+&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
+&lt;$macrocall $name=&quot;t3&quot; ur_p1=&lt;&lt;h1&gt;&gt; ur_p2=&lt;&lt;h2&gt;&gt; ur_p3=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+</pre>
+</div>
+<div created="20200226094331723" modified="20200228114312717" tags="L1" title="B">
+<pre>&lt;$vars ur_title=B ur_prefix=&quot;K&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot;&gt;
-{{L2TemplateListPrefix}}
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p2=B ur_note=&quot;Handshape Size&quot;&gt;
+{{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot;&gt;
-{{L2TemplateListSuffix}}
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_p1=B ur_note=&quot;Palm Facing&quot;&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;&gt;
-{{L2TemplateListSuffix}}
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=B ur_note=&quot;Movement&quot;&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 </pre>
 </div>
-<div created="20200226110721894" modified="20200226110721894" title="Draft of 'abc'">
-<pre>Handshape sizes:
+<div created="20200228114339267" modified="20200228114441153" tags="L2" title="B-\">
+<pre>&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;U&quot; ur_t1=&quot;B&quot; ur_t2=&quot;\&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
 
-&lt;$set name=&quot;l-suffix&quot; value=&quot;B&quot;&gt;
-{{L1Template}}
-&lt;/$set&gt;</pre>
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p2=B ur_p3=&quot;\&quot; ur_note=&quot;Handshape Size&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=B ur_p2=&quot;\&quot;  ur_note=&quot;Movement&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200228114526692" modified="20200228114618362" tags="L2" title="B-&gt;">
+<pre>&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;o&quot; ur_t1=&quot;B&quot; ur_t2=&quot;&gt;&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p1=B ur_p3=&quot;&gt;&quot; ur_note=&quot;Handshape Size&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_p1=B ur_p3=&quot;&gt;&quot;  ur_note=&quot;Palm Facing&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200228114701777" modified="20200228114728433" tags="L2" title="B-h">
+<pre>&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;o&quot; ur_t1=&quot;B&quot; ur_t2=&quot;h&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p1=B ur_p3=&quot;h&quot; ur_note=&quot;Handshape Size&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_p1=B ur_p3=&quot;h&quot;  ur_note=&quot;Palm Facing&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+</pre>
+</div>
+<div created="20200228113943035" modified="20200228114509085" tags="L2" title="B-U">
+<pre>&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;U&quot; ur_t1=&quot;B&quot; ur_t2=&quot;U&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p1=B ur_p3=U ur_note=&quot;Handshape Size&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=B ur_p2=U  ur_note=&quot;Movement&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+</pre>
 </div>
 <div created="20200223043825137" modified="20200223043838783" tags="EXTLINK" title="ext Root doc">
 <pre>&lt;div style=&quot;float:right&quot;&gt;Back to [ext[Main Index|../index.html]]&lt;/div&gt;</pre>
@@ -10028,9 +10233,6 @@ Movement:
 &lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text=&quot;no&quot;/&gt;
 </pre>
 </div>
-<div created="20200226091205584" modified="20200226091207036" title="L1-S3">
-<pre></pre>
-</div>
 <div created="20200226131131898" modified="20200226134257517" tags="META" title="L1HeaderTemplate">
 <pre>\define Line1()$(ur_title)$
 \define Line2()[img width=50px [img $(ur_prefix)$$(ur_title)$.png]]
@@ -10061,93 +10263,6 @@ Movement:
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;&lt;L1ListE2&gt;&gt;
-&lt;/tr&gt;
-&lt;/table&gt;</pre>
-</div>
-<div created="20200226121245510" modified="20200226121330540" tags="META" title="L1Test_xU">
-<pre>\define L1Sub(l-prefix)&lt;$list filter=&quot;[title[-$l-prefix$$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
-\define L2Sub(l-prefix)&lt;$count filter=&quot;[title[-$l-prefix$$(l-suffix)$]!is[missing]]&quot; /&gt;
-\define L3Sub(l-prefix)&lt;$count filter=&quot;[tag[$l-prefix$]tag[$(l-suffix)$]]&quot; /&gt;
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;U i \&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;U i \&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;U i \&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L3Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;/table&gt;</pre>
-</div>
-<div created="20200226120618223" modified="20200226120956457" tags="META" title="L1Test-xK">
-<pre>\define L1Sub(l-prefix)&lt;$list filter=&quot;[title[-$l-prefix$$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
-\define L2Sub(l-prefix)&lt;$count filter=&quot;[title[-$l-prefix$$(l-suffix)$]!is[missing]]&quot; /&gt;
-\define L3Sub(l-prefix)&lt;$count filter=&quot;[tag[$l-prefix$]tag[$(l-suffix)$]]&quot; /&gt;
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;W C B K Y&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;W C B K Y&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;W C B K Y&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L3Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;/table&gt;</pre>
-</div>
-<div created="20200226112806342" modified="20200226120300909" tags="META" title="L1Test-xS">
-<pre>\define L1Sub(l-prefix)&lt;$list filter=&quot;[title[$l-prefix$-$(l-suffix)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
-\define L2Sub(l-prefix)&lt;$count filter=&quot;[title[$l-prefix$-$(l-suffix)$]!is[missing]]&quot; /&gt;
-\define L3Sub(l-prefix)&lt;$count filter=&quot;[tag[$l-prefix$]tag[$(l-suffix)$]]&quot; /&gt;
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;$list filter=&quot;S l 2 3 4&quot;&gt;
-&lt;$set name=&quot;next-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L3Sub&quot; l-prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
 &lt;/tr&gt;
 &lt;/table&gt;</pre>
 </div>
@@ -10294,20 +10409,20 @@ Palm Facing:
 &lt;/tr&gt;
 &lt;/table&gt;</pre>
 </div>
-<div created="20200226141644025" modified="20200226142949721" tags="META" title="L2TemplateListPrefix">
+<div created="20200226141644025" modified="20200228112542803" tags="META" title="L2TemplateP1List">
 <pre>\define L1List()
 &lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt; &lt;$macrocall $name=&quot;L1Sub&quot; ur_p1=&lt;&lt;currentTiddler&gt;&gt; ur_p2=$(ur_p2)$ /&gt;&lt;/td&gt;
 &lt;/$list&gt;
 \end
 \define L2List()
 &lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; ur_p1=&lt;&lt;currentTiddler&gt;&gt; ur_p2=$(ur_p2)$ /&gt;&lt;/td&gt;
 &lt;/$list&gt;
 \end
 \define L1Top()$(ur_note)$
-\define L1Sub(cur_prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$cur_prefix$-$(ur_title)$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
-\define L2Sub(cur_prefix)&lt;$list filter=&quot;[title[$cur_prefix$-$(ur_title)$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$cur_prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+\define L1Sub(ur_p1,ur_p2)&lt;$list filter=&quot;[title[$ur_p1$-$ur_p2$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(ur_p1,ur_p2)&lt;$list filter=&quot;[title[$ur_p1$-$ur_p2$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$ur_p1$.png]]&lt;/$link&gt;&lt;/$list&gt;
 
 &lt;&lt;L1Top&gt;&gt;:
 
@@ -10320,20 +10435,20 @@ Palm Facing:
 &lt;/tr&gt;
 &lt;/table&gt;</pre>
 </div>
-<div created="20200226142308488" modified="20200226142923363" tags="META" title="L2TemplateListSuffix">
+<div created="20200226142308488" modified="20200228112453150" tags="META" title="L2TemplateP2List">
 <pre>\define L1List()
 &lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L1Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt; &lt;$macrocall $name=&quot;L1Sub&quot; ur_p1=$(ur_p1)$ ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
 &lt;/$list&gt;
 \end
 \define L2List()
 &lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
-&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; cur_prefix=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; ur_p1=$(ur_p1)$ ur_p2=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
 &lt;/$list&gt;
 \end
 \define L1Top()$(ur_note)$
-\define L1Sub(cur_prefix)&lt;span style=&quot;display:block; text-align:center&quot;&gt;&lt;$list filter=&quot;[title[$(ur_title)$-$cur_prefix$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;&lt;/span&gt;
-\define L2Sub(cur_prefix)&lt;$list filter=&quot;[title[$(ur_title)$-$cur_prefix$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$cur_prefix$.png]]&lt;/$link&gt;&lt;/$list&gt;
+\define L1Sub(ur_p1,ur_p2)&lt;$list filter=&quot;[title[$ur_p1$-$ur_p2$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(ur_p1,ur_p2)&lt;$list filter=&quot;[title[$ur_p1$-$ur_p2$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$ur_p2$.png]]&lt;/$link&gt;&lt;/$list&gt;
 
 &lt;&lt;L1Top&gt;&gt;:
 
@@ -10346,49 +10461,89 @@ Palm Facing:
 &lt;/tr&gt;
 &lt;/table&gt;</pre>
 </div>
-<div created="20200226112955598" modified="20200226121412441" tags="" title="L2Test_Link">
-<pre>&lt;$list filter=&quot;W C B K Y&quot;&gt;
-&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-{{L1Test-xS}}
-&lt;/$set&gt;
+<div created="20200228113813696" modified="20200228113924427" tags="META" title="L3TemplateP1List">
+<pre>\define L1List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td style=&quot;text-align:center&quot;&gt; &lt;$macrocall $name=&quot;L1Sub&quot; ur_p1=&lt;&lt;currentTiddler&gt;&gt; ur_p2=&quot;$(ur_p2)$&quot; ur_p3=&quot;$(ur_p3)$&quot; /&gt;&lt;/td&gt;
 &lt;/$list&gt;
-
-&lt;$list filter=&quot;U i \&quot;&gt;
-&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-{{L1Test-xS}}
-&lt;/$set&gt;
+\end
+\define L2List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; ur_p1=&lt;&lt;currentTiddler&gt;&gt; ur_p2=&quot;$(ur_p2)$&quot; ur_p3=&quot;$(ur_p3)$&quot; /&gt;&lt;/td&gt;
 &lt;/$list&gt;
+\end
+\define L1Top()$(ur_note)$
+\define L1Sub(ur_p1,ur_p2,ur_p3)&lt;$list filter=&quot;[title[$ur_p1$$ur_p2$$ur_p3$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(ur_p1,ur_p2,ur_p3)&lt;$list filter=&quot;[title[$ur_p1$$ur_p2$$ur_p3$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$ur_p1$.png]]&lt;/$link&gt;&lt;/$list&gt;
 
-&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
-&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-{{L1Test-xS}}
-&lt;/$set&gt;
+&lt;&lt;L1Top&gt;&gt;:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;&lt;L1List&gt;&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;&lt;L2List&gt;&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200228112756340" modified="20200228112943225" tags="META" title="L3TemplateP2List">
+<pre>\define L1List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td style=&quot;text-align:center&quot;&gt; &lt;$macrocall $name=&quot;L1Sub&quot; ur_p1=&quot;$(ur_p1)$&quot; ur_p2=&lt;&lt;currentTiddler&gt;&gt; ur_p3=&quot;$(ur_p3)$&quot; /&gt;&lt;/td&gt;
 &lt;/$list&gt;
-
-
-
-&lt;$list filter=&quot;U i \&quot;&gt;
-&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-{{L1Test-xK}}
-&lt;/$set&gt;
+\end
+\define L2List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; ur_p1=&quot;$(ur_p1)$&quot; ur_p2=&lt;&lt;currentTiddler&gt;&gt; ur_p3=&quot;$(ur_p3)$&quot; /&gt;&lt;/td&gt;
 &lt;/$list&gt;
+\end
+\define L1Top()$(ur_note)$
+\define L1Sub(ur_p1,ur_p2,ur_p3)&lt;$list filter=&quot;[title[$ur_p1$$ur_p2$$ur_p3$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(ur_p1,ur_p2,ur_p3)&lt;$list filter=&quot;[title[$ur_p1$$ur_p2$$ur_p3$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$ur_p2$.png]]&lt;/$link&gt;&lt;/$list&gt;
 
-&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
-&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-{{L1Test-xK}}
-&lt;/$set&gt;
+&lt;&lt;L1Top&gt;&gt;:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;&lt;L1List&gt;&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;&lt;L2List&gt;&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20200228110027177" modified="20200228111244504" tags="META" title="L3TemplateP3List">
+<pre>\define L1List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td style=&quot;text-align:center&quot;&gt; &lt;$macrocall $name=&quot;L1Sub&quot; ur_p1=&quot;$(ur_p1)$&quot; ur_p2=&quot;$(ur_p2)$&quot; ur_p3=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/td&gt;
 &lt;/$list&gt;
-
-
-&lt;$list filter=&quot;&gt; h q o #&quot;&gt;
-&lt;$set name=&quot;l-suffix&quot; value=&lt;&lt;currentTiddler&gt;&gt; &gt;
-{{L1Test-xU}}
-&lt;/$set&gt;
+\end
+\define L2List()
+&lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
+&lt;td&gt; &lt;$macrocall $name=&quot;L2Sub&quot; ur_p1=&quot;$(ur_p1)$&quot; ur_p2=&quot;$(ur_p2)$&quot; ur_p3=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/td&gt;
 &lt;/$list&gt;
-</pre>
+\end
+\define L1Top()$(ur_note)$
+\define L1Sub(ur_p1,ur_p2,ur_p3)&lt;$list filter=&quot;[title[$ur_p1$$ur_p2$$ur_p3$]]&quot;&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt; &lt;/$list&gt;
+\define L2Sub(ur_p1,ur_p2,ur_p3)&lt;$list filter=&quot;[title[$ur_p1$$ur_p2$$ur_p3$]]&quot;&gt;&lt;$link&gt;[img width=50px [img $(ur_group)$$ur_p3$.png]]&lt;/$link&gt;&lt;/$list&gt;
+
+&lt;&lt;L1Top&gt;&gt;:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;&lt;L1List&gt;&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;&lt;L2List&gt;&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
 </div>
 <div created="20200203145715457" modified="20200203145738704" tags="META" title="Recent entries">
 <pre>&lt;&lt;timeline limit:30 format:&quot;YYYY-0MM-0DD&quot;&gt;&gt;</pre>
+</div>
+<div created="20200228105029243" modified="20200228105100718" tags="B 3 U h" title="soda pop">
+<pre></pre>
 </div>
 <div created="20200115085810255" modified="20200130192534318" tags="META $:/tags/ViewTemplate" title="template Home Button">
 <pre>&lt;div style=&quot;float:right&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
