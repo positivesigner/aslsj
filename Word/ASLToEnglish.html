@@ -231,6 +231,8 @@ Error message and password prompt
 
 <li>3-h</li>
 
+<li>3-i</li>
+
 <li>3-U</li>
 
 <li>3\&gt;</li>
@@ -243,7 +245,11 @@ Error message and password prompt
 
 <li>3Bh</li>
 
+<li>3Bi</li>
+
 <li>3BU</li>
+
+<li>3ih</li>
 
 <li>3Uh</li>
 
@@ -259,9 +265,13 @@ Error message and password prompt
 
 <li>B-h</li>
 
+<li>B-i</li>
+
 <li>B-U</li>
 
 <li>B\&gt;</li>
+
+<li>Bih</li>
 
 <li>BUh</li>
 
@@ -271,11 +281,15 @@ Error message and password prompt
 
 <li>ext Root doc</li>
 
+<li>grease</li>
+
 <li>h</li>
 
 <li>HideHeader</li>
 
 <li>i</li>
+
+<li>i-h</li>
 
 <li>img KB.png</li>
 
@@ -320,6 +334,8 @@ Error message and password prompt
 <li>keyboard action SaveAllChanges</li>
 
 <li>l</li>
+
+<li>L1</li>
 
 <li>L1HeaderTemplate</li>
 
@@ -377,89 +393,111 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200226092210381" modified="20200301020636329" tags="L1" title="\">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;U&quot;&gt;
+<div created="20200226092210381" modified="20200301060509949" tags="L1" title="\">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Handshape Size&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links \&gt;&gt;</pre>
+&lt;&lt;main
+&quot;\&quot;
+U
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200301024116381" modified="20200301024138318" tags="L2" title="\-&gt;">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;U&quot; ur_p2=&quot;o&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200301024116381" modified="20200301055659877" tags="L2" title="\-&gt;">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Handshape Size&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;Movement&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP1List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;\&quot; &quot;&gt;&quot;&gt;&gt;</pre>
+&lt;&lt;main
+&quot;\&quot; &quot;&gt;&quot;
+U o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200301021326434" modified="20200301021331688" tags="L1" title="#">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=&quot;$ur_key$&quot; ur_prefix=&quot;o&quot;&gt;
+<div created="20200301021326434" modified="20200301061228436" tags="L1" title="#">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links &quot;#&quot;&gt;&gt;</pre>
+&lt;&lt;main
+&quot;#&quot;
+o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200226092551646" modified="20200301021159279" tags="L1" title="&gt;">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=&quot;$ur_key$&quot; ur_prefix=&quot;o&quot;&gt;
+<div created="20200226092551646" modified="20200301060610878" tags="L1" title="&gt;">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links &quot;&gt;&quot;&gt;&gt;</pre>
+&lt;&lt;main
+&quot;&gt;&quot;
+o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
 </div>
 <div bag="default" created="20151010151732122" creator="Tobias Beer" modified="20151010151750739" module-type="startup" revision="0" title="$:/.tb/modules/startup/hide-sidebar.js" type="application/javascript">
 <pre>/*\
@@ -9729,15 +9767,11 @@ exports.startup = function() {
 <div created="20190925014431388" modified="20190925051250712" title="$:/DefaultTiddlers">
 <pre>[all[tiddlers]tag[INDEX]sort[title]]</pre>
 </div>
-<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
-<pre>{
-    &quot;tiddlers&quot;: {
-        &quot;Untitled&quot;: {
-            &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot; tc-reveal\&quot; style=\&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\&quot;&gt;&lt;div class=\&quot;tc-subtitle\&quot; style=\&quot;box-sizing: border-box; font-size: 0.9em; color: rgb(192, 192, 192); font-weight: 300;\&quot;&gt;&lt;br class=\&quot;Apple-interchange-newline\&quot;&gt;29th February 2020 at 9:06pm&lt;/div&gt;&lt;/div&gt;&lt;div class=\&quot; tc-reveal\&quot; style=\&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\&quot;&gt;&lt;div class=\&quot;tc-tags-wrapper\&quot; style=\&quot;box-sizing: border-box; margin: 4px 0px 14px;\&quot;&gt;&lt;span class=\&quot;tc-tag-list-item\&quot; style=\&quot;box-sizing: border-box; position: relative; display: inline-block; margin-right: 7px;\&quot;&gt;&lt;span class=\&quot;tc-tag-label tc-btn-invisible\&quot; draggable=\&quot;true\&quot; style=\&quot;box-sizing: border-box; padding: 0.16em 0.7em; margin: 0px; background: none rgb(238, 204, 102); border: none; cursor: pointer; color: rgb(51, 51, 51); display: inline-block; font-size: 0.9em; font-weight: 400; line-height: 1.2em; white-space: nowrap; vertical-align: baseline; border-radius: 1em; fill: rgb(51, 51, 51);\&quot;&gt;L3&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=\&quot;tc-tiddler-body tc-reveal\&quot; style=\&quot;box-sizing: border-box; clear: both; font-size: 15px; line-height: 22px; color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\&quot;&gt;&lt;p style=\&quot;box-sizing: border-box;\&quot;&gt;&lt;table style=\&quot;box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; border: 1px solid rgb(221, 221, 221); width: auto; max-width: 100%; caption-side: bottom; margin-top: 1em; margin-bottom: 1em;\&quot;&gt;&lt;tr style=\&quot;box-sizing: border-box;\&quot;&gt;&lt;td style=\&quot;box-sizing: border-box; padding: 0px 7px; border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221); text-align: center;\&quot;&gt;&lt;a class=\&quot;tc-tiddlylink tc-tiddlylink-resolves\&quot; href=\&quot;#3\&quot; style=\&quot;box-sizing: border-box; background: transparent; text-decoration: none; font-weight: 500; color: rgb(87, 120, 216); user-select: inherit;\&quot;&gt;3&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;box-sizing: border-box; padding: 0px 7px; border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221); text-align: center;\&quot;&gt;&lt;a class=\&quot;tc-tiddlylink tc-tiddlylink-resolves\&quot; href=\&quot;#B\&quot; style=\&quot;box-sizing: border-box; background: transparent; text-decoration: none; font-weight: 500; color: rgb(87, 120, 216); user-select: inherit;\&quot;&gt;B&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;box-sizing: border-box; padding: 0px 7px; border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221); text-align: center;\&quot;&gt;&lt;a class=\&quot;tc-tiddlylink tc-tiddlylink-resolves\&quot; href=\&quot;#%5C\&quot; style=\&quot;box-sizing: border-box; background: transparent; text-decoration: none; font-weight: 500; color: rgb(87, 120, 216); user-select: inherit;\&quot;&gt;\\&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;box-sizing: border-box;\&quot;&gt;&lt;td style=\&quot;box-sizing: border-box; padding: 0px 7px; border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221);\&quot;&gt;&lt;a class=\&quot;tc-tiddlylink tc-tiddlylink-resolves\&quot; href=\&quot;#3\&quot; style=\&quot;box-sizing: border-box; background: transparent; text-decoration: none; font-weight: 500; color: rgb(87, 120, 216); user-select: inherit;\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,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\&quot; width=\&quot;50px\&quot; style=\&quot;box-sizing: border-box; border: 0px; max-width: 100%;\&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;box-sizing: border-box; padding: 0px 7px; border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221);\&quot;&gt;&lt;a class=\&quot;tc-tiddlylink tc-tiddlylink-resolves\&quot; href=\&quot;#B\&quot; style=\&quot;box-sizing: border-box; background: transparent; text-decoration: none; font-weight: 500; color: rgb(87, 120, 216); user-select: inherit;\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,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\&quot; width=\&quot;50px\&quot; style=\&quot;box-sizing: border-box; border: 0px; max-width: 100%;\&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;box-sizing: border-box; padding: 0px 7px; border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221);\&quot;&gt;&lt;a class=\&quot;tc-tiddlylink tc-tiddlylink-resolves\&quot; href=\&quot;#%5C\&quot; style=\&quot;box-sizing: border-box; background: transparent; text-decoration: none; font-weight: 500; color: rgb(87, 120, 216); user-select: inherit;\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,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\&quot; width=\&quot;50px\&quot; style=\&quot;box-sizing: border-box; border: 0px; max-width: 100%;\&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/p&gt;&lt;p style=\&quot;box-sizing: border-box;\&quot;&gt;Movement:&lt;ul style=\&quot;box-sizing: border-box;\&quot;&gt;&lt;li style=\&quot;box-sizing: border-box;\&quot;&gt;3B&amp;gt;-Jesus&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;/div&gt;&quot;
-        }
-    }
-}</pre>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[Untitled]]
+# [[img Ui.png]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9757,8 +9791,8 @@ exports.startup = function() {
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200301052430148" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20190925044925672" modified="20200301062441143" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
@@ -9778,7 +9812,7 @@ exports.startup = function() {
 <div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
-<div created="20200301020757067" list="3B\" modified="20200301052738755" title="$:/StoryList">
+<div list="[[ASL to English]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
@@ -9951,134 +9985,194 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20200301015716841" modified="20200301015728595" tags="L1" title="2">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;S&quot;&gt;
+<div created="20200301015716841" modified="20200301060802500" tags="L1" title="2">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot; ur_p1=$ur_key$&gt;
-{{L2TemplateU2List}}
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links 2&gt;&gt;</pre>
+&lt;&lt;main
+2
+S
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200226084409125" modified="20200301015655454" tags="L1" title="3">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;S&quot;&gt;
+<div created="20200226084409125" modified="20200301060316547" tags="L1" title="3">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot; ur_p1=$ur_key$&gt;
-{{L2TemplateU2List}}
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links 3&gt;&gt;</pre>
+&lt;&lt;main
+3
+S
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200228113134512" modified="20200301025131497" tags="L2" title="3-\">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;U&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200228113134512" modified="20200301054726747" tags="L2" title="3-\">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Palm Facing&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;Movement&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP3List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;3&quot; &quot;\&quot;&gt;&gt;</pre>
+&lt;&lt;main
+3 &quot;\&quot;
+S U
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200228113310350" modified="20200301025400836" tags="L2" title="3-&gt;">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;o&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200228113310350" modified="20200301054628671" tags="L2" title="3-&gt;">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Location&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;Palm Facing&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP2List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;3&quot; &quot;&gt;&quot;&gt;&gt;</pre>
+&lt;&lt;main
+3 &quot;&gt;&quot;
+S o
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;
+</pre>
 </div>
-<div created="20200226092835904" modified="20200301025527664" tags="L2" title="3-B">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;K&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200226092835904" modified="20200301054900554" tags="L2" title="3-B">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP3List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP3List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;3&quot; &quot;B&quot;&gt;&gt;</pre>
+&lt;&lt;main
+3 B
+S K
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200228113620226" modified="20200301025630734" tags="L2" title="3-h">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;U&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200228113620226" modified="20200301055005290" tags="L2" title="3-h">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Location&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;Movement&quot;&gt;
-{{L3TemplateP3List}}
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP2List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;3&quot; &quot;h&quot;&gt;&gt;</pre>
+&lt;&lt;main
+3 h
+S o
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200228112635983" modified="20200301025757086" tags="L2" title="3-U">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;S&quot; ur_p2=&quot;U&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200301061531579" modified="20200301061541001" tags="L2" title="3-i">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Location&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;Movement&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP3List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;3&quot; &quot;U&quot;&gt;&gt;</pre>
+&lt;&lt;main
+3 &quot;i&quot;
+S U
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200228112635983" modified="20200301055048718" tags="L2" title="3-U">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 &quot;U&quot;
+S U
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20200301052745507" modified="20200301052757035" tags="L3" title="3\&gt;">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
@@ -10151,6 +10245,23 @@ S K o U
 &quot;Palm Facing&quot; 
 &quot;U i \&quot;&gt;&gt;</pre>
 </div>
+<div created="20200301061708641" modified="20200301061721903" tags="L3" title="3Bi">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 B &quot;i&quot;
+S K U o
+&quot;Movement&quot; 
+&quot;&gt; h q o #&quot;&gt;&gt;</pre>
+</div>
 <div created="20200301052447785" modified="20200301052509699" tags="L3" title="3BU">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
@@ -10167,6 +10278,23 @@ S K o U
 S K U o
 &quot;Movement&quot; 
 &quot;&gt; h q o #&quot;&gt;&gt;</pre>
+</div>
+<div created="20200301061739319" modified="20200301061756903" tags="L3" title="3ih">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 &quot;i&quot; &quot;h&quot;
+S U o K
+&quot;Location&quot; 
+&quot;W C B K Y&quot;&gt;&gt;</pre>
 </div>
 <div created="20200301052647682" modified="20200301052726809" tags="L3" title="3Uh">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
@@ -10185,27 +10313,33 @@ S U o K
 &quot;Location&quot; 
 &quot;W C B K Y&quot;&gt;&gt;</pre>
 </div>
-<div created="20200301015700425" modified="20200301015710500" tags="L1" title="4">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;S&quot;&gt;
+<div created="20200301015700425" modified="20200301060748163" tags="L1" title="4">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot; ur_p1=$ur_key$&gt;
-{{L2TemplateU2List}}
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links 4&gt;&gt;</pre>
+&lt;&lt;main
+4
+S
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20190925014523514" modified="20200226141358186" tags="INDEX" title="ASL to English">
 <pre>{{ext Root doc}}
@@ -10228,95 +10362,143 @@ S U o K
 
 &lt;&lt;list-links filter:&quot;[tag[DOC]sort[title]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200226094331723" modified="20200301020051051" tags="L1" title="B">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;K&quot;&gt;
+<div created="20200226094331723" modified="20200301060645718" tags="L1" title="B">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;  ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links B&gt;&gt;</pre>
+&lt;&lt;main
+&quot;B&quot;
+K
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200228114339267" modified="20200301022132583" tags="L2" title="B-\">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;U&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200228114339267" modified="20200301055230181" tags="L2" title="B-\">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Handshape Size&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;Movement&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP3List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;B&quot; &quot;\&quot;&gt;&gt;</pre>
+&lt;&lt;main
+B &quot;\&quot;
+K U
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200228114526692" modified="20200301021845287" tags="L2" title="B-&gt;">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;o&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200228114526692" modified="20200301055351562" tags="L2" title="B-&gt;">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Handshape Size&quot;&gt;
-{{L3TemplateP2List}}
-&lt;/$vars&gt;
-
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;Palm Facing&quot;&gt;
-{{L3TemplateP2List}}
-&lt;/$vars&gt;
-\end
-
-&lt;&lt;l3_links &quot;B&quot; &quot;&gt;&quot;&gt;&gt;</pre>
-</div>
-<div created="20200228114701777" modified="20200301021658523" tags="L2" title="B-h">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;o&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
-{{L2HeaderTemplate}}
-&lt;/$vars&gt;
-
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Handshape Size&quot;&gt;
-{{L3TemplateP2List}}
-&lt;/$vars&gt;
-
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;Palm Facing&quot;&gt;
-{{L3TemplateP2List}}
-&lt;/$vars&gt;
-\end
-
-&lt;&lt;l3_links &quot;B&quot; &quot;h&quot;&gt;&gt;</pre>
-</div>
-<div created="20200228113943035" modified="20200301022639051" tags="L2" title="B-U">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;K&quot; ur_p2=&quot;U&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
-{{L2HeaderTemplate}}
-&lt;/$vars&gt;
-
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Handshape Size&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;Movement&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+B &quot;&gt;&quot;
+K o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200228114701777" modified="20200301055420393" tags="L2" title="B-h">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+B &quot;h&quot;
+K o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200301061610769" modified="20200301061618633" tags="L2" title="B-i">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP3List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;B&quot; &quot;U&quot;&gt;&gt;</pre>
+&lt;&lt;main
+B &quot;i&quot;
+K U
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200228113943035" modified="20200301055448834" tags="L2" title="B-U">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+B &quot;U&quot;
+K U
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20200301052941497" modified="20200301052953964" tags="L3" title="B\&gt;">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
@@ -10331,6 +10513,23 @@ S U o K
 
 &lt;&lt;main
 B &quot;\&quot; &quot;&gt;&quot;
+K U o S
+&quot;Handshape Size&quot; 
+&quot;S l 2 3 4&quot;&gt;&gt;</pre>
+</div>
+<div created="20200301061810413" modified="20200301061818771" tags="L3" title="Bih">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+B i h
 K U o S
 &quot;Handshape Size&quot; 
 &quot;S l 2 3 4&quot;&gt;&gt;</pre>
@@ -10352,27 +10551,33 @@ K U o S
 &quot;Handshape Size&quot; 
 &quot;S l 2 3 4&quot;&gt;&gt;</pre>
 </div>
-<div created="20200301020139800" modified="20200301020154345" tags="L1" title="C">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;K&quot;&gt;
+<div created="20200301020139800" modified="20200301060920764" tags="L1" title="C">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;  ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links C&gt;&gt;</pre>
+&lt;&lt;main
+&quot;C&quot;
+K
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 <div modified="20200301025132214" title="Draft of '3-\'">
 <pre></pre>
@@ -10380,53 +10585,89 @@ K U o S
 <div created="20200223043825137" modified="20200223043838783" tags="EXTLINK" title="ext Root doc">
 <pre>&lt;div style=&quot;float:right&quot;&gt;Back to [ext[Main Index|../index.html]]&lt;/div&gt;</pre>
 </div>
-<div created="20200301021218458" modified="20200301021223616" tags="L1" title="h">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=&quot;$ur_key$&quot; ur_prefix=&quot;o&quot;&gt;
+<div created="20200301061320238" modified="20200301061351793" tags="3 B i h" title="grease">
+<pre></pre>
+</div>
+<div created="20200301021218458" modified="20200301061149064" tags="L1" title="h">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links &quot;h&quot;&gt;&gt;</pre>
+&lt;&lt;main
+&quot;h&quot;
+o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20190925053827947" modified="20200111081344048" tags="EXTLINK" title="HideHeader">
 <pre>[ext[Hiding The Sidebar On Startup|TiddlyWiki Plugin Hiding The Sidebar On Startup.html]]</pre>
 </div>
-<div created="20200301020710240" modified="20200301020715865" tags="L1" title="i">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;U&quot;&gt;
+<div created="20200301020710240" modified="20200301061103367" tags="L1" title="i">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Handshape Size&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
-
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links i&gt;&gt;</pre>
+&lt;&lt;main
+&quot;i&quot;
+U
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200301061639143" modified="20200301061651990" tags="L2" title="i-h">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+&quot;i&quot; &quot;h&quot;
+U o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20200226082040329" modified="20200226082042006" tags="META" title="img KB.png" type="image/png">
 <pre>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</pre>
@@ -10476,8 +10717,8 @@ K U o S
 <div created="20200226082323902" modified="20200226124524984" tags="META" title="img U\.png" type="image/png">
 <pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAp0SURBVHhe7Zx5bExbHMfPQ59WLCFNLaUl2ipt0SaNpXZBkBL8QQWxhNA0iCCWkliCEqQiSJsKIkgVtUSkSomUqDZK29jFEmppLUFRS9/vnfOdyZl7Z8bcO3c6MzKfP977nd9y9fzm3nN/Z5n5p66ujvlwjAb4vw8H8CVLA75kacCXLA34kqUBX7I04EuWBvQn68SJE/+YePLkCbR/N1SU6iA7OxvxEt+/f4f5L0VPBf/169cmTZqgYYmOq3kReh7D3bt3Q1LRqFEjSH8jeu4sGqQgMdanT59r166hwXn27FmHDh3Q+Ltw9m24evXqwsJCNDjbtm2D9NehJ1lz5syBxFh5eXnfvn2nT5+ONmOjRo2C9Pfx/yivkdOnTyOYsYSEBKEsKipKTU09efKkaJIAD/5CEEpvR8+Y9fTp044dO6Jh7Q0oD2pmfv/+bVXvReh5DBXjtyJZtjLSoEGD2NhYNLwTPcmibkPiXLp0CRJjlZWVkKxRWlp69+5dNLwQnW/D8PBwSIw9ePAAEmMDBgyAZIOuXbtSoY+Gt6EtWfSICT5+/AgVrx4gMRYYGAiJsS5duvw/KqpGtIiICEjehoZkyd1+8+YNJMZev34NibH27dtDYmzgwIFCoMD+/fsLmaCqNS8vDw3vgn/2joIYFTDX1a1ZswYqDrScf//9F1o+K6qpqYHBe9A5ZhGhoaGQGDt16pQQJk+eLAQ1z58/h8TYz58/5QfWW9CWrE6dOkFiLDo6GhJj+/fvF0JYWJgQBPRpQGIsKCjo0KFDaDBGd1ZGRgYa3oK4wRxkypQpCGOsX79+kDi1tbXCB23OjRs3hNLMokWLYGOsYcOGVKnC4A1oS9bFixfRUY48DI0cOVL4oM1Zv369UJqhGwo2TnJyMgzegLZkEWlpaegoY/7+/pA4VE+QQ3x8PNqMrVixQkTJrFq1CmZOZmYmDB6P5mTR46YYmMzQqEQOO3fuRJsjohR0794dZs7jx49h8Gw0J4soLi728/NDRy3JysqSSzBKCmIsobchPEzA4Nno/CsPHz5sK19kNb80AwIC3r9/L0IUXLlyRfiYgcGD0fknon/WKCwsnDFjBhp84RQxKmbOnAknTm5uLv03KSmprKwMHh6GnmS1aNFCdM8WGzZsgMRYTEwMwlRQ3QAnFceOHYOTJ6Gngpdn0VaRX4h0m9haZqAJua3dWXGXeRp6kjV27FhINhg2bBgkTs+ePSGpoDkTTaopa2ibUGs8AtxhWpDvLHokqWJAQ0KhfPToEYKtsXTpUvhJwOZJ6PybJk2ahD4xtnjxYkh2QaQ1aPCSLyiIjIyE2WPQmayHDx/SzE70KioqSi7rzfTt2xcShwp3BFvj27dvISEhcDWxcOFCmD0D/Xf7iBEj0CfGjh8/3rZtWzRs8+rVKwRbo6CgQN40Ejx48ABmD0B/so4ePYoOMdajR48zZ86gYZu4uDgE26a6uhreJmyVtfWP/mTRQCNvbdGcWfHcWaW0tBTxtpk2bRq8TcDgbpz6O86dO4fecMaMGQOJIy/gyCDYLnJZSzRu3BgGt+Lsh9arVy90iOPIzbVp0yYE20WxO3n79m0Y3IezyaICSi6pxo0bZz6iZaewRLBdXr58CW8TP378gM1NOJssQt5k9ff3p5kwGrapqKhAsF3mz5+PABMwuAn9uztmwsLCJkyYIGQqlxyZqchnbOyQnp7epk0bNDhTp06F5BaQNOe4d++euUalZCUmJgpZgXkYGjJkCCL/hHoSbmfNx9UYdmPPmjULveETQ6snJc3HdjVNZWpra0WUGSrxYKtfDEtWTU2NYmXdDvHx8SLq6dOnMTExQrlnzx6hVCOfEDDz5csXmOsLI4dMehibNm2KrtgmICDg/PnzihrNTGFhIS5nydWrV+EhYd6srB8Mfr9s3LgR/bANzQEh2UDsEqnZtWsXPCTq85sKBieLoJoT/XAOXM6S69evwyzhyBTKEIxPFpGVlYV+OAcuZwmVpjBLpKWlwexKXJIswupGrHr3bPv27Qioq1Ovx4eEhMBmCc3hg4OD4WQiOjoaZpfhqmRRdYpOSERFRTVv3hwNDr3mEMBRb77m5eXBpgIelsDmGlx49Q8fPqAHJqgoVbwEyQfeJn79+gWbibdv38KmYvPmzXAysWDBAthcgGs/CvW3LcwTI8GLFy/gKlFSUgIzZ/DgwTBYg2by8DMhzqe4Atcma+vWreiBCbq52rVrh4btQnTHjh3w4IwcOdLO1zSqqqrgZwIGo3Ftsj59+tS6dWv0wISsoVkRXFWsW7cOTpzY2Fh6Zukpzs/Ph4eEol559+4dDIbi2mQR6enp6IE1aNYNP2so9sfMC40rV66Eh4QwCVJSUqA1FJcni24HxZk3Bfa3fNRDONGwYcPq6mp4mLh16xbM3IFexzAYh8uTRcinZdRfwfjjfKVPnz5wlaB5KMwS8gaKK8p6Axb//sjs2bMh8U0zSCbGjx9va1J98+ZNSq7im7ICq7sh8+bNg+Tw+qI2kDRXQqVmy5YtxT9HibP6ZBH79u1DAGfo0KEwWOPu3bvwk1B8iwpa46iPZBEHDx6kfEVERJSXl9fU1Mjn6dVYXTtWbPbQ3AiXtgRmE9AaRD0li6D7i6pzIasrSfvQ/bh37140ODt37hSXUgCzCWgNov6SpUA9eNkiNzdXhJiX+QVbtmxRb44pThMa+w0htyUrOTkZHeKHIiFZQjUHlbUIqKtT7PQQvXv3Vi8uw8ahKQS0RuC2ZOXk5KBDjK1duxZafg564sSJo0ePptENKhN37txBgETnzp0VE0wYTEBrBG5LljxsOb4zVlRURPVBZGQkIjnh4eFyZTt37lwYONAagduSRZhPPdOkR+vPGdCMR8QKBg0aBIPqhD20RuDOZMlHi7SuC9NAnpmZiWBOdnY2bJZPIlRG4M5kyb/LQkMPtFpQrEwcOXJE6NHmCI0huDNZRFxcHPr0pxPNVqHKQHEStaCggPRocISnIdTH3NAO8pF6qpsgOUxAQMCBAwfQ4NAEG5IrQNLcREVFhfnUjZ+f38OHD2HQwvDhw8UVunTp8vnzZ9KIpsDAutTNySJSUlLQLcZSU1Oh1QgNf5cvXzYX9LgcR73ypRv3/xD1u3fvgoKCxKZOYGDg/fv3zUsUupHPiNF7U246g5vHLKJVq1bm56iqqorKdyEbRXFxMSTnETeYeykrK5M/fBrpYdBLs2bNcC1Dv9biEckili1bhs5xHDx0aoslS5bgQhxoncZTkkUji7w8HxwcrNjZ18SXL19wIc7Zs2dhcA5PSRZBJZLi5EhOTs6FCxf2799fWVkJJ4ehMgJX4T9SCK1zeFCyiPz8fPTPktDQUK2H4Okli2D+qzDQOodnJYtYvnw5umjJ8+fP4eEw8pbH1atXoXUCj0sWoVhOIBITE2HTgry+mJGRAa0TeGKyCMWJEn0HR2traxMSEiicSjlbu0GacH8Fb4t9+/bRJCYpKWnIkCFQaYdeiyUlJd26dTPk57o8N1keiPunO16EL1ka8CVLA75kacCXLA34kqUBX7I04EuWBnzJ0oAvWRrwJcthGPsPqkjC85khfG0AAAAASUVORK5CYII=</pre>
 </div>
-<div created="20200226084006881" modified="20200226084009180" tags="META" title="img Ui.png" type="image/png">
-<pre>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</pre>
+<div title="img Ui.png" type="image/png">
+<pre>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</pre>
 </div>
 <div created="20200226082307409" modified="20200226082314598" tags="META" title="img UU.png" type="image/png">
 <pre>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA4oSURBVHhe7Z15bFVFFMYHUHBBVAS0gAtiVXAngIjYqLhLXNG4NA3GiHHDuCFxaYgraqIkskmICpIgqGBA3HEJSFjUoqIIKmBVKBZBKUpFSv2853uT8+YuvffR19ua/v7hzJm5r/eeN3PmnJm5jxa1tbWmmXi05L/NxKCpGqusrKxFixaDBg368ssvqco/TXIYVlRUFBQUiNyyZcuqqqq99tpLinmlSfasBx98kJIxO3funDhxIgv5Bj2raTF//nz0Jt69R58+fViXZxrdMDzssMN+/PFHCPvtt19lZeVuu+0megEDsHfv3r/88gvLGRYvXty3b18WjFm7du2oUaP++ecfyD///PPAgQOHDx8uVbuE2KyRcMUVV/C2PI499tjVq1ezzuPCCy9kXTZPPfUUW9TWPvfcc9RmA9uxRa40ImO9//77fCxF165dv/jiC2nw1ltvUesxe/ZsSsbsv//+0mbMmDFU+bj66qulTc40FmOtW7fugAMO4GNl07lz5z/++GPLli0YoVR5VFdXU/JYs2ZNeXn57rvvznIQ3377Lf9eTjSK2RD3cdNNN/32228sZwM7Tp06FQMNnogqjzZt2lDyeOaZZ0aPHi1+ShgyZAisw4LHO++8Qyk3xGbpEjF2hFNOOWXfffdlweP000/HhaWlpSwbc9pppznRFop///333LlzWc5clTPpG2vDhg05hJSXXXaZXG6j0z322EMEDfpaTU1Nly5dpNi2bdsdO3bIhTmQ/jC88847//rrL5Fbt24tgnD77bdT8nHwwQeLcOaZZ4rguDBhypQpCMr69+8vxa1bt8L9iZwDKRsLM920adNERtfYvn27yIiM8E2WlJQ48afl8MMPF+GYY44RQYMYTQR8Plye/TIQtWHeFDkHUjbWLbfcgnxF5EsvvVQEICbo1asXPJFoHA466CARHF8mnH322SJgDH7wwQeIS6XYoUMHpN8i50Caxvr4448/+eQTkTGsNm7cKDJABiOCHW7A9hdgn/mII44QQfP9999TMmbFihXWWIceeqgIOSKuq+FBh7JDCUyePBlfOwvGYBbbvHkz3JkehkcddRQl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</pre>
@@ -10485,54 +10726,69 @@ K U o S
 <div color="#8080c0" created="20190925051857974" modified="20190925051931336" title="INDEX">
 <pre></pre>
 </div>
-<div created="20200301020200150" modified="20200301020213175" tags="L1" title="K">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;K&quot;&gt;
+<div created="20200301020200150" modified="20200301060943702" tags="L1" title="K">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;  ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links K&gt;&gt;</pre>
+&lt;&lt;main
+&quot;K&quot;
+K
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20200223012728498" key="((save-all-changes))" modified="20200223013015060" tags="META $:/tags/KeyboardShortcut" title="keyboard action SaveAllChanges">
 <pre>&lt;$action-sendmessage $message=&quot;tm-save-wiki&quot;/&gt;
 &lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text=&quot;no&quot;/&gt;
 </pre>
 </div>
-<div created="20200301015733108" modified="20200301015739958" tags="L1" title="l">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;S&quot;&gt;
+<div created="20200301015733108" modified="20200301060818346" tags="L1" title="l">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot; ur_p1=$ur_key$&gt;
-{{L2TemplateU2List}}
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links l&gt;&gt;</pre>
+&lt;&lt;main
+l
+S
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200301061028231" list="\ 3 &gt; B 4 2 l S W C K Y U i h q o #" modified="20200301061028231" title="L1">
+<pre></pre>
 </div>
 <div created="20200226131131898" modified="20200226134257517" tags="META" title="L1HeaderTemplate">
 <pre>\define Line1()$(ur_title)$
@@ -10724,7 +10980,7 @@ K U o S
 &lt;/tr&gt;
 &lt;/table&gt;</pre>
 </div>
-<div created="20200228112756340" modified="20200301024628658" tags="META" title="L3TemplateP2List">
+<div created="20200228112756340" modified="20200301054549622" tags="META" title="L3TemplateP2List">
 <pre>\define L1List()
 &lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
 &lt;td style=&quot;text-align:center&quot;&gt; &lt;$macrocall $name=&quot;L1Sub&quot; ur_p1=&quot;$(ur_p1)$&quot; ur_p2=&lt;&lt;currentTiddler&gt;&gt; ur_p3=&quot;$(ur_p3)$&quot; /&gt;&lt;/td&gt;
@@ -10754,7 +11010,7 @@ K U o S
 &lt;/tr&gt;
 &lt;/table&gt;</pre>
 </div>
-<div created="20200228110027177" modified="20200301024722452" tags="META" title="L3TemplateP3List">
+<div created="20200228110027177" modified="20200301054228315" tags="META" title="L3TemplateP3List">
 <pre>\define L1List()
 &lt;$list filter=&quot;$(ur_filter)$&quot;&gt;
 &lt;td style=&quot;text-align:center&quot;&gt; &lt;$macrocall $name=&quot;L1Sub&quot; ur_p1=&quot;$(ur_p1)$&quot; ur_p2=&quot;$(ur_p2)$&quot; ur_p3=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/td&gt;
@@ -10810,74 +11066,92 @@ $(ur_section_title)$:
 &lt;&lt;main&gt;&gt;
 </pre>
 </div>
-<div created="20200301021310796" modified="20200301021318660" tags="L1" title="o">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=&quot;$ur_key$&quot; ur_prefix=&quot;o&quot;&gt;
+<div created="20200301021310796" modified="20200301061213743" tags="L1" title="o">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links &quot;o&quot;&gt;&gt;</pre>
+&lt;&lt;main
+&quot;o&quot;
+o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200301021243132" modified="20200301021255103" tags="L1" title="q">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=&quot;$ur_key$&quot; ur_prefix=&quot;o&quot;&gt;
+<div created="20200301021243132" modified="20200301061200685" tags="L1" title="q">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p2=&quot;$ur_key$&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links &quot;q&quot;&gt;&gt;</pre>
+&lt;&lt;main
+&quot;q&quot;
+o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20200203145715457" modified="20200203145738704" tags="META" title="Recent entries">
 <pre>&lt;&lt;timeline limit:30 format:&quot;YYYY-0MM-0DD&quot;&gt;&gt;</pre>
 </div>
-<div created="20200301015743931" modified="20200301015750439" tags="L1" title="S">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;S&quot;&gt;
+<div created="20200301015743931" modified="20200301060834591" tags="L1" title="S">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot; ur_p1=$ur_key$&gt;
-{{L2TemplateU2List}}
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
+{{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links S&gt;&gt;</pre>
+&lt;&lt;main
+S
+S
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20200228105029243" modified="20200228105100718" tags="B 3 U h" title="soda pop">
 <pre></pre>
@@ -10997,67 +11271,83 @@ There is a sidebar with settings. It has a minimum width, so when your browser w
 
 {{HideHeader}}</pre>
 </div>
-<div created="20200301020656281" modified="20200301023550079" tags="L1" title="U">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;U&quot;&gt;
+<div created="20200301020656281" modified="20200301061049141" tags="L1" title="U">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_note=&quot;Location&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
-
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links U&gt;&gt;</pre>
+&lt;&lt;main
+&quot;U&quot;
+U
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200301023740627" modified="20200301024018581" tags="L2" title="U-h">
-<pre>\define l3_links(ur_t1,ur_t2)
-&lt;$vars ur_p1=&quot;U&quot; ur_p2=&quot;o&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+<div created="20200301023740627" modified="20200301055635039" tags="L2" title="U-h">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;Handshape Size&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
 {{L3TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;W C B K Y&quot; ur_group=&quot;K&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;Movement&quot;&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
 {{L3TemplateP1List}}
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l3_links &quot;U&quot; &quot;h&quot;&gt;&gt;</pre>
+&lt;&lt;main
+U &quot;h&quot;
+U o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&gt;&gt;</pre>
 </div>
-<div created="20200301020107351" modified="20200301020130586" tags="L1" title="W">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;K&quot;&gt;
+<div created="20200301020107351" modified="20200301060906299" tags="L1" title="W">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;  ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links W&gt;&gt;</pre>
+&lt;&lt;main
+&quot;W&quot;
+K
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 <div created="20190925051442835" modified="20200115085918302" tags="META" title="What is this Wiki Stuff?">
 <pre>{{snip Home Button}}
@@ -11121,27 +11411,33 @@ Test your Tiddler filter using a drop-down list:
 * Filter categories found here: https://tiddlywiki.com/static/is%2520Operator.html
 </pre>
 </div>
-<div created="20200301020217542" modified="20200301020231976" tags="L1" title="Y">
-<pre>\define l2_links(ur_key)
-&lt;$vars ur_title=$ur_key$ ur_prefix=&quot;K&quot;&gt;
+<div created="20200301020217542" modified="20200301060957660" tags="L1" title="Y">
+<pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
+&lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
 {{L1HeaderTemplate}}
 
-&lt;$vars ur_filter=&quot;S l 2 3 4&quot; ur_group=&quot;S&quot; ur_note=&quot;Handshape Size&quot; ur_p2=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_note=&quot;$ur_section_a$&quot; ur_p2=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP1List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;U i \&quot; ur_group=&quot;U&quot; ur_note=&quot;Palm Facing&quot; ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_note=&quot;$ur_section_b$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
-&lt;$vars ur_filter=&quot;&gt; h q o #&quot; ur_group=&quot;o&quot; ur_note=&quot;Movement&quot;  ur_p1=$ur_key$&gt;
+&lt;$vars ur_filter=&quot;$ur_filter_c$&quot; ur_group=&quot;$ur_code_c$&quot; ur_note=&quot;$ur_section_c$&quot; ur_p1=&quot;$ur_t1$&quot;&gt;
 {{L2TemplateP2List}}
 &lt;/$vars&gt;
 
 &lt;/$vars&gt;
 \end
 
-&lt;&lt;l2_links Y&gt;&gt;</pre>
+&lt;&lt;main
+&quot;Y&quot;
+K
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
 </div>
 
 </div>
