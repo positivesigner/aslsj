@@ -227,6 +227,8 @@ Error message and password prompt
 
 <li>3-\</li>
 
+<li>3-#</li>
+
 <li>3-&gt;</li>
 
 <li>3-B</li>
@@ -250,6 +252,8 @@ Error message and password prompt
 <li>3\h</li>
 
 <li>3B\</li>
+
+<li>3B#</li>
 
 <li>3B&gt;</li>
 
@@ -309,11 +313,19 @@ Error message and password prompt
 
 <li>3iq-what's up</li>
 
+<li>3K&gt;</li>
+
 <li>3Kh</li>
 
 <li>3Ki</li>
 
 <li>3Kq</li>
+
+<li>3KU</li>
+
+<li>3q-hate</li>
+
+<li>3U#</li>
 
 <li>3U&gt;</li>
 
@@ -327,6 +339,8 @@ Error message and password prompt
 
 <li>3Uq</li>
 
+<li>3Uq-Austrailia</li>
+
 <li>3Wi</li>
 
 <li>3Wiq-disease</li>
@@ -335,7 +349,17 @@ Error message and password prompt
 
 <li>3Wq</li>
 
+<li>3Wq-awful</li>
+
 <li>4</li>
+
+<li>4B&gt;-pear</li>
+
+<li>4B&gt;-win</li>
+
+<li>4BU&gt;-remove</li>
+
+<li>4BUq-greedy</li>
 
 <li>ASL to English</li>
 
@@ -344,6 +368,8 @@ Error message and password prompt
 <li>B</li>
 
 <li>B-\</li>
+
+<li>B-#</li>
 
 <li>B-&gt;</li>
 
@@ -362,6 +388,8 @@ Error message and password prompt
 <li>B\h</li>
 
 <li>Bih</li>
+
+<li>BU#</li>
 
 <li>BU&gt;</li>
 
@@ -429,17 +457,25 @@ Error message and password prompt
 
 <li>K</li>
 
+<li>K-&gt;</li>
+
 <li>K-h</li>
 
 <li>K-i</li>
 
 <li>K-q</li>
 
+<li>K-U</li>
+
 <li>keyboard action SaveAllChanges</li>
 
 <li>Kih</li>
 
 <li>Kiq</li>
+
+<li>KU&gt;</li>
+
+<li>KUh</li>
 
 <li>l</li>
 
@@ -486,6 +522,8 @@ Error message and password prompt
 <li>TiddlyWiki Startup Options</li>
 
 <li>U</li>
+
+<li>U-#</li>
 
 <li>U-&gt;</li>
 
@@ -9935,7 +9973,7 @@ exports.startup = function() {
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200301081212411" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200301085819919" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
@@ -9956,7 +9994,7 @@ exports.startup = function() {
 <div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
-<div created="20200301080416565" list="[[Entry Audit]] 3Wiq-sick [[Tag Audit]] [[Template Audit_L2,L3]] 3ih-disappointed [[3iq-what's up]] 3Uh-light 3U&gt;-computer 3BU#-melon" modified="20200301081302231" title="$:/StoryList">
+<div created="20200301080416565" list="[[Entry Audit]] [[Tag Audit]] 3Wq-awful" modified="20200301091009190" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
@@ -10207,6 +10245,29 @@ S U
 &quot;Movement&quot; o &quot;&gt; h q o #&quot;
 &gt;&gt;</pre>
 </div>
+<div created="20200301082443628" modified="20200301082450056" tags="L2" title="3-#">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 &quot;#&quot;
+S o
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;
+</pre>
+</div>
 <div created="20200228113310350" modified="20200301054628671" tags="L2" title="3-&gt;">
 <pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
@@ -10341,7 +10402,7 @@ S o
 &gt;&gt;
 </pre>
 </div>
-<div created="20200301062938149" modified="20200301062945546" tags="L2" title="3-q">
+<div created="20200301062938149" modified="20200301082456529" tags="L2" title="3-q">
 <pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
@@ -10357,7 +10418,7 @@ S o
 \end
 
 &lt;&lt;main
-3 &quot;q&quot;
+3 q
 S o
 &quot;Location&quot; K &quot;W C B K Y&quot;
 &quot;Palm Facing&quot; U &quot;U i \&quot;
@@ -10459,6 +10520,23 @@ S K U o
 &quot;Movement&quot; 
 &quot;&gt; h q o #&quot;&gt;&gt;</pre>
 </div>
+<div created="20200301082212009" modified="20200301082216372" tags="L3" title="3B#">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 B #
+S K o U
+&quot;Palm Facing&quot; 
+&quot;U i \&quot;&gt;&gt;</pre>
+</div>
 <div created="20200301052532216" modified="20200301052600923" tags="L3" title="3B&gt;">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
@@ -10476,7 +10554,7 @@ S K o U
 &quot;Palm Facing&quot; 
 &quot;U i \&quot;&gt;&gt;</pre>
 </div>
-<div created="20200301081433688" modified="20200301081507917" tags="&gt; 3 B K DICTe1 ASLSJ" title="3B&gt;-contact">
+<div created="20200301081433688" modified="20200301085543132" tags="\ 3 &gt; B DICTe1 ASLSJ" title="3B&gt;-contact">
 <pre>{{DICTe1}}
 
 * Page 364</pre>
@@ -10700,6 +10778,23 @@ S U o K
 
 * Page 364</pre>
 </div>
+<div created="20200301082054464" modified="20200301082100100" tags="L3" title="3K&gt;">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 K &quot;&gt;&quot;
+S K o U
+&quot;Palm Facing&quot; 
+&quot;U i \&quot;&gt;&gt;</pre>
+</div>
 <div created="20200301075138646" modified="20200301075145643" tags="L3" title="3Kh">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
@@ -10750,6 +10845,45 @@ S K U o
 S K o U
 &quot;Palm Facing&quot; 
 &quot;U i \&quot;&gt;&gt;</pre>
+</div>
+<div created="20200301082116977" modified="20200301082151409" tags="L3" title="3KU">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 K U
+S K U o
+&quot;Movement&quot; 
+&quot;&gt; h q o #&quot;&gt;&gt;</pre>
+</div>
+<div created="20200301082611308" modified="20200301082632928" tags="\ 3 q K DICTe1 ASLSJ" title="3q-hate">
+<pre>{{DICTe1}}
+
+* Page 363</pre>
+</div>
+<div created="20200301082030165" modified="20200301082035527" tags="L3" title="3U#">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+3 U &quot;#&quot;
+S U o K
+&quot;Location&quot; 
+&quot;W C B K Y&quot;&gt;&gt;</pre>
 </div>
 <div created="20200301070629598" modified="20200301070634835" tags="L3" title="3U&gt;">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
@@ -10829,6 +10963,11 @@ S U o K
 &quot;Location&quot; 
 &quot;W C B K Y&quot;&gt;&gt;</pre>
 </div>
+<div created="20200301082516486" modified="20200301082607040" tags="q 3 K U DICTe1 ASLSJ" title="3Uq-Austrailia">
+<pre>{{DICTe1}}
+
+* Page 363</pre>
+</div>
 <div created="20200301080916649" modified="20200301080930733" tags="L3" title="3Wi">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
@@ -10873,6 +11012,11 @@ S K o U
 &quot;Palm Facing&quot; 
 &quot;U i \&quot;&gt;&gt;</pre>
 </div>
+<div created="20200301082636925" modified="20200301091058814" tags="q 3 W \ DICTe1 ASLSJ" title="3Wq-awful">
+<pre>{{DICTe1}}
+
+* Page 363</pre>
+</div>
 <div created="20200301015700425" modified="20200301060748163" tags="L1" title="4">
 <pre>\define main(ur_t1,ur_p1,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b,ur_section_c,ur_code_c,ur_filter_c)
 &lt;$vars ur_title=&quot;$ur_t1$&quot; ur_prefix=&quot;$ur_p1$&quot;&gt;
@@ -10900,6 +11044,26 @@ S
 &quot;Palm Facing&quot; U &quot;U i \&quot;
 &quot;Movement&quot; o &quot;&gt; h q o #&quot;
 &gt;&gt;</pre>
+</div>
+<div created="20200301082823056" modified="20200301082921894" tags="&gt; 4 \ B DICTe1 ASLSJ" title="4B&gt;-pear">
+<pre>{{DICTe1}}
+
+* Page 362</pre>
+</div>
+<div created="20200301082707231" modified="20200301085625601" tags="4 &gt; B \ DICTe1 ASLSJ" title="4B&gt;-win">
+<pre>{{DICTe1}}
+
+* Page 363</pre>
+</div>
+<div created="20200301082746024" modified="20200301082816281" tags="U 4 &gt; B DICTe1 ASLSJ" title="4BU&gt;-remove">
+<pre>{{DICTe1}}
+
+* Page 362</pre>
+</div>
+<div created="20200301082935001" modified="20200301082950083" tags="q 4 U B DICTe1 ASLSJ" title="4BUq-greedy">
+<pre>{{DICTe1}}
+
+* Page 362</pre>
 </div>
 <div created="20190925014523514" modified="20200301070222678" tags="INDEX" title="ASL to English">
 <pre>{{ext Root doc}}
@@ -10981,6 +11145,28 @@ B &quot;\&quot;
 K U
 &quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
 &quot;Movement&quot; o &quot;&gt; h q o #&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200301082418727" modified="20200301082426828" tags="L2" title="B-#">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+B &quot;#&quot;
+K o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
 &gt;&gt;</pre>
 </div>
 <div created="20200228114526692" modified="20200301055351562" tags="L2" title="B-&gt;">
@@ -11149,7 +11335,7 @@ K U o S
 &quot;Handshape Size&quot; 
 &quot;S l 2 3 4&quot;&gt;&gt;</pre>
 </div>
-<div created="20200301061810413" modified="20200301061818771" tags="L3" title="Bih">
+<div created="20200301081930191" modified="20200301081935588" tags="L3" title="Bih">
 <pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
 {{L3HeaderTemplate}}
@@ -11162,6 +11348,23 @@ K U o S
 
 &lt;&lt;main
 B i h
+K U o S
+&quot;Handshape Size&quot; 
+&quot;S l 2 3 4&quot;&gt;&gt;</pre>
+</div>
+<div created="20200301081951554" modified="20200301082019587" tags="L3" title="BU#">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+B U &quot;#&quot;
 K U o S
 &quot;Handshape Size&quot; 
 &quot;S l 2 3 4&quot;&gt;&gt;</pre>
@@ -11445,6 +11648,28 @@ K
 &quot;Movement&quot; o &quot;&gt; h q o #&quot;
 &gt;&gt;</pre>
 </div>
+<div created="20200301082328546" modified="20200301082335596" tags="L2" title="K-&gt;">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP2List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+K &quot;&gt;&quot;
+K o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
+</div>
 <div created="20200301075215590" modified="20200301075224283" tags="L2" title="K-h">
 <pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
@@ -11467,7 +11692,7 @@ K o
 &quot;Palm Facing&quot; U &quot;U i \&quot;
 &gt;&gt;</pre>
 </div>
-<div created="20200301063003259" modified="20200301063011495" tags="L2" title="K-i">
+<div created="20200301063003259" modified="20200301082406836" tags="L2" title="K-i">
 <pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
@@ -11483,7 +11708,7 @@ K o
 \end
 
 &lt;&lt;main
-K &quot;i&quot;
+K i
 K U
 &quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
 &quot;Movement&quot; o &quot;&gt; h q o #&quot;
@@ -11509,6 +11734,28 @@ K &quot;q&quot;
 K o
 &quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
 &quot;Palm Facing&quot; U &quot;U i \&quot;
+&gt;&gt;</pre>
+</div>
+<div created="20200301082353315" modified="20200301082359986" tags="L2" title="K-U">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p1=&quot;$ur_t1$&quot; ur_p2=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP3List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+K U
+K U
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Movement&quot; o &quot;&gt; h q o #&quot;
 &gt;&gt;</pre>
 </div>
 <div created="20200223012728498" key="((save-all-changes))" modified="20200223013015060" tags="META $:/tags/KeyboardShortcut" title="keyboard action SaveAllChanges">
@@ -11546,6 +11793,40 @@ K U o S
 
 &lt;&lt;main
 K &quot;i&quot; &quot;q&quot;
+K U o S
+&quot;Handshape Size&quot; 
+&quot;S l 2 3 4&quot;&gt;&gt;</pre>
+</div>
+<div created="20200301081855969" modified="20200301081901761" tags="L3" title="KU&gt;">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+K U &quot;&gt;&quot;
+K U o S
+&quot;Handshape Size&quot; 
+&quot;S l 2 3 4&quot;&gt;&gt;</pre>
+</div>
+<div created="20200301061810413" modified="20200301081839094" tags="L3" title="KUh">
+<pre>\define main(ur_t1,ur_t2,ur_t3,ur_p1,ur_p2,ur_p3,ur_p4,ur_section_title,ur_filter)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_p3=&quot;$ur_p3$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L3HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_section_title=&quot;$ur_section_title$&quot; ur_section_code=&quot;$ur_p4$&quot; ur_filter=&quot;$ur_filter$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot; ur_t3=&quot;$ur_t3$&quot;&gt;
+{{L4TemplateList}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+K U h
 K U o S
 &quot;Handshape Size&quot; 
 &quot;S l 2 3 4&quot;&gt;&gt;</pre>
@@ -11953,24 +12234,83 @@ S
 &quot;Movement&quot; o &quot;&gt; h q o #&quot;
 &gt;&gt;</pre>
 </div>
-<div created="20200301072306718" modified="20200301073333507" tags="META" title="Tag Audit">
-<pre>\define main()
-&lt;$list filter=&quot;U i \&quot;&gt;
+<div created="20200301072306718" modified="20200301091041889" tags="META" title="Tag Audit">
+<pre>\define main(ur_filter_S,ur_not_S,ur_filter_K,ur_not_K,ur_filter_U,ur_not_U,ur_filter_o,ur_not_o)
+&lt;$list filter=&quot;$ur_filter_S$ $ur_filter_K$ $ur_filter_U$ $ur_filter_o$&quot;&gt;
 &lt;$macrocall $name=&quot;tag_ASLSJ&quot; ur_tag_code=&lt;&lt;currentTiddler&gt;&gt; /&gt;
 &lt;/$list&gt;
-&lt;$macrocall $name=&quot;tag_DICT_VID&quot; ur_tag_filter=&quot;[tag[ASLSJ]!tag[DICTe1]]&quot; /&gt;
+
+&lt;&lt;tag_DICT_VID &quot;[tag[ASLSJ]!tag[DICTe1]]&quot; &gt;&gt;
+
+&lt;&lt;tag_UNIQUE_FILTER_A &quot;$ur_filter_S$&quot; &gt;&gt;
+&lt;&lt;tag_UNIQUE_FILTER_A &quot;$ur_filter_K$&quot; &gt;&gt;
+&lt;&lt;tag_UNIQUE_FILTER_A &quot;$ur_filter_U$&quot; &gt;&gt;
+&lt;&lt;tag_UNIQUE_FILTER_A &quot;$ur_filter_o$&quot; &gt;&gt;
+&lt;&lt;tag_MISSING_FILTER_A &quot;$ur_filter_S$&quot; &quot;$ur_not_K$&quot; &gt;&gt;
+&lt;&lt;tag_MISSING_FILTER_A &quot;$ur_filter_S$&quot; &quot;$ur_not_U$&quot; &gt;&gt;
+&lt;&lt;tag_MISSING_FILTER_A &quot;$ur_filter_S$&quot; &quot;$ur_not_o$&quot; &gt;&gt;
+&lt;&lt;tag_MISSING_FILTER_A &quot;$ur_filter_K$&quot; &quot;$ur_not_U$&quot; &gt;&gt;
+&lt;&lt;tag_MISSING_FILTER_A &quot;$ur_filter_K$&quot; &quot;$ur_not_o$&quot; &gt;&gt;
+&lt;&lt;tag_MISSING_FILTER_A &quot;$ur_filter_U$&quot; &quot;$ur_not_o$&quot; &gt;&gt;
+
 \end
+
 \define tag_ASLSJ(ur_tag_code)
 &lt;$list filter=&quot;[tag[$ur_tag_code$]!tag[ASLSJ]]&quot;&gt;
 Missing ASLSJ Tag: &lt;$link&gt;&lt;&lt;currentTiddler&gt;&gt;&lt;/$link&gt;&lt;br/&gt;
 &lt;/$list&gt;
 \end
+
 \define tag_DICT_VID(ur_tag_filter)
 &lt;$list filter=&quot;$ur_tag_filter$&quot;&gt;
 Missing Dict/Vid link: &lt;$link&gt;&lt;&lt;currentTiddler&gt;&gt;&lt;/$link&gt;&lt;br/&gt;
 &lt;/$list&gt;
 \end
-&lt;&lt;main&gt;&gt;</pre>
+
+\define tag_UNIQUE_FILTER_A(ur_filter)
+&lt;$list filter=&quot;$ur_filter$&quot;&gt;
+&lt;$macrocall $name=&quot;tag_UNIQUE_FILTER_B&quot; ur_tag_code=&lt;&lt;currentTiddler&gt;&gt; ur_filter=&quot;$ur_filter$&quot; /&gt;
+&lt;/$list&gt;
+\end
+
+\define tag_UNIQUE_FILTER_B(ur_tag_code,ur_filter)
+
+&lt;$list filter=&quot;$ur_filter$&quot;&gt;
+&lt;$macrocall $name=&quot;tag_UNIQUE_SPREAD&quot; ur_tag_code=&quot;$ur_tag_code$&quot; ur_tag_dup=&lt;&lt;currentTiddler&gt;&gt; /&gt;
+&lt;/$list&gt;
+\end
+
+\define tag_UNIQUE_SPREAD(ur_tag_code,ur_tag_dup)
+&lt;$list filter=&quot;[[$ur_tag_code$]![$ur_tag_dup$]]&quot;&gt;
+&lt;$list filter=&quot;[tag[$ur_tag_code$]tag[$ur_tag_dup$]]&quot;&gt;
+Duplicate section $ur_tag_code$ $ur_tag_dup$: &lt;$link&gt;&lt;&lt;currentTiddler&gt;&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;/$list&gt;
+&lt;/$list&gt;
+\end
+
+\define tag_MISSING_FILTER_A(ur_filter,ur_not_filter)
+&lt;$list filter=&quot;$ur_filter$&quot;&gt;
+&lt;$macrocall $name=&quot;tag_MISSING_FILTER_B&quot; ur_tag_code=&lt;&lt;currentTiddler&gt;&gt; ur_not_filter=&quot;$ur_not_filter$&quot; /&gt;
+&lt;/$list&gt;
+\end
+
+\define tag_MISSING_FILTER_B(ur_tag_code,ur_not_filter)
+&lt;$list filter=&quot;[tag[$ur_tag_code$]$ur_not_filter$]&quot;&gt;
+Missing section $ur_not_filter$: &lt;$link&gt;&lt;&lt;currentTiddler&gt;&gt;&lt;/$link&gt;&lt;br/&gt;
+&lt;/$list&gt;
+\end
+
+&lt;&lt;main
+&quot;S l 2 3 4&quot;
+&quot;!tag[S]!tag[l]!tag[2]!tag[3]!tag[4]&quot;
+&quot;W C B K Y&quot;
+&quot;!tag[W]!tag[C]!tag[B]!tag[K]!tag[Y]&quot;
+&quot;U i \&quot;
+&quot;!tag[U]!tag[i]!tag[\]&quot;
+&quot;&gt; h q o #&quot;
+&quot;!tag[&gt;]!tag[h]!tag[q]!tag[o]!tag[#]&quot;
+&gt;&gt;
+</pre>
 </div>
 <div created="20200226112806342" modified="20200301015409104" tags="META" title="Template Audit_L2,L3">
 <pre>\define t2(ur_p1,ur_p2)
@@ -12115,6 +12455,28 @@ U
 &quot;Movement&quot; o &quot;&gt; h q o #&quot;
 &gt;&gt;</pre>
 </div>
+<div created="20200301082257499" modified="20200301082305833" tags="L2" title="U-#">
+<pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
+&lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
+{{L2HeaderTemplate}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_a$&quot; ur_group=&quot;$ur_code_a$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot; ur_note=&quot;$ur_section_a$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+
+&lt;$vars ur_filter=&quot;$ur_filter_b$&quot; ur_group=&quot;$ur_code_b$&quot; ur_p2=&quot;$ur_t1$&quot; ur_p3=&quot;$ur_t2$&quot;  ur_note=&quot;$ur_section_b$&quot;&gt;
+{{L3TemplateP1List}}
+&lt;/$vars&gt;
+\end
+
+&lt;&lt;main
+U &quot;#&quot;
+U o
+&quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
+&quot;Location&quot; K &quot;W C B K Y&quot;
+&gt;&gt;</pre>
+</div>
 <div created="20200301070647438" modified="20200301070650037" tags="L2" title="U-&gt;">
 <pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
@@ -12159,7 +12521,7 @@ U o
 &quot;Location&quot; K &quot;W C B K Y&quot;
 &gt;&gt;</pre>
 </div>
-<div created="20200301065336269" modified="20200301065345256" tags="L2" title="U-o">
+<div created="20200301065336269" modified="20200301082315356" tags="L2" title="U-o">
 <pre>\define main(ur_t1,ur_t2,ur_p1,ur_p2,ur_section_a,ur_code_a,ur_filter_a,ur_section_b,ur_code_b,ur_filter_b)
 &lt;$vars ur_p1=&quot;$ur_p1$&quot; ur_p2=&quot;$ur_p2$&quot; ur_t1=&quot;$ur_t1$&quot; ur_t2=&quot;$ur_t2$&quot;&gt;
 {{L2HeaderTemplate}}
@@ -12175,7 +12537,7 @@ U o
 \end
 
 &lt;&lt;main
-&quot;U&quot; &quot;o&quot;
+U o
 U o
 &quot;Handshape Size&quot; S &quot;S l 2 3 4&quot;
 &quot;Location&quot; K &quot;W C B K Y&quot;
