@@ -226,10 +226,11 @@ Namespace Mx
                     If EndingWithText(trwFILE.v(enmFCol.existing_path), "htm") AndAlso
                       prv.Found_TWFile(trwFILE.v(enmFCol.existing_path)) AndAlso
                       prv.Found_TWFile(trwFILE.v(enmFCol.new_data_path) & ".TDLY") = False Then
-
-                        ret_file_io.Delete(trwFILE.v(enmFCol.existing_path) & "l")
-                        Call prv.Overwrite_TWExport(trwFILE.v(enmFCol.new_data_path) & ".TDLY", trwFILE.v(enmFCol.existing_path) & "l")
-                        ret_file_io.Delete(trwFILE.v(enmFCol.new_data_path) & ".TDLY")
+						
+						trwFILE.v(enmFCol.existing_path) &= "l"
+						trwFILE.v(enmFCol.new_data_path) &= ".TDLY"
+                        Call prv.Overwrite_TWExport(trwFILE.v(enmFCol.new_data_path), trwFILE.v(enmFCol.existing_path))
+                        ret_file_io.Delete(trwFILE.v(enmFCol.new_data_path))
 
                     Else
                         ret_file_io.Delete(trwFILE.v(enmFCol.existing_path))
@@ -256,22 +257,18 @@ Namespace Mx
                         Dim chraBLOCK(0 To 100) As Char
                         Call stmREADER.ReadBlock(chraBLOCK, 0, 100)
                         Dim line = New String(chraBLOCK)
-                        Dim intFOUND_INDEX = InStr(line, "MOTW Comment")
-                        If intFOUND_INDEX > 0 Then
-                            Found_TWFile = True
-                        End If
+                        Found_TWFile = ContainingText(line, "MOTW comment")
                     End Using 'stmREADER
                 End Function 'Found_TWFile
 
                 Public Shared Sub Overwrite_TWExport(ur_new_filepath As String, ur_exisitng_filepath As String)
                     Using stmOUTPUT As New System.IO.StreamWriter(ur_exisitng_filepath, False, Mx.gUTF8_FileEncoding)
-                        For Each strLINE In System.IO.File.ReadAllText(ur_new_filepath).Replace(vbCr, mt).Replace("<div style=""float:right""><button class=""tc-btn-invisible"">" & vbLf &
-"&gt;&gt;", "<div style=""float:right""><a href=""#""><button class=""tc-btn-invisible"">" & vbLf &
-"&lt;&lt;").Split(vbLf(0))
-                            stmOUTPUT.WriteLine(prv.Fix_Line_Href(strLINE))
-                        Next
-                    End Using
-
+						Using stmREADER As New System.IO.StreamReader(ur_new_filepath, gUTF8_FileEncoding)
+							While stmREADER.EndOfStream = False
+								stmOUTPUT.WriteLine(prv.Fix_Line_Href(stmREADER.ReadLine))
+							End While
+						End Using 'stmREADER
+                    End Using 'stmOUTPUT
                 End Sub 'Overwrite_TWExport
 
                 Const chrQMARK = "?"
