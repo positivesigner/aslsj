@@ -147,6 +147,10 @@ Error message and password prompt
 
 <li>$:/config/HideSidebarOnStartup</li>
 
+<li>$:/config/Manager/RecentTags</li>
+
+<li>$:/config/Manager/System</li>
+
 <li>$:/config/MissingLinks</li>
 
 <li>$:/config/Navigation/openLinkFromOutsideRiver</li>
@@ -161,7 +165,11 @@ Error message and password prompt
 
 <li>$:/config/ShortcutInfo/save-all-changes</li>
 
+<li>$:/config/ShortcutInfo/save-html-converted</li>
+
 <li>$:/config/shortcuts/save-all-changes</li>
+
+<li>$:/config/shortcuts/save-html-converted</li>
 
 <li>$:/config/TextEditor/EnableToolbar</li>
 
@@ -184,6 +192,8 @@ Error message and password prompt
 <li>$:/SiteTitle</li>
 
 <li>$:/state/dropdown/keyboardshortcut/save-all-changes-286565879</li>
+
+<li>$:/state/dropdown/keyboardshortcut/save-html-converted-286565879</li>
 
 <li>$:/state/showeditpreview</li>
 
@@ -213,13 +223,19 @@ Error message and password prompt
 
 <li>ASLSJ Dictionary</li>
 
+<li>ext ASL to English Dictionary</li>
+
 <li>ext Root doc</li>
+
+<li>ext Video Sources</li>
 
 <li>HideHeader</li>
 
 <li>INDEX</li>
 
 <li>keyboard action SaveAllChanges</li>
+
+<li>keyboard action SaveHtmlConverted</li>
 
 <li>Recent entries</li>
 
@@ -280,6 +296,12 @@ exports.startup = function() {
 <div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20190925044957682" revision="0" tags="" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
+<div created="20200303055008547" list="META" modified="20200303055008547" title="$:/config/Manager/RecentTags">
+<pre></pre>
+</div>
+<div created="20200303054959888" modified="20200303054959888" title="$:/config/Manager/System">
+<pre></pre>
+</div>
 <div created="20190925061735308" modified="20190925061735308" title="$:/config/MissingLinks">
 <pre>no</pre>
 </div>
@@ -301,8 +323,14 @@ exports.startup = function() {
 <div created="20200223012716802" modified="20200223013001664" tags="META" title="$:/config/ShortcutInfo/save-all-changes">
 <pre></pre>
 </div>
+<div created="20200303054411494" modified="20200303055008548" tags="META" title="$:/config/ShortcutInfo/save-html-converted">
+<pre></pre>
+</div>
 <div created="20200223012858820" modified="20200223012858820" title="$:/config/shortcuts/save-all-changes">
 <pre>alt-S</pre>
+</div>
+<div created="20200303054425007" modified="20200303054425007" title="$:/config/shortcuts/save-html-converted">
+<pre>alt-H</pre>
 </div>
 <div created="20190925061557600" modified="20200116064526517" title="$:/config/TextEditor/EnableToolbar">
 <pre>no</pre>
@@ -9531,14 +9559,17 @@ exports.startup = function() {
 <div created="20190925014404111" modified="20200223062013390" title="$:/SiteTitle">
 <pre>ASLSJ</pre>
 </div>
-<div created="20200223012850920" modified="20200223012850920" title="$:/state/dropdown/keyboardshortcut/save-all-changes-286565879">
-<pre>open</pre>
+<div created="20200223012850920" modified="20200303054034619" title="$:/state/dropdown/keyboardshortcut/save-all-changes-286565879">
+<pre>close</pre>
+</div>
+<div created="20200303054420844" modified="20200303054427122" title="$:/state/dropdown/keyboardshortcut/save-html-converted-286565879">
+<pre>close</pre>
 </div>
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200226220830645" title="$:/state/sidebar">
-<pre>no</pre>
+<div created="20190925044925672" modified="20200303054902463" title="$:/state/sidebar">
+<pre>yes</pre>
 </div>
 <div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
@@ -9549,16 +9580,16 @@ exports.startup = function() {
 <div created="20190925052229880" modified="20200115080408562" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20190925051414187" modified="20200223043750307" title="$:/state/tab-1749438307">
+<div created="20190925051414187" modified="20200303055252671" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200223062018371" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20190925014513912" modified="20200303055247261" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
-<div list="[[ASLSJ Dictionary]]" title="$:/StoryList">
+<div created="20200303054659006" list="[[ASLSJ Dictionary]] [[keyboard action SaveHtmlConverted]]" modified="20200303055250355" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
@@ -9577,7 +9608,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/index.html&quot;
+            &quot;text&quot;: &quot;file:///C:/BBK/aslsj/index.htm&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9597,7 +9628,7 @@ exports.startup = function() {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/BBK/aslsj/index.html&quot;
+            &quot;text&quot;: &quot;/C:/BBK/aslsj/index.htm&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9731,17 +9762,24 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div created="20190925014523514" modified="20200226220903240" tags="INDEX" title="ASLSJ Dictionary">
+<div created="20190925014523514" modified="20200303053546505" tags="INDEX" title="ASLSJ Dictionary">
 <pre>ASLSJ is a text-based writing system for American Sign Language. It is intended to help with using computers to find examples of ASL words in everyday use.
 
-[ext[Video Sources
-|Sources/VideoSources.html]]
+{{ext Video Sources}}
 
-[ext[ASL to English Dictionary
-|Word/ASLToEnglish.html]]</pre>
+{{ext ASL to English Dictionary}}</pre>
+</div>
+<div created="20200303053523477" modified="20200303053536342" tags="EXTLINK" title="ext ASL to English Dictionary">
+<pre>[ext[ASL to English Dictionary
+|Word/ASLToEnglish.htm]]</pre>
 </div>
 <div created="20200223043825137" modified="20200223043838783" tags="EXTLINK" title="ext Root doc">
 <pre>&lt;div style=&quot;float:right&quot;&gt;Back to [ext[Main Index|../index.html]]&lt;/div&gt;</pre>
+</div>
+<div created="20200303053444835" modified="20200303053511676" tags="EXTLINK" title="ext Video Sources">
+<pre>[ext[Video Sources
+|Sources/VideoSources.htm]]
+</pre>
 </div>
 <div created="20190925053827947" modified="20200111081344048" tags="EXTLINK" title="HideHeader">
 <pre>[ext[Hiding The Sidebar On Startup|TiddlyWiki Plugin Hiding The Sidebar On Startup.html]]</pre>
@@ -9753,6 +9791,11 @@ exports.startup = function() {
 <pre>&lt;$action-sendmessage $message=&quot;tm-save-wiki&quot;/&gt;
 &lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text=&quot;no&quot;/&gt;
 </pre>
+</div>
+<div created="20200303054452509" key="((save-html-converted))" modified="20200303054750792" tags="META $:/tags/KeyboardShortcut" title="keyboard action SaveHtmlConverted">
+<pre>&lt;$action-sendmessage $message=&quot;tm-download-file&quot;
+$param=&quot;$:/core/templates/exporters/StaticRiver&quot;
+exportFilter=&quot;&quot;&quot;[all[tiddlers]tag[INDEX]sort[title]][all[tiddlers]!tag[EXTLINK]!tag[INDEX]!tag[META]!prefix[Draft of]!is[image]!is[tag]!is[system]sort[title]]&quot;&quot;&quot;/&gt;</pre>
 </div>
 <div created="20200203145715457" modified="20200203145738704" tags="META" title="Recent entries">
 <pre>&lt;&lt;timeline limit:30 format:&quot;YYYY-0MM-0DD&quot;&gt;&gt;</pre>
@@ -9770,10 +9813,8 @@ Examples of conversations:
 
 &lt;&lt;list-links filter:&quot;[tag[WEBSITE_CONVERSATION]sort[title]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200115085810255" modified="20200130192534318" tags="META $:/tags/ViewTemplate" title="template Home Button">
-<pre>&lt;div style=&quot;float:right&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
-&gt;&gt;
-&lt;/$button&gt;&lt;/div&gt;
+<div created="20200115085810255" modified="20200303053649020" tags="META $:/tags/ViewTemplate" title="template Home Button">
+<pre>&lt;div style=&quot;float:right&quot;&gt;{{$:/core/ui/TopBar/menu}}&lt;/div&gt;
 
 &lt;div style=&quot;float:right&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; tooltip={{$:/language/Buttons/Home/Hint}} aria-label={{$:/language/Buttons/Home/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
 &lt;span class=&quot;tc-dirty-indicator&quot;&gt;

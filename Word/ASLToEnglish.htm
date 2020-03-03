@@ -157,6 +157,10 @@ Error message and password prompt
 
 <li>$:/config/HideSidebarOnStartup</li>
 
+<li>$:/config/Manager/RecentTags</li>
+
+<li>$:/config/Manager/System</li>
+
 <li>$:/config/MissingLinks</li>
 
 <li>$:/config/Navigation/openLinkFromOutsideRiver</li>
@@ -898,6 +902,12 @@ exports.startup = function() {
 <div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20190925044957682" revision="0" tags="" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
+<div created="20200303053821387" list="META" modified="20200303054336012" title="$:/config/Manager/RecentTags">
+<pre></pre>
+</div>
+<div created="20200303053809294" modified="20200303054345394" title="$:/config/Manager/System">
+<pre>system</pre>
+</div>
 <div created="20190925061735308" modified="20190925061735308" title="$:/config/MissingLinks">
 <pre>no</pre>
 </div>
@@ -919,13 +929,13 @@ exports.startup = function() {
 <div created="20200223012716802" modified="20200223013001664" tags="META" title="$:/config/ShortcutInfo/save-all-changes">
 <pre></pre>
 </div>
-<div created="20200303051242737" modified="20200303051244947" tags="" title="$:/config/ShortcutInfo/save-html-converted">
+<div created="20200303051242737" modified="20200303054301994" tags="META" title="$:/config/ShortcutInfo/save-html-converted">
 <pre></pre>
 </div>
 <div created="20200223012858820" modified="20200223012858820" title="$:/config/shortcuts/save-all-changes">
 <pre>alt-S</pre>
 </div>
-<div created="20200303052037709" modified="20200303052037709" title="$:/config/shortcuts/save-html-converted">
+<div created="20200303052037709" modified="20200303054149429" title="$:/config/shortcuts/save-html-converted">
 <pre>alt-H</pre>
 </div>
 <div created="20190925061557600" modified="20200116064526517" title="$:/config/TextEditor/EnableToolbar">
@@ -10160,7 +10170,7 @@ exports.startup = function() {
 <div created="20200101055747328" modified="20200101060051241" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190925044925672" modified="20200303051250494" title="$:/state/sidebar">
+<div created="20190925044925672" modified="20200303054209895" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200111074213994" modified="20200111074213994" title="$:/state/tab--1498284803">
@@ -10175,13 +10185,13 @@ exports.startup = function() {
 <div created="20190925051414187" modified="20200303052044589" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190925014513912" modified="20200303052155192" title="$:/state/tab/sidebar--595412856">
+<div created="20190925014513912" modified="20200303054351208" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200115080122418" modified="20200115080133954" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
-<div created="20200303051310783" list="[[ASL to English]]" modified="20200303052021731" title="$:/StoryList">
+<div created="20200303054242252" list="[[ASL to English]]" modified="20200303054445426" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200111074215259" modified="20200111074215259" title="$:/temp/advancedsearch">
@@ -13077,7 +13087,7 @@ K U o S
 &lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text=&quot;no&quot;/&gt;
 </pre>
 </div>
-<div created="20200303052055561" key="((save-html-converted))" modified="20200303052149773" tags="$:/tags/KeyboardShortcut" title="keyboard action SaveHtmlConverted">
+<div created="20200303052055561" key="((save-html-converted))" modified="20200303054336011" tags="$:/tags/KeyboardShortcut META" title="keyboard action SaveHtmlConverted">
 <pre>&lt;$action-sendmessage $message=&quot;tm-download-file&quot;
 $param=&quot;$:/core/templates/exporters/StaticRiver&quot;
 exportFilter=&quot;&quot;&quot;[all[tiddlers]tag[INDEX]sort[title]][all[tiddlers]!tag[EXTLINK]!tag[INDEX]!tag[META]!prefix[Draft of]!is[image]!is[system]sort[title]]&quot;&quot;&quot;/&gt;</pre>
